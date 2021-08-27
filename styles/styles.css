@@ -2,13 +2,12 @@ body {
   margin: 0 80px !important;
 }
 
-a {
-  color: black !important;
-  -webkit-text-decoration-line: none !important;
-          text-decoration-line: none !important;
-}
 
-navbar-content a {
+.navbar-content a {
   float: right;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.hello {
+  text-align: center;
+}
+
