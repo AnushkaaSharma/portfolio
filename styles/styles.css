@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
 
 body {
   margin: 0 80px !important;
@@ -12,20 +14,31 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   letter-spacing: 2px;
   font-size: 18px;
 
 }
 
-.navbar-content a {
+.nav-link1 {
   float: right;
-  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #E99557;
+  font-family: 'Gilroy', sans-serif;
   letter-spacing: 1px;
+  font-weight: 600;
+  border-bottom: 3px solid #E99557;
+}
+
+.nav-link2 {
+  text-decoration: none;
+  color: grey;
+  padding-left: 28px;
 }
 
 .hello {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  letter-spacing: 1px;
 }
 
