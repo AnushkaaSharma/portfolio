@@ -14,7 +14,6 @@ body {
 .logo a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
   font-family: 'Gilroy', sans-serif;
   letter-spacing: 0.1em;
   font-size: 22px;
@@ -51,23 +50,23 @@ body {
   background-color: #ffffff;
   width: 100%;
   margin-top: 64px;
+  margin-bottom: 24px;
 }
 
 .projects-background {
-  background-color: #ffffff;
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   margin-top: 24px;
 }
 
 .project-image {
   width: 375px;
-  height: 280px;
-  margin: 60px 80px 60px 60px;
+  height: auto;
+  margin: 24px 60px 24px 60px;
 }
 
 .project-title {
-  margin: 60px 60px 0 80px;
+  margin: 140px 60px 0 24px;
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
@@ -76,7 +75,7 @@ body {
 }
 
 .project-description {
-  margin: 24px 60px 0px 80px;
+  margin: 24px 60px 0px 24px;
   font-family: 'Gilroy', sans-serif;
   color: black;
   font-size: 14px;
@@ -85,12 +84,11 @@ body {
 .button {
   font-family: 'Gilroy', sans-serif;
   color:black;
-  margin: 24px 60px 60px 80px;
+  margin: 24px 60px 60px 24px;
   padding: 10px 20px;
   background-color: transparent;
   border: 1px solid black;
   transition-duration: 0.4s;
-  letter-spacing: 1px;
 }
 
 .button:hover {
