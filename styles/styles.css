@@ -8,14 +8,6 @@ body {
   margin-top: 32px;
 }
 
-.logo a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Gilroy', sans-serif;
-  letter-spacing: 0.1em;
-  font-size: 22px;
-}
-
 .nav-link {
   font-family: 'Gilroy', sans-serif;
   text-decoration: none;
@@ -39,15 +31,14 @@ body {
   margin: 0 200px;
 }
 
-.projects {
-  
+.projects {  
   width: 100%;
   margin-top: 64px;
   margin-bottom: 24px;
 }
 
 .projects-background {
-  background-color: #ffffff;
+  background-image: url('../images/Desktop\ -\ 2.jpg');
   width: 100%;
   min-height: 400px;
   margin-top: 64px;
@@ -60,18 +51,18 @@ body {
 }
 
 .project-title {
-  margin: 140px 60px 0 24px;
+  margin: 100px 60px 0 24px;
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 20px;
-  color: black;
+  color: white;
 }
 
 .project-description {
   margin: 24px 60px 0px 24px;
   font-family: 'Gilroy', sans-serif;
-  color: black;
+  color: white;
   font-size: 14px;
 }
 
@@ -80,14 +71,13 @@ body {
   color:black;
   margin: 24px 60px 60px 24px;
   padding: 10px 20px;
-  background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid white;
   transition-duration: 0.4s;
 }
 
 .button:hover {
-  background-color:black !important;
-  color: white;
+  background-color:white !important;
+  color: black;
 }
 
 .social-media {
