@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/main.css",
+    "watch": "tailwindcss -i ./src/styles.css -o ./dist/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AnushkaaSharma/portfolio/issues"
   },
-  "homepage": "https://github.com/AnushkaaSharma/portfolio#readme"
+  "homepage": "https://github.com/AnushkaaSharma/portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }
