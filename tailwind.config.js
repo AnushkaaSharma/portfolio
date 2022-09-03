@@ -3,11 +3,16 @@ module.exports = {
   content: ["./dist/**/*.html"], 
   theme: {
     extend: {
+      screens: {
+        'tablet': '640px',
+        'laptop': '1024px',
+        'desktop': '1280px',
+      },
       colors: {
         neutral: {
           '100': '#FAFAFA',
           '200': '#F7F7F7',
-          '300': '#F2F2F2',
+          '300': '#ECECEC',
           '400': '#D8D8D8',
           '500': '#C2C2C2',
           '600': '#A1A1A1',
