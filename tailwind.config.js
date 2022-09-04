@@ -26,6 +26,7 @@ module.exports = {
         'p': ['16px', '24px'],
         'h6': ['20px', '32px'],
         'h4': ['32px', '44px'],
+        'h2': ['48px', '52px'],
       },
       fontWeight: {
         light: 300,
@@ -34,8 +35,9 @@ module.exports = {
         bold: 700,
       },
       fontFamily: {
-        body: ['Mulish']
-      }
+        body: ['Mulish'],
+        logo: ['Playfair Display'],
+      },
     },
   },
   plugins: [],
