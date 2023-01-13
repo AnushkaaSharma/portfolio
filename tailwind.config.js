@@ -8,6 +8,9 @@ module.exports = {
         'md': '1024px',
         'lg': '1280px',
       },
+      container: {
+        'sm': '980px',
+      },
       colors: {
         neutral: {
           '100': '#FAFAFA',
@@ -18,7 +21,7 @@ module.exports = {
           '600': '#A1A1A1',
           '700': '#7B7B7B',
           '800': '#484848',
-          '900': '#2C2C2C',
+          '900': '#333333',
         },
         red: {
           '400': '#FB766A',
