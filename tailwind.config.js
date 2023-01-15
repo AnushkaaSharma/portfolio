@@ -8,9 +8,6 @@ module.exports = {
         'md': '1024px',
         'lg': '1280px',
       },
-      container: {
-        'sm': '980px',
-      },
       colors: {
         neutral: {
           '100': '#FAFAFA',
@@ -23,13 +20,13 @@ module.exports = {
           '800': '#484848',
           '900': '#333333',
         },
-        red: {
-          '400': '#FB766A',
+        belly: {
+          '400': '#ED644A',
         }
       },
       fontSize: {
         'sm': ['14px', '20px'],
-        'p': ['16px', '24px'],
+        'p': ['16px', '28px'],
         'h6': ['20px', '32px'],
         'h4': ['32px', '44px'],
         'h2': ['48px', '52px'],
