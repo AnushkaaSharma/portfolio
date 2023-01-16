@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Anushka Sharma</title>
 </head>
-<body>     
+<body class="font-body text-neutral-900 bg-neutral-100">     
     <!--Navbar-->
     <nav class="mx-40">
         <div class="container flex flex-wrap justify-between items-center mt-6 mb-6">
@@ -33,15 +33,66 @@
         </div>
     </nav>
 
-    <!--Projects-->
-    <section class="mx-40">
+    <!--Intro-->
+    <div class="lg:mx-40 my-20 text-center">
+        <h4 class="text-h4 font-semibold">Hi, I'm Anushka.</h4>
+        <p class="pt-6 font-light text-p">
+            I am a passionate, self-driven user experience designer and I design websites and 
+            mobile applications using Human Centered Approach. I believe in human-driven 
+            innovation and the use of technology to improve lives. I strongly recommend and 
+            advocate for applying the Human-centered design approach in all disciplines of life. 
+            Currently, designer @ <a href="https://coresoftint.com/" class="text-belly-400 font-semibold">Core Software Integrated.</a>
+        </p>
+    </div>
+
+    <!-- Projects -->
+    <div class="mx-40 relative">
+        <p class="uppercase text-p pl-12 font-regular pb-6">Recent Projects</p> 
+        <hr class="w-10 h-0.5 absolute top-3 left-0 bg-neutral-700">
+        <div class="grid grid-cols-2 gap-6">
             <div>
-                <a href="belly.html">
-                    <img src="../src/images/Project.png">
-                </a>
+                <div class="relative">
+                    <a href="belly.html">
+                        <img class="w-full object-cover"src="../src/images/Project.png">
+                        <div class="absolute top-0 left-0 bg-neutral-900 hover:h-full hover:opacity-100 duration-500">
+                            <h4>A food ordering App</h4>
+                            <a href="./belly.html">View Details</a>
+                        </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div>
+            <div class="grid grid-cols-2 gap-20uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu">
+                <div class="group relative">
+                    <img class="w-full object-cover"
+                        src="../src/images/Project.png" />
+                    <div
+                        class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                        <h1 class="text-2xl text-white">Fiction T-Shirt Store</h1>
+                        <a class="text-neutral-100 duration-300" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
                 <img src="../src/images/Chatter.png">
-            </div>
-    </section>
+            </div> -->
+        </div>
+    </div>
+
+    <!--Lets connect-->
+    <div class="mt-20 lg:mx-40">
+        <h6 class="font-semibold text-h6 text-center">Let's Connect</h6>
+        <div class="text-center mt-6 font-light">
+            <a class="px-5">Email</a>
+            <a class="px-5">Dribbble</a>
+            <a class="px-5">Github</a>
+            <a class="px-5">Linkedin</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-20 lg:mx-40">
+        <hr class="h-0.5 bg-neutral-300">
+        <p class="text-sm text-neutral-800 font-light py-6">Designed by Anushka Sharma. All rights reserved.</p>
+    </div>
 </html>
