@@ -21,6 +21,7 @@ module.exports = {
           '900': '#333333',
         },
         belly: {
+          '100': '#FBF1E7',
           '400': '#ED644A',
         }
       },
@@ -29,6 +30,7 @@ module.exports = {
         'p': ['16px', '28px'],
         'h6': ['20px', '32px'],
         'h4': ['32px', '44px'],
+        'h5': ['24px', '32px'],
         'h2': ['48px', '52px'],
       },
       fontWeight: {
