@@ -696,6 +696,10 @@ video {
   width: 20rem;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
 .list-outside{
   list-style-position: outside;
 }
