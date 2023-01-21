@@ -619,6 +619,26 @@ video {
   right: 2.25rem;
 }
 
+.col-span-3{
+  grid-column: span 3 / span 3;
+}
+
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
+.col-start-7{
+  grid-column-start: 7;
+}
+
+.col-start-9{
+  grid-column-start: 9;
+}
+
+.col-start-10{
+  grid-column-start: 10;
+}
+
 .m-10{
   margin: 2.5rem;
 }
@@ -904,6 +924,10 @@ video {
   padding: 5rem;
 }
 
+.p-4{
+  padding: 1rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -932,6 +956,16 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pt-6{
