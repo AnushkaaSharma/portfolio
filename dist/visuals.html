@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js">
     <title>Anushka Sharma</title>
 </head>
 <body class="font-body text-neutral-900 bg-neutral-100">     
     <!--Navbar-->
-    <nav class="mx-40">
+    <nav class="mx-40 fixed w-full z-20 top-0 left-0">
         <div class="container flex flex-wrap justify-between items-center mt-6 mb-6">
             <a href="index.html" class="font-logo text-h2 text-neutral-900">
                 A.
@@ -62,10 +63,10 @@
             <!--Image 3-->
             <img 
                 class="w-full h-full object-cover cursor-pointer" 
-                src="../src/images/sunrise.jpg" 
+                src="../src/images/mardibarun.jpg" 
                 alt="Bird" 
-                onclick="showModal('../src/images/sunrise.jpg')" 
-            />    
+                onclick="showModal('../src/images/mardibarun.jpg')" 
+            />     
             <!--Image 4-->
             <img 
                 class="w-full h-full object-cover cursor-pointer" 
@@ -73,13 +74,20 @@
                 alt="Bird" 
                 onclick="showModal('../src/images/annapurna.jpg')" 
             />   
-            <!--Image 3-->
+            <!--Image 5-->
             <img 
-                class="w-full h-full object-cover cursor-pointer" 
-                src="../src/images/kalu.jpg" 
-                alt="Bird" 
-                onclick="showModal('../src/images/kalu.jpg')" 
-            />    
+            class="w-full h-full object-cover cursor-pointer" 
+            src="../src/images/sunrise.jpg" 
+            alt="Bird" 
+            onclick="showModal('../src/images/sunrise.jpg')" 
+            />  
+            <!--Image 6-->
+            <img 
+            class="w-full h-full object-cover cursor-pointer" 
+            src="../src/images/coffee.jpg" 
+            alt="Bird" 
+            onclick="showModal('../src/images/coffee.jpg')" 
+        />  
         </div>
         <div id="modal" class="hidden fixed top-0 left-0 z-80 w-screen h-screen flex justify-center items-center bg-black/70">
             <a 
@@ -92,13 +100,20 @@
             <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" />
         </div>
     </div>
-
     
 
     <!-- Footer -->
     <div class="mt-20 lg:mx-40">
         <hr class="h-px bg-neutral-300">
-        <p class="text-sm text-neutral-800 font-light py-6">Designed by Anushka Sharma. All rights reserved.</p>
+        <div class="grid grid-cols-2 gap-6 my-6">
+            <div>
+                <p class="text-sm text-neutral-800 font-light">Designed by Anushka Sharma. All rights reserved.</p>
+            </div>
+            <div class="col-start-10 col-span-2">
+                <a class="px-4" href="https://github.com/AnushkaaSharma"><i class="fa-brands fa-github fa-lg"></i></a>
+                <a href="https://github.com/AnushkaaSharma"><i class="fa-solid fa-basketball fa-lg"></i></a>
+            </div>
+        </div>
     </div>
 
     <!--JS for images-->
@@ -119,6 +134,6 @@
         function closeModal() {
             modal.classList.add('hidden');
         }
-    </script>
-
+    </script> 
+</body>
 </html>
