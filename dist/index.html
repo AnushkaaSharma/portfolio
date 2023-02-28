@@ -10,28 +10,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Anushka Sharma</title>
 </head>
-<body class="font-body text-neutral-900 bg-neutral-100">     
+<body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
     <!--Navbar-->
-    <nav class="mx-40">
-        <div class="container flex flex-wrap justify-between items-center mt-6 mb-6">
-            <a href="index.html" class="font-logo text-h2 text-neutral-900">
-                A.
-            </a>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="flex flex-col md:flex-row">
+    <nav class="p-2">
+        <div class="flex justify-between py-5">
+            <div>
+                <a class="text-h2 font-logo">A.</a>
+            </div>
+            <div>
+                <ul class="flex">
                     <li>
-                        <a href="index.html" class="block text-neutral-900 hover:text-neutral-900 hover:font-semibold duration-500 text-p mr-6 font-regular" aria-current="page">
+                        <a href="index.html" class="text-p text-neutral-900 font-semibold mx-6" aria-current="page">
                             Work
                         </a>
                     </li>
                     <li>
-                        <a href="about.html" class="block text-neutral-700 mr-6 text-p font-regular" aria-current="page">
+                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="visuals.html" class="block text-neutral-700 text-p font-regular" aria-current="page">
-                            Visuals
+                        <a href="#" class="text-p text-neutral-700 font-regular" aria-current="page">
+                            Resume
                         </a>
                     </li>
                 </ul>
@@ -40,68 +40,21 @@
     </nav>
 
     <!--Intro-->
-    <div class="lg:mx-40 my-20 text-center">
-        <h4 class="text-h4 font-semibold">Hi, I'm Anushka.</h4>
-        <p class="pt-6 font-light text-p">
-            I am a passionate, self-driven user experience designer and I design websites and 
-            mobile applications using Human Centered Approach. I believe in human-driven 
-            innovation and the use of technology to improve lives. I strongly recommend and 
-            advocate for applying the Human-centered design approach in all disciplines of life. 
-            Currently, designer @ <a href="https://coresoftint.com/" class="text-belly-400 font-semibold">Core Software Integrated.</a>
-        </p>
-    </div>
-
-    <!-- Projects -->
-    <div class="mx-40 relative">
-        <p class="uppercase text-p pl-12 font-regular pb-6">Recent Projects</p> 
-        <hr class="w-10 h-0.5 absolute top-3 left-0 bg-neutral-700">
-            <div class="grid grid-cols-2 gap-40">
-                <!-- Belly -->
-                <div class="group relative">
-                    <img class="w-full object-cover" src="../src/images/Project.png" />
-                    <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-black opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
-                        <h6 class="text-p text-center font-light text-neutral-100 pb-6 px-10">An online food ordering and delivery platform.</h6>
-                        <hr class="w-80 h-px" />
-                        <a class="text-neutral-100 uppercase text-p pt-6 duration-300 font-light" href="belly.html">View Details</a>
-                    </div>
-                </div>
-                <!-- Chatter -->
-                <div class="group relative">
-                    <img class="w-full object-cover" src="../src/images/Chatter.png" />
-                    <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-black opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
-                        <h6 class="text-p text-center font-light text-neutral-100 pb-6 px-10">A SaaS application that enables chat communication with your site's visitors.</h6>
-                        <hr class="w-80 h-px" />
-                        <a class="text-neutral-100 uppercase text-p pt-6 duration-300 font-light" href="#">View Details</a>
-                    </div>
-                </div>
-            </div>
+    <main>
+        <div class="text-center">
+            <h4 class="text-h4 font-semibold">Hi, I'm Anushka.</h4>
+            <p class="pt-6 font-light text-p">
+                I am a passionate, self-driven user experience designer and I design websites and 
+                mobile applications using Human Centered Approach. I believe in human-driven 
+                innovation and the use of technology to improve lives. I strongly recommend and 
+                advocate for applying the Human-centered design approach in all disciplines of life. 
+                Currently, designer @ 
+                <a href="https://coresoftint.com/" class="text-belly-400 font-semibold">
+                    Core Software Integrated.
+                </a>
+            </p>
         </div>
-
-
-    <!--Lets connect-->
-    <div class="mt-20 lg:mx-40">
-        <h6 class="font-semibold text-h6 text-center">Let's Connect!</h6>
-        <div class="text-center mt-6 font-light">
-            <a class="px-5">Email</a>
-            <a class="px-5">Twitter</a>
-            <a class="px-5">Linkedin</a>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="mt-20 lg:mx-40">
-        <hr class="h-px bg-neutral-300">
-        <div class="grid grid-cols-2 gap-6 my-6">
-            <div>
-                <p class="text-sm text-neutral-800 font-light">Designed by Anushka Sharma. All rights reserved.</p>
-            </div>
-            <div class="col-start-10 col-span-2">
-                <a class="px-4" href="https://github.com/AnushkaaSharma"><i class="fa-brands fa-github fa-lg"></i></a>
-                <a href="https://github.com/AnushkaaSharma"><i class="fa-solid fa-basketball fa-lg"></i></a>
-            </div>
-        </div>
-    </div>
-
+    </main>
 
 </body>
 </html>
