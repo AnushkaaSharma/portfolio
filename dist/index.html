@@ -12,7 +12,7 @@
 </head>
 <body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
     <!--Navbar-->
-    <nav class="p-2">
+    <nav class="mx-2">
         <div class="flex justify-between py-5">
             <div>
                 <a class="text-h2 font-logo">A.</a>
@@ -40,7 +40,7 @@
     </nav>
 
     <!--Intro-->
-    <main>
+    <main class="mx-2">
         <div class="text-center">
             <h4 class="text-h4 font-semibold">Hi, I'm Anushka.</h4>
             <p class="pt-6 font-light text-p">
@@ -48,13 +48,44 @@
                 mobile applications using Human Centered Approach. I believe in human-driven 
                 innovation and the use of technology to improve lives. I strongly recommend and 
                 advocate for applying the Human-centered design approach in all disciplines of life. 
-                Currently, designer @ 
+                <br />Currently, UX Designer @ 
                 <a href="https://coresoftint.com/" class="text-belly-400 font-semibold">
                     Core Software Integrated.
                 </a>
             </p>
         </div>
+        <!--Projects-->
+        <div class="mx-2 mt-12 relative">
+            <hr class="w-10 h-0.5 absolute left-0 top-3 bg-neutral-700">
+            <p class="text-p uppercase font-light pl-12">Recent Projects</p>
+            <div class="grid grid-cols-2 mt-6 gap-10">
+                <!-- Belly -->
+                <div class="group relative">
+                    <img class="w-full object-cover" src="../src/images/Project.png" />
+                    <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                        <h6 class="text-p text-center font-light text-neutral-100 pb-6 px-10">An online food ordering and delivery platform.</h6>
+                        <hr class="w-80 h-px" />
+                        <a class="text-neutral-100 uppercase text-p pt-6 duration-300 font-light" href="belly.html">View Details</a>
+                    </div>
+                </div>
+                <!-- Chatter -->
+                <div class="group relative">
+                    <img class="w-full object-cover" src="../src/images/Chatter.png" />
+                    <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-neutral-900  opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                        <h6 class="text-p text-center font-light text-neutral-100 pb-6 px-10">A SaaS application that enables chat communication with your site's visitors.</h6>
+                        <hr class="w-80 h-px" />
+                        <a class="text-neutral-100 uppercase text-p pt-6 duration-300 font-light" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-
+    <!--Footer-->
+    <footer class="mx-2">
+        <hr class="h-px bg-neutral-300">
+        <div class="grid grid-cols-2">
+            <p class="text-sm font-light">Designed by Anushka Sharma. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
