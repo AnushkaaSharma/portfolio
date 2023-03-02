@@ -7,81 +7,79 @@
     <link href="/dist/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Anushka Sharma</title>
 </head>
-<body class="bg-neutral-100 mx-40 font-body">
-    <header>       
-        <nav class="py-6 mx-10 bg-neutral-100">
-            <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="index.html" class="font-logo text-h2 text-neutral-900">
-                A.
-            </a>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="flex flex-col md:flex-row">
+<body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
+    <!--Navbar-->
+    <nav class="mx-2">
+        <div class="flex justify-between py-5">
+            <div>
+                <a class="text-h2 font-logo">A.</a>
+            </div>
+            <div>
+                <ul class="flex">
                     <li>
-                        <a href="#" class="block text-neutral-700 text-p font-regular mx-6" aria-current="page">
+                        <a href="index.html" class="text-p text-neutral-900 font-semibold mx-6" aria-current="page">
                             Work
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="block text-neutral-900 text-p font-semibold mx-6 border border-t-0 border-l-0 border-r-0 border-b-2 border-neutral-900" aria-current="page">
+                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="block text-neutral-700 text-p font-regular mx-6" aria-current="page">
+                        <a href="#" class="text-p text-neutral-700 font-regular" aria-current="page">
                             Resume
                         </a>
                     </li>
                 </ul>
             </div>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section class="m-10">
-            <div>
-                <h4 class="text-neutral-900 text-h4 font-semibold mb-6">A little bit about myself.</h4>
-                <p class="font-light text-p text-neutral-900">My name is Anushka Sharma and I'm passionate about 
-                    improving the lives of others through design. I'm constantly learning new things everyday and love 
-                    meeting people who are motivated and unafraid of sharing their ideas with the world.
-                    Currently, I am a UX Designer at Core Software Integrated, Nepal.
-                </p>
-                <p class="font-light text-p text-neutral-900 mt-3">I'm a self taught designer and have learnt a lot of the 
-                    processes, concepts and theories of UX/UI and product design through attending workshops, 
-                    reading blogs and applying these to projects in my spare time and at work. I am very much a 
-                    big-picture thinker and enjoy working on products end to end, from ideation all the way to development.
-                </p>
-            </div>
-            <div>
-                <img class="mt-10" src="../src/images/profile.jpg">
-            </div>
-        </section>
+    <!--Intro-->
+    <section class="mx-2">
+        <div class="mt-12"> 
+            <h4 class="text-h4 font-semibold">A little bit about myself.</h4>
+            <p class="pt-6 font-light text-p text-justify">
+                My name is Anushka Sharma and I'm passionate about improving the lives 
+                of others through design. I'm constantly learning new things everyday 
+                and love meeting people who are motivated and unafraid of sharing their 
+                ideas with the world.
+                Currently, I am a UX Designer at Core Software Integrated, Nepal.
+            </p>
+            <p class="pt-6 font-light text-p text-justify">
+                I'm a self taught designer and have learnt 
+                a lot of the processes, concepts and theories of UX/UI and product 
+                design through attending workshops, reading blogs and applying these 
+                to projects in my spare time and at work. I am very much a big-picture 
+                thinker and enjoy working on products end to end, from ideation all the way to development.
+            </p>
+            <img class="mt-10 w-full" src="../src/images/profile.jpg" />
+        </div>
+    </section>
 
-        <!--Photography-->
-        <section class="m-10">
-            <div class="bg-black">
-                <h2 class="font-logo text-h2 text-center p-40 text-neutral-100">photography.</h2>
+    <!--Socials-->
+    <section class="mx-2">
+        <div class="my-12 py-6">
+            <h6 class="font-semibold text-h6 text-center">Let's Connect!</h6>
+            <div class="text-center mt-6 font-light">
+                <a class="px-5">Email</a>
+                <a class="px-5">Twitter</a>
+                <a class="px-5">Linkedin</a>
+                <a class="px-5">Medium</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="m-10">
-            <h6 class="font-semibold text-center text-h6 text-neutral-900 mt-6 mb-6">
-                Let's Connect!
-            </h6>
-            <div class="text-center text-p text-neutral-900"> 
-                <a href="#" class='px-6'>Email</a>
-                <a href="#" class='px-6'>Medium</a>
-                <a href="#" class='px-6'>Linkedin</a>
-                <a href="#" class='px-6'>Twitter</a>
-            </div>
-        </section>
-
-
-    <footer class="m-10 pt-6 pb-6 border border-r-0 border-l-0 border-b-0 border-neutral-300">
-        <p class="text-sm text-neutral-800 font-light">Designed by Anushka Sharma. All rights reserved.</p>
+    <!--Footer-->
+    <footer class="mx-2 mt-10">
+        <hr class="h-px bg-neutral-300">
+        <div class="grid grid-cols-2 py-6">
+            <p class="text-sm font-light">Designed by Anushka Sharma. All rights reserved.</p>
+        </div>
     </footer>
-     
 </body>
 </html>

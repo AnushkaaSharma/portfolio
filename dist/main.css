@@ -740,6 +740,10 @@ video {
   height: 100vh;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .max-h-\[600px\]{
   max-height: 600px;
 }
@@ -956,8 +960,16 @@ video {
   padding-left: 3rem;
 }
 
+.pt-20{
+  padding-top: 5rem;
+}
+
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .font-body{
