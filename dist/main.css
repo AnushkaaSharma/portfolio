@@ -750,6 +750,22 @@ video {
   max-width: 800px;
 }
 
+.max-w-max{
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.max-w-fit{
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-screen-2xl{
+  max-width: 1536px;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -898,6 +914,11 @@ video {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pt-6{
