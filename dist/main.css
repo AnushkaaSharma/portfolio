@@ -623,6 +623,18 @@ video {
   grid-column-start: 10;
 }
 
+.-m-1{
+  margin: -0.25rem;
+}
+
+.m-1{
+  margin: 0.25rem;
+}
+
+.m-2{
+  margin: 0.5rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -747,6 +759,10 @@ video {
   width: 100vw;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -807,8 +823,16 @@ video {
   gap: 1rem;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .border{
@@ -875,12 +899,21 @@ video {
      object-fit: cover;
 }
 
+.object-center{
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-40{
   padding: 10rem;
 }
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .py-5{
@@ -1073,6 +1106,10 @@ video {
 }
 
 @media (min-width: 1024px){
+  .md\:-m-2{
+    margin: -0.5rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1084,11 +1121,24 @@ video {
   .md\:flex-row{
     flex-direction: row;
   }
+
+  .md\:p-2{
+    padding: 0.5rem;
+  }
 }
 
 @media (min-width: 1280px){
   .lg\:mx-40{
     margin-left: 10rem;
     margin-right: 10rem;
+  }
+
+  .lg\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:pt-24{
+    padding-top: 6rem;
   }
 }
