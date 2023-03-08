@@ -20,9 +20,5 @@
   "homepage": "https://github.com/AnushkaaSharma/portfolio#readme",
   "devDependencies": {
     "tailwindcss": "^3.1.8"
-  },
-  "dependencies": {
-    "lightbox2": "^2.11.3",
-    "lightgallery": "^2.7.1"
   }
 }

@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/css/lightbox.min.css" />
+    <script type="text/javascript" src="../dist/js/lightbox-plus-jquery.min.js"></script>
     <title>Anushka Sharma</title>
 </head>
 <body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
@@ -56,11 +58,19 @@
         </div>
         <!--Photos-->
         <div class="mt-12 grid grid-cols-3 gap-4">
-            <img src="../src/images/bird.jpeg" />
-            <img src="../src/images/langtangglacier.JPG" />
-            <img src="../src/images/annapurna.jpg" />
+            <a href="../src/images/bird.jpeg" data-lightbox="mygallery">
+                <img src="../src/images/bird.jpeg" />
+            </a>
+            <a href="../src/images/bird.jpeg" data-lightbox="mygallery">
+                <img src="../src/images/bird.jpeg" />
+            </a>
+            <a href="../src/images/bird.jpeg" data-lightbox="mygallery">
+                <img src="../src/images/bird.jpeg" />
+            </a>
         </div>
     </main>
+
+
     <!--Footer-->
     <footer class="mx-2 mt-10">
         <hr class="h-px bg-neutral-300">
@@ -68,5 +78,7 @@
             <p class="text-sm font-light">© 2023 | AS </p>
         </div>
     </footer>
+
+    <script src="path/to/lightbox.js"></script>
 </body>
 </html>
