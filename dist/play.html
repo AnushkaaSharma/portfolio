@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="../src/css/lightbox.min.css" />
-    <script type="text/javascript" src="../dist/js/lightbox-plus-jquery.min.js"></script>
     <title>Anushka Sharma</title>
 </head>
 <body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
@@ -47,72 +45,16 @@
     </nav>
 
     <main  class="mx-2">
-        <section>
-            <!--Intro-->
-            <div class="mt-12 text-center">
-                <h5 class="font-semibold text-h5">Visual explorations</h5>
-                <p class="py-5 font-light text-p text-center">
-                    In addition to my work as a UX designer, I am also an avid photographer.
-                    I love to capture beautiful moments and landscapes and use my photographs
-                    as a way to express myself creatively.
-                </p>
-            </div>
-            <!--Photos row-->
-            <div class="my-12">
-                <div class="flex flex-wrap">
-                    <!--Column-->
-                    <div class="flex w-1/2 flex-wrap">
-                        <div class="w-1/2 p-1">
-                            <img
-                                alt="gallery"
-                                class="block h-full w-full rounded-lg object-cover object-center"
-                                src="../src/images/bird.jpeg" />
-                        </div>
-                        <div class="w-1/2 p-1">
-                            <img
-                                alt="gallery"
-                                class="block h-full w-full rounded-lg object-cover object-center"
-                                src="../src/images/annapurna.jpg" />
-                        </div>
-                        <div class="w-full p-1">
-                            <img
-                                alt="gallery"
-                                class="block h-full w-full rounded-lg object-cover object-center"
-                                src="../src/images/dolly.jpg" />
-                        </div>
-                    </div>
-                    <!--Column-->
-                    <div class="flex w-1/2 flex-wrap">
-                        <div class="w-full p-1">
-                            <img
-                            alt="gallery"
-                            class="block h-full w-full rounded-lg object-cover object-center"
-                            src="../src/images/mardibarun.jpg"/>
-                        </div>
-                        <div class="w-1/2 p-1">
-                            <img
-                                alt="gallery"
-                                class="block h-full w-full rounded-lg object-cover object-center"
-                                src="../src/images/langtangglacier.JPG"/>
-                        </div>
-                        <div class="w-1/2 p-1">
-                            <img
-                            alt="gallery"
-                            class="block h-full w-full rounded-lg object-cover object-center"
-                            src="../src/images/kalu.jpg" />
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </section>   
-        
-        <section>
-            <p class="py-12 font-light text-p text-center">
+        <!--Intro-->
+        <div class="mt-12">
+            <h5 class="font-semibold text-h5 text-center">Visual explorations</h5>
+            <p class="py-5 font-light text-p text-center">
                 In addition to my work as a UX designer, I am also an avid photographer.
                 I love to capture beautiful moments and landscapes and use my photographs
                 as a way to express myself creatively.
             </p>
-            <div class="grid grid-cols-2 gap-6">
+        </div>
+        <div class="mt-6 grid grid-cols-2 gap-6">
                 <div class="relative">
                     <div class="group relative">
                         <img class="w-full object-cover" src="../src/images/langtangglacier.JPG" />
@@ -121,13 +63,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="group relative">
-                        <img class="w-full object-cover" src="../src/images/walk.jpg" />
-                        <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-black opacity-20 group-hover:h-full group-hover:opacity-90 duration-500">
-                            <p class="text-p text-center font-semibold text-neutral-100">Mardi Himal Trek 2019</p>
-                        </div>
-                    </div>
+                <div class="relative overflow-hidden w-full transition ease-in-out duration-500 hover:opacity-80 bg-neutral-900">
+                    <img class="w-full object-cover transition ease-in-out duration-500 hover:scale-110" src="../src/images/langtangglacier.JPG" />
                 </div>
             </div>
             <div class="my-12">
@@ -138,23 +75,42 @@
                     as a way to express myself creatively.
                 </p>
                 <div>
-                    <div class="grid grid-flow-col grid-rows gap-2">
-                        <img class="row-span-1 h-full object-cover col-start-1 rounded-lg" src="../src/images/flower.jpg" />
-                        <img class="row-span-1 h-full object-cover col-span-1 rounded-lg" src="../src/images/light2.JPG" />
-                        <img class="row-span-3 h-full object-cover col-start-2 col-span-1 rounded-lg" src="../src/images/kiri ft. apurba.jpg" /> 
-                        <img class="row-span-1 h-full object-cover col-start-3 col-span-1 rounded-lg" src="../src/images/coffee.JPG" />
-                        <img class="row-span-2 h-full object-cover col-start-3 col-span-1 rounded-lg" src="../src/images/sunset from terrace.jpg" />
-                        <img class="row-span-2 h-full object-cover col-span-1 rounded-lg" src="../src/images/dolly.jpg" />
-                        <img class="row-span-3 h-full object-cover col-span-1 rounded-lg" src="../src/images/kali.jpg" /> 
-                        <img class="row-span-1 h-full object-cover col-start-2 col-span-1 rounded-lg" src="../src/images/bird.jpeg" />
-                        <img class="row-span-1 h-full object-cover col-start-3 col-span-1 rounded-lg" src="../src/images/fish.jpeg" />
-                        <img class="row-span-3 h-full object-cover col-start-3 col-span-1 rounded-lg" src="../src/images/randomlight.jpeg" />
-                        <img class="row-span-2 h-full object-cover col-span-1 rounded-lg" src="../src/images/lights.JPG" />
-                        <img class="row-span-1 h-full object-cover col-span-1 rounded-lg" src="../src/images/sunset2.jpg" />
+                    <div class="grid grid-flow-col grid-rows-4 gap-4">
+                        <div class="relative overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/flower.jpg" />
+                        </div>
+                        <div class="row-span-2 col-start-2 relative overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/kiri ft. apurba.jpg" />
+                        </div>
+                        <div class="relative overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/coffee.JPG" />
+                        </div>
+                        <div class="col-start-3 relative overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/lights.JPG" />
+                        </div>
+                        <div class="col-start-3 row-start-2 relative overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/bird.jpeg" />
+                        </div>
+                        <div class="relative row-start-3 overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/fish.jpeg" />
+                        </div>
+                        <div class="relative row-start-3 overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/sunset from terrace.jpg" />
+                        </div>
+                        <div class="relative row-start-3 overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/dolly.jpg" />
+                        </div>
+                        <!--ROW 4-->
+                        <div class="row-start-4 col-start-1 relative overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/singlecup.JPG" />
+                        </div>
+                        <div class="relative overflow-hidden w-full transition ease-in-out duration-500 rounded-lg">
+                            <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/chandragiriview.jpg" />
+                        </div>
+                     
                     </div>
                     </div>
                 </div>
-        </section>
     </main>
     
     <!--Footer-->
@@ -164,5 +120,6 @@
             <p class="text-sm font-light">© 2023 | AS </p>
         </div>
     </footer>
+    
 </body>
 </html>
