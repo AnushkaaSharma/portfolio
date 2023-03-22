@@ -92,20 +92,14 @@
 
 .menuicon {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background: #fff url(https://i.postimg.cc/k4rb3zpp/pngwave.png);
-    background-size: 20px;
+    width: 120px;
+    height: 120px;
+    background-image: url("../src/images/x.svg");
     cursor: pointer;
     background-repeat: no-repeat;
-    background-position: 8px;
 }
 
 .menuicon.active {
-    background: #fff url(https://i.postimg.cc/25t1dMY5/pngegg-1.png);
-    background-size: 20px;
+    background: url("../src/images/menu.svg");
     background-repeat: no-repeat;
-    background-position: 8px;
 }
