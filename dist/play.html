@@ -8,41 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/navbar.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="../dist/js/navbar.js"></script>
     <title>Anushka Sharma</title>
 </head>
 <body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
     <!--Navbar-->
-    <nav class="mx-2">
-        <div class="flex justify-between py-5">
+    <!-- <nav>
+        <div class="flex justify-between py-8"> 
             <div>
-                <a class="text-h2 font-logo">A.</a>
+                <a href="#" class="text-h2 font-logo">A.</a>
             </div>
             <div>
-                <ul class="flex">
-                    <li>
-                        <a href="index.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
-                            Work
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-p text-neutral-00 font-semibold mx-6" aria-current="page">
-                            Play
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
-                            Resume
-                        </a>
-                    </li>
+                <span class="z-20 menuicon py-2" id="toggle" onclick="menuToggle()"></span>
+            </div>
+        </div>
+        <div class="z-10 fullPageMenu" id="nav">
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="my-2 font-body" data-text="Work">Work</a></li>
+                    <li><a href="about.html" class="my-2 font-body" data-text="About">About</a></li>
+                    <li><a href="play.html" class="my-2" data-text="Play">Play</a></li>
+                    <li><a href="#" class="my-2" data-text="Resume">Resume</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
+
 
     <main  class="mx-2">
         <!--Intro-->
@@ -104,29 +97,40 @@
 
 
         <!--Random shots opt 2-->
-        <div class="mt-12 grid grid-cols-2 gap-6">
-            <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
-                <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/dolly.jpg" />
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-6">
+                <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
+                    <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/dolly.jpg" />
+                </div>
+                <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
+                    <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/sunset from terrace.jpg" />
+                </div>
+                <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
+                    <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/coffee.JPG" />
+                </div>
+                <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
+                    <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/langtangglacier.JPG" />
+                </div>
+                <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
+                    <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/langtang range.jpg" />
+                </div>
+                <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
+                    <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/walk.jpg" />
+                </div>
+                <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
+                    <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/mardibarun.jpg" />
+                </div>
             </div>
-            <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
-                <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/sunset from terrace.jpg" />
+        </section>
+
+        <section class="mt-12">
+            <div class="flex justify-end">
+                <button class="py-4 px-6 bg-black text-neutral-100">
+                    Previous
+                </button>
             </div>
-            <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
-                <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/coffee.JPG" />
-            </div>
-            <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
-                <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/langtangglacier.JPG" />
-            </div>
-            <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
-                <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/langtang range.jpg" />
-            </div>
-            <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
-                <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/walk.jpg" />
-            </div>
-            <div class="relative overflow-hidden w-full transition ease-in-out duration-500">
-                <img class="h-full transition ease-in-out duration-500 hover:scale-110 object-cover" src="../src/images/mardibarun.jpg" />
-            </div>
-        </div>
+        </section>
+
     </main>
     
     <!--Footer-->
