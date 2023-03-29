@@ -583,6 +583,10 @@ video {
   }
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -788,12 +792,39 @@ video {
   width: 100vw;
 }
 
+.w-0{
+  width: 0px;
+}
+
+.w-11{
+  width: 2.75rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
 
 .max-w-\[800px\]{
   max-width: 800px;
+}
+
+.translate-x-2\/4{
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-2\/4{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-2\/4{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -820,10 +851,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-rows-4{
   grid-template-rows: repeat(4, minmax(0, 1fr));
 }
@@ -834,10 +861,6 @@ video {
 
 .flex-wrap{
   flex-wrap: wrap;
-}
-
-.content-center{
-  align-content: center;
 }
 
 .items-center{
@@ -866,6 +889,10 @@ video {
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .overflow-hidden{
@@ -933,16 +960,6 @@ video {
 
 .bg-black\/70{
   background-color: rgb(0 0 0 / 0.7);
-}
-
-.from-cyan-500{
-  --tw-gradient-from: #06b6d4;
-  --tw-gradient-to: rgb(6 182 212 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-blue-500{
-  --tw-gradient-to: #3b82f6;
 }
 
 .object-cover{
@@ -1135,8 +1152,8 @@ video {
   opacity: 0.9;
 }
 
-.opacity-10{
-  opacity: 0.1;
+.outline{
+  outline-style: solid;
 }
 
 .drop-shadow-xl{
@@ -1164,56 +1181,26 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:h-full:hover{
+  height: 100%;
+}
+
+.hover\:w-11:hover{
+  width: 2.75rem;
+}
+
+.hover\:w-full:hover{
+  width: 100%;
+}
+
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-black:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.hover\:hover\:bg-black:hover:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gradient-to-r:hover{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .hover\:opacity-80:hover{
   opacity: 0.8;
-}
-
-.hover\:opacity-10:hover{
-  opacity: 0.1;
-}
-
-.hover\:opacity-90:hover{
-  opacity: 0.9;
-}
-
-.hover\:opacity-100:hover{
-  opacity: 1;
-}
-
-.hover\:transition:hover{
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.hover\:duration-300:hover{
-  transition-duration: 300ms;
-}
-
-.hover\:ease-in-out:hover{
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .group:hover .group-hover\:h-full{
@@ -1226,10 +1213,6 @@ video {
 
 .group:hover .group-hover\:opacity-90{
   opacity: 0.9;
-}
-
-.group:hover .group-hover\:opacity-0{
-  opacity: 0;
 }
 
 @media (min-width: 1024px){

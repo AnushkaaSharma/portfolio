@@ -9,11 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../src/navbar.css" rel="stylesheet" />
-    <link href="../src/loader.css" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <title>Anushka Sharma</title>
 </head>
-<body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
+<body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">    
+    <!--Navbar-->
+    <nav class="mx-2">
+        <div class="flex justify-between py-5">
+            <div>
+                <a class="text-h2 font-logo">A.</a>
+            </div>
+            <div>
+                <ul class="flex">
+                    <li>
+                        <a href="index.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--Projects-->
     <section class="mx-2 mt-16">
         <!--Intro-->
@@ -62,7 +83,32 @@
             </div> 
         </div>
     </section>
-            
+    
+
+    <div class="grid grid-cols-2 gap-6 mt-12">
+        <div class="container flex justify-center items-center flex-wrap">
+            <div class="overflow-hidden relative">
+                <span class="absolute block w-0 h-0 
+                            opacity-90 -translate-x-2/4 
+                            -translate-y-2/4 bg-black z-10
+                            transition ease-in-out duration-300
+                            hover:w-full hover:h-full">
+
+                </span>
+                <div class="imgBx">
+                    <img src="../src/images/project.png" />
+                </div>
+                <div class="content">
+                    <div>
+                        <p class="text-p">
+                            An online food ordering and delivery platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--Socials-->
     <!-- <section class="mx-2">
         <div class="my-12 py-6">
@@ -84,6 +130,9 @@
             <p class="text-sm font-light">Designed by Anushka Sharma.</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" 
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" 
+    crossorigin="anonymous"></script>
     <!--Feather Icons-->
     <script>
         feather.replace()
