@@ -23,6 +23,8 @@ module.exports = {
         belly: {
           '100': '#FBF1E7',
           '400': '#ED644A',
+          'black':'#333333',
+          'secondary': '#FCB316',
         }
       },
       fontSize: {
