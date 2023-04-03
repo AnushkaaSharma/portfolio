@@ -22,7 +22,7 @@
             <div>
                 <ul class="flex">
                     <li>
-                        <a href="index.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
                             About
                         </a>
                     </li>
@@ -36,7 +36,7 @@
         </div>
     </nav>
     <!--Projects-->
-    <section class="mx-2 mt-16">
+    <section class="mx-2 mt-16"> 
         <!--Intro-->
         <div class="text-center">
             <h4 class="text-h4 font-semibold">Hi, I'm Anushka.</h4>
@@ -54,15 +54,15 @@
     </section>
 
     <!--Projects-->
-    <section>
-        <div class="mx-2 mt-16">
+    <section class="mx-4">
+        <div class="mt-16">
             <hr class="-z-10 relative w-10 h-0.5 left-0 top-3 bg-neutral-700">
             <p class="text-p uppercase font-light pl-12">Recent Projects</p>
         </div>
-        <div class="grid grid-cols-2 mt-6 gap-10"> 
+        <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-10"> 
             <!-- Belly -->
-            <div class="group relative">
-                <img class="w-full object-cover" src="../src/images/Project.png" />
+            <div class="group min-w-fit mx-auto lg:w-full relative">
+                <img class="lg:w-full object-cover" src="../src/images/Project.png" /> 
                 <!--On hover-->
                 <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-black opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
                     <h6 class="text-p text-center font-light text-neutral-100 pb-6 px-10">An online food ordering and delivery platform.</h6>
@@ -71,63 +71,38 @@
                         View Details
                     </a>
                 </div>
-            </div>
+            </div> 
             <!-- Chatter -->
-            <div class="group relative">
-                <img class="w-full object-cover" src="../src/images/Chatter.png" />
+            <div class="group min-w-fit mx-auto lg:w-full relative">
+                <img class="lg:w-full object-cover" src="../src/images/Chatter.png" />
                 <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-black opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
                     <h6 class="text-p text-center font-light text-neutral-100 pb-6 px-10">A SaaS application that enables chat communication with your site's visitors.</h6>
                     <hr class="w-80 h-px" />
                     <a class="text-neutral-100 uppercase text-p pt-6 duration-300 font-light" href="chatter.html">View Details</a>
                 </div>
             </div> 
-        </div>
+        </div> 
     </section>
-    
-
-    <div class="grid grid-cols-2 gap-6 mt-12">
-        <div class="container flex justify-center items-center flex-wrap">
-            <div class="overflow-hidden relative">
-                <span class="absolute block w-0 h-0 
-                            opacity-90 -translate-x-2/4 
-                            -translate-y-2/4 bg-black z-10
-                            transition ease-in-out duration-300
-                            hover:w-full hover:h-full">
-
-                </span>
-                <div class="imgBx">
-                    <img src="../src/images/project.png" />
-                </div>
-                <div class="content">
-                    <div>
-                        <p class="text-p">
-                            An online food ordering and delivery platform.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--Socials-->
-    <!-- <section class="mx-2">
+    <section class="mx-2">
         <div class="my-12 py-6">
             <h6 class="font-semibold text-h6 text-center">Let's Connect!</h6>
-            <div class="text-center mt-6 font-light">
-                <a class="px-5">Email</a>
-                <a class="px-5">Twitter</a>
-                <a class="px-5">Linkedin</a>
-                <a class="px-5">Medium</a>
+            <div class="text-center flex flex-col lg:flex-row lg:justify-center mt-6 font-light">
+                <a class="py-2 px-5">Email</a>
+                <a class="py-2 px-5">Twitter</a>
+                <a class="py-2 px-5">Linkedin</a>
+                <a class="py-2 px-5">Medium</a>
             </div>
         </div>
-    </section> -->
+    </section> 
     
 
     <!--Footer-->
-    <footer class="mx-2 mt-10">
+    <footer class="mx-2">
         <hr class="h-px bg-neutral-300">
-        <div class="grid grid-cols-2 py-6">
-            <p class="text-sm font-light">Designed by Anushka Sharma.</p>
+        <div class="py-6 flex flex-col lg:flex-row">
+            <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.js" 
