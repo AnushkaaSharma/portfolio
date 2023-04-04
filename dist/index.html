@@ -35,6 +35,52 @@
             </div>
         </div>
     </nav>
+
+     <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <!-- <section class="showcase">
+    <header>
+      <h2 class="logo">Travel</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="https://traversymedia.com/downloads/videos/explore.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop To </h2> 
+      <h3>Exploring The World</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div> -->
+    <!-- <nav>
+        <div class="navicon">
+          <div></div>
+        </div>
+      
+        <a>This was</a>
+        <a>Made using</a>
+        <a>The clip-path property</a>
+        <a>Transition in</a>
+        <a>CSS only</a>
+      
+      </nav> -->
     <!--Projects-->
     <section class="mx-2 mt-16"> 
         <!--Intro-->
@@ -81,6 +127,17 @@
                     <a class="text-neutral-100 uppercase text-p pt-6 duration-300 font-light" href="chatter.html">View Details</a>
                 </div>
             </div> 
+            <!-- Bill split -->
+            <div class="group min-w-fit mx-auto lg:w-full relative">
+                <img class="lg:w-full object-cover" src="../src/images/Bill split.png" />
+                <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-black opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h6 class="text-p text-center font-light text-neutral-100 pb-6 px-10">
+                        Coming soon
+                    </h6>
+                    <!-- <hr class="w-80 h-px" />
+                    <a class="text-neutral-100 uppercase text-p pt-6 duration-300 font-light" href="chatter.html">View Details</a> -->
+                </div>
+            </div>  
         </div> 
     </section>
 
@@ -111,6 +168,15 @@
     <!--Feather Icons-->
     <script>
         feather.replace()
+    </script>
+    <script>
+         const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
     </script>
 </body>
 </html>

@@ -25,6 +25,9 @@ module.exports = {
           '400': '#ED644A',
           'black':'#333333',
           'secondary': '#FCB316',
+        },
+        payper: {
+          '900':'#94C4A9',
         }
       },
       fontSize: {
