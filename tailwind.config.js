@@ -28,6 +28,10 @@ module.exports = {
         },
         payper: {
           '900':'#94C4A9',
+        },
+        chatter: {
+          '100':'#ECF4FD',
+          '500': '#2F80ED',
         }
       },
       fontSize: {

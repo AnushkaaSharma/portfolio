@@ -13,11 +13,18 @@
     <title>Anushka Sharma</title>
 </head>
 <body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">    
+    <!--Loader-->
+    <div class="container">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+    </div>
     <!--Navbar-->
     <nav class="mx-2">
         <div class="flex justify-between py-5">
             <div>
-                <a class="text-h2 font-logo">A.</a>
+                <a href="index.html" class="text-h2 font-logo">A.</a>
             </div>
             <div>
                 <ul class="flex">
@@ -36,51 +43,6 @@
         </div>
     </nav>
 
-     <!-- Video Source -->
-  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
-  <!-- <section class="showcase">
-    <header>
-      <h2 class="logo">Travel</h2>
-      <div class="toggle"></div>
-    </header>
-    <video src="https://traversymedia.com/downloads/videos/explore.mp4" muted loop autoplay></video>
-    <div class="overlay"></div>
-    <div class="text">
-      <h2>Never Stop To </h2> 
-      <h3>Exploring The World</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-      <a href="#">Explore</a>
-    </div>
-    <ul class="social">
-      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-    </ul>
-  </section>
-  <div class="menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Destination</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div> -->
-    <!-- <nav>
-        <div class="navicon">
-          <div></div>
-        </div>
-      
-        <a>This was</a>
-        <a>Made using</a>
-        <a>The clip-path property</a>
-        <a>Transition in</a>
-        <a>CSS only</a>
-      
-      </nav> -->
     <!--Projects-->
     <section class="mx-2 mt-16"> 
         <!--Intro-->
@@ -103,7 +65,7 @@
     <section class="mx-4">
         <div class="mt-16">
             <hr class="-z-10 relative w-10 h-0.5 left-0 top-3 bg-neutral-700">
-            <p class="text-p uppercase font-light pl-12">Recent Projects</p>
+            <p class="text-p uppercase font-light pl-12">Selected Projects</p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-10"> 
             <!-- Belly -->
@@ -158,25 +120,20 @@
     <!--Footer-->
     <footer class="mx-2">
         <hr class="h-px bg-neutral-300">
-        <div class="py-6 flex flex-col">
-            <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
+        <div class="py-6 flex flex-col lg:flex-row lg:justify-between">
+            <div>
+                <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row">
+                <img class="justify-center items-center mx-auto lg:mx-2 w-7 h-7" src="../src/images/dribbble.png" />
+                <img class="justify-center items-center mx-auto lg:mx-2 w-7 h-7" src="../src/images/github.png" />
+            </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.4.js" 
-    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" 
-    crossorigin="anonymous"></script>
     <!--Feather Icons-->
     <script>
         feather.replace()
     </script>
-    <script>
-         const menuToggle = document.querySelector('.toggle');
-      const showcase = document.querySelector('.showcase');
 
-      menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        showcase.classList.toggle('active');
-      })
-    </script>
 </body>
 </html>

@@ -8,25 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/navbar.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <title>Anushka Sharma</title>
 </head>
-<body class="font-body text-neutral-900">     
+<body class="font-body text-neutral-900 bg-neutral-100">    
     <!--Navbar-->
-    <nav class="mx-40">
-        <div class="container flex flex-wrap justify-between items-center mt-6 mb-6">
-            <a href="index.html" class="font-logo text-h2 text-neutral-900">
-                A.
-            </a>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="flex flex-col md:flex-row">
+    <nav class="max-w-4xl mx-auto">
+        <div class="flex justify-between py-5">
+            <div>
+                <a class="text-h2 font-logo">A.</a>
+            </div>
+            <div class="py-4">
+                <ul class="flex">
                     <li>
-                        <a href="index.html" class="block text-neutral-900 text-p mr-6 font-semibold border border-t-0 border-l-0 border-r-0 border-b-2 border-neutral-900" aria-current="page">
-                            Work
+                        <a href="index.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                            About
                         </a>
                     </li>
                     <li>
-                        <a href="about.html" class="block text-neutral-700 text-p font-regular" aria-current="page">
-                            About
+                        <a href="#" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                            Resume
                         </a>
                     </li>
                 </ul>
@@ -34,106 +36,280 @@
         </div>
     </nav>
 
-    <!--Project Details-->    
-    <div class="grid grid-cols-2 gap-6 bg-belly-100">
-        <div>
-            <h4 class="text-h4 font-semibold pt-32 pb-6 px-40 text-belly-400">Chatter</h4>
-            <p class="text-neutral-700 px-40 text-p">
-                Customer relationship management project 
+    <!--Main-->
+    <main>
+        <!--Banner-->
+        <section class="bg-belly-100">
+            <div class="grid grid-cols-2">
+                <div class="max-w-4xl mx-auto">
+                    <p>Chatter</p>
+                </div>
+                <div>
+                    <img src="../src/images/Img.png" class="w-full h-full"/>
+                </div>
+            </div>
+        </section>
+        <!--Project Overview-->
+        <section class="my-24 mx-4 lg:max-w-4xl  lg:mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div>
+                    <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+                    <h6 class="text-p font-semibold pb-4">
+                        Project Overview
+                    </h6>
+                    <p class="text-p font-light text-justify">
+                        Chatter is a SaaS application that is specifically 
+                        designed to help businesses manage their interactions 
+                        with customers through messaging. It offers features 
+                        such as group chat, direct messaging, and the ability
+                        to share files and other content.
+                    </p>
+                </div>
+                <div>
+                    <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+                    <h6 class="text-p font-semibold pb-4">
+                        My Roles
+                    </h6>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1 text-justify">
+                            Conducting user research to understand how businesses and customers use chat for communication.
+                        </li>
+                        <li class="pb-1 text-justify">
+                            Planned and organized project tasks into sprints to efficiently break down and complete the project.
+                        </li>
+                        <li class="pb-1 text-justify">
+                            I also worked closely with developers to ensure that the chat features 
+                            are implemented according to the design specifications and function as intended.
+                        </li>
+                        <li class="text-justify">
+                            Additionally, I was also involved in defining and enforcing design standards and guidelines for the overall CRM application.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--Image-->
+   
+        <!--Desc-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <p class="text-p font-light text-justify">
+                Chatter is a customer relationship management, is a platform that helps businesses 
+                manage and track their customer interactions, sales, and support. It typically provides
+                tools for managing customer information, such as contact details and purchase history, 
+                and for automating and tracking sales and support activities. Web-based CRMs often integrate
+                with other business systems and tools, such as email and messaging platforms, to provide a 
+                central hub for managing customer relationships. They may also offer features such as chat 
+                and messaging tools, as well as integrations with social media and other channels, to help 
+                businesses communicate with their customers in real-time and across multiple channels.
             </p>
-        </div>
-        <div>
-            <img class="mt-32" src="../src/images/chatterproject.png">
-        </div>
-    </div>
+        </section>
+        <!--IA-->
+        <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold">
+                Sitemap and flow
+            </h6>
+            <div class="mt-6 flex justify-center">
+                <img class="lg:w-2/3" src="../src/images/IA-chatter.png" />
+            </div>
+        </section>
 
-    <!--Project overview-->
-    <div class="mt-20 lg:mx-40 grid grid-cols-2 gap-6">
-        <div>
-            <h6 class="text-h6 text-neutral-900 font-semibold pb-6">Project Overview</h6>
-            <p class="text-p text-neutral-900 font-light">
-                Chatter is a SaaS application that is specifically designed to help businesses manage their interactions with customers through messaging. It offers features such as group chat, direct messaging, and the ability to share files and other content.
+        <!--Final Screens-->
+        <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold">
+                Final Screens
+            </h6>
+            <div class="mt-6">
+                <div>
+                    <p class="font-semibold">Login</p>
+                    <p class="font-light pt-1">
+                        A simple sign up page that allow users to either log in using Google, Apple and Linkedin.
+                    </p>
+                    <img
+                        class="mt-6 drop-shadow-lg" 
+                        src="../src/images/login.png" 
+                    />
+                </div>
+                <div class="mt-12">
+                    <p class="font-semibold">Channels</p>
+                    <p class="font-light pt-1">
+                        Integrating channels allows users to access and interact with the application
+                        through a variety of platforms such as social media, messaging apps, or 
+                        other third-party tools.
+                    </p>
+                    <img
+                        class="mt-6 drop-shadow-lg" 
+                        src="../src/images/chatter/Channel.jpg" 
+                    />
+                    <img
+                        class="mt-6 drop-shadow-lg" 
+                        src="../src/images/channel.png" 
+                    />
+                </div>
+                <div class="mt-12">
+                    <p class="font-semibold">Boards</p>
+                    <p class="font-light pt-1">
+                        Boards allow users to organize and track tasks and projects by creating
+                        a visual representation of the work that needs to be done. Boards are 
+                        used to track the progress of individual tasks or projects, assign 
+                        tasks to team members, set deadlines, and collaborate with others. 
+                        It also offers features such as comments, attachments, and integration with other tools and platforms.
+                    </p>
+                    <img
+                        class="mt-6 drop-shadow-lg" 
+                        src="../src/images/boards.png" 
+                    />
+                    <img
+                        class="mt-6 drop-shadow-lg" 
+                        src="../src/images/chatter/boardmodals.png" 
+                    />
+                </div>
+                <div class="mt-12">
+                    <p class="font-semibold">Billing</p>
+                    <p class="font-light pt-1">
+                        We have subscription-based billing where customers pay a recurring fee on a regular basis, 
+                        monthly or annually and access your service. This model can be further customized with 
+                        different pricing tiers or plans, allowing customers to choose the level of service 
+                        that best meets their needs.
+                    </p>
+                    <img
+                        class="mt-6 drop-shadow-lg" 
+                        src="../src/images/billing.png" 
+                    />
+                </div>
+            </div>
+        </section>
+        <!--UI-->
+        <section class="my-24 py-24 bg-chatter-100">
+            <div class="lg:max-w-4xl lg:mx-auto mx-4">
+                <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+                <h6 class="text-p font-semibold">
+                    UI Design Elements
+                </h6>
+                <div class="pt-6">
+                    <p class="font-semibold text-neutral-700 pb-4">
+                        Colour
+                    </p>
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-6">
+                        <div>
+                            <div class="bg-chatter-500 w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                ED644A
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-belly-black w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                333333
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-neutral-700 w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                737373
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-neutral-100 w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                FDFDFD
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Tools used-->
+                <div class="pt-6">
+                    <p class='font-semibold text-neutral-700 pb-4'>
+                        Tools used
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                        <div class="flex">
+                            <img src="../src/images/Figma-logo.svg" class="h-10"/>
+                            <p class="font-light px-4">
+                                Figma
+                                for design
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <img src="../src/images/notion.png" class="w-10 h-10"/>
+                            <p class="font-light px-4">
+                                Notion for documentation
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <img src="../src/images/GMD.png" class="w-10 h-10"/>
+                            <p class="font-light px-4">
+                                Icons from
+                                Google Material Design
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <img src="../src/images/unsplash.png" class="w-10 h-10"/>
+                            <p class="font-light px-4">
+                                Images from
+                                Unsplash
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Takeaways-->
+        <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold pb-2">
+                Takeaways
+            </h6>
+            <p class="text-p font-light text-justify">
+                User testing is key. <br />
+                When conducting user testing, it's important to use realistic scenarios 
+                that mimic real-world usage. User testing should be started as early in the 
+                development process as possible, and should be conducted frequently. 
+                <br /> After conducting user testing, it's important to use the feedback
+                received to make improvements to the app. This can involve tweaking 
+                the design, adding new features, or addressing usability issues. By 
+                iterating based on user feedback, app created can be more 
+                user-friendly and will meet the needs of the target audience.        
             </p>
-        </div>
-        <div>
-            <h6 class="text-h6 font-semibold pb-6">My Roles</h6>
-                <ul class="text-p font-light list-disc list-outside">
-                    <li class="pb-2">
-                        Conducted user research to understand how businesses and customers use chat for communication.
-                    </li>
-                    <li class="pb-2">
-                        Planned and organized project tasks into sprints to efficiently break down and complete the project.
-                    </li>
-                    <li class="pb-2">
-                        I also worked closely with developers to ensure that the chat features are implemented according to the design specifications and function as intended.
-                    </li>
-                    <li>
-                        Additionally, I was also involved in defining and enforcing design standards and guidelines for the overall CRM application.
-                    </li>
-                </ul>
-        </div>
-    </div>
+        </section>
+        <!--Next steps-->
+        <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold pb-2">
+                Next Steps
+            </h6>
+            <p class="text-p font-light text-justify">
+                The next step would be to conduct another round of 
+                usability studies with a wider range of participants, 
+                to determine whether the current solution effectively
+                addresses the users’ pain points.      
+            </p>
+        </section>
+    </main>
 
-    <!--More about Belly-->
-    <div class="mt-20 lg:mx-40">
-        <p class="text-p font-light">
-            Chatter is a customer relationship management, is a platform that helps businesses manage and track their customer interactions, sales, and support. It typically provides tools for managing customer information, such as contact details and purchase history, and for automating and tracking sales and support activities. Web-based CRMs often integrate with other business systems and tools, such as email and messaging platforms, to provide a central hub for managing customer relationships. They may also offer features such as chat and messaging tools, as well as integrations with social media and other channels, to help businesses communicate with their customers in real-time and across multiple channels.        
-        </p>
-        </div>
-
-    <!--Final Designs-->
-    <div class="mt-20 lg:mx-40">
-        <h6 class="font-semibold text-h6">Final Designs</h6>
-        <div class="mt-6">
-            <div>
-                <p class="font-semibold">Login</p>
-                <p class="font-light">A simple sign up page that allow users to either log in using Google, Apple and Linkedin.</p>
-                <img class="drop-shadow-xl mt-6" src="../src/images/login.png" />
-            </div>
-            <div class="mt-12">
-                <p class="font-semibold">Channels</p>
-                <p class="font-light">Integrating channels allows users to access and interact with the application through a variety of platforms such as social media, messaging apps, or other third-party tools.</p>
-                <img class="drop-shadow-xl mt-6" src="../src/images/channel.png" />
-            </div>
-            <div class="mt-12">
-                <p class="font-semibold">Boards</p>
-                <p class="font-light">
-                    Boards allow users to organize and track tasks and projects by creating a visual representation of the work that needs to be done. Boards are used to track the progress of individual tasks or projects, assign tasks to team members, set deadlines, and collaborate with others. It also offers features such as comments, attachments, and integration with other tools and platforms.
-                </p>
-                <img class="drop-shadow-xl mt-6" src="../src/images/boards.png" />
-            </div>
-            <div class="mt-12">
-                <p class="font-semibold">Billing</p>
-                <p class="font-light">
-                    We have subscription-based billing where customers pay a recurring fee on a regular basis, monthly or annually and access your service. This model can be further customized with different pricing tiers or plans, allowing customers to choose the level of service that best meets their needs.
-                </p>
-                <img class="drop-shadow-xl mt-6" src="../src/images/billing.png" />
-            </div>
-        </div>
-    </div>
-
-    <!--Lets connect-->
-    <div class="mt-20 lg:mx-40">
-        <h6 class="font-semibold text-h6 text-center">Let's Connect</h6>
-        <div class="text-center mt-6 font-light">
-            <a class="px-5">Email</a>
-            <a class="px-5">Dribbble</a>
-            <a class="px-5">Github</a>
-            <a class="px-5">Linkedin</a>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="mt-20 lg:mx-40">
+    <!--Footer-->
+    <footer class="mx-4 lg:max-w-4xl lg:mx-auto">
         <hr class="h-px bg-neutral-300">
-        <div class="grid grid-cols-2 gap-6 my-6">
+        <div class="py-6 flex flex-col lg:flex-row lg:justify-between">
             <div>
-                <p class="text-sm text-neutral-800 font-light">Designed by Anushka Sharma. All rights reserved.</p>
+                <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
             </div>
-            <div class="col-start-10 col-span-2">
-                <a class="px-4" href="https://github.com/AnushkaaSharma"><i class="fa-brands fa-github fa-lg"></i></a>
-                <a href="https://github.com/AnushkaaSharma"><i class="fa-solid fa-basketball fa-lg"></i></a>
+            <div class="flex flex-col lg:flex-row">
+                <img class="justify-center items-center mx-auto lg:mx-2 w-7 h-7" src="../src/images/dribbble.png" />
+                <img class="justify-center items-center mx-auto lg:mx-2 w-7 h-7" src="../src/images/github.png" />
             </div>
         </div>
-    </div>
-</html> 
+    </footer>
+
+    <!--Feather Icons-->
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
