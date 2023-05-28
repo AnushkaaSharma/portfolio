@@ -27,7 +27,10 @@ module.exports = {
           'secondary': '#FCB316',
         },
         payper: {
+          '100':'#FBF4E1',
           '900':'#94C4A9',
+          '500':'#FFD760',
+          'secondary':'#1A1A21',
         },
         chatter: {
           '100':'#ECF4FD',

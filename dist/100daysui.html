@@ -8,11 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/navbar.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <title>Anushka Sharma</title>
 </head>
-<body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
-   <!--Navbar-->
-   <nav class="mx-4">
+<body class="font-body text-neutral-900 bg-neutral-100">    
+    <!--Navbar-->
+    <nav class="lg:max-w-4xl lg:mx-auto mx-4">
         <div class="flex justify-between py-3">
             <div>
                 <a href="index.html" class="text-h2 font-logo">A.</a>
@@ -25,7 +27,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="about.html" class="text-p text-neutral-900 font-semibold mx-6" aria-current="page">
+                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
                             About
                         </a>
                     </li>
@@ -39,30 +41,23 @@
         </div>
     </nav>
 
-    <!--Intro-->
-    <section class="mx-2">
-        <div class="mt-12"> 
-            <h4 class="text-h4 font-semibold">A little bit about myself.</h4>
-            <p class="pt-6 font-light text-p text-justify">
-                My name is Anushka Sharma and I'm passionate about improving the lives 
-                of others through design. I'm constantly learning new things everyday 
-                and love meeting people who are motivated and unafraid of sharing their 
-                ideas with the world.
-                Currently, I am a UX Designer at Core Software Integrated, Nepal.
-            </p>
-            <p class="pt-6 font-light text-p text-justify">
-                I'm a self taught designer and have learnt 
-                a lot of the processes, concepts and theories of UX/UI and product 
-                design through attending workshops, reading blogs and applying these 
-                to projects in my spare time and at work. I am very much a big-picture 
-                thinker and enjoy working on products end to end, from ideation all the way to development.
-            </p>
-            <img class="mt-10 w-full" src="./assets/profile.jpg" />
+    <!--Main-->
+    <main class="my-12 lg:max-w-4xl lg:mx-auto mx-4">
+        <h4 class="text-h4 text-neutral-900 text-center font-semibold pb-12">
+            100 Days UI design challenge
+        </h4>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+                <img src="../dist/assets/dailyUI/DailyUI_001.png">
+                <p class="text-neutral-700 text-p text-center pt-2">
+                    Login
+                </p>
+            </div>
         </div>
-    </section>
+    </main>
 
-    <!--Footer-->
-    <footer class="mt-12 lg:max-w-4xl lg:mx-auto mx-4">
+      <!--Footer-->
+      <footer class="mt-12 lg:max-w-4xl lg:mx-auto mx-4">
         <hr class="h-px bg-neutral-300">
         <div class="py-5 flex flex-col lg:flex-row lg:justify-between">
             <div>
@@ -84,5 +79,10 @@
             </div>
         </div>
     </footer>
+
+    <!--Feather Icons-->
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>
