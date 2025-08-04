@@ -1,13 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/**/*.html"], 
+ content: ["./dist/**/*.html", "./src/**/*.css"],
   theme: {
     extend: {
-      screens: {
-        'sm': '300px',
-        'md': '1024px',
-        'lg': '1280px',
-      },
       colors: {
         neutral: {
           '100': '#FAFAFA',
