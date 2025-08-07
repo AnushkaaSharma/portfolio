@@ -7,41 +7,99 @@
     <link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../src/navbar.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <title>Anushka Sharma</title>
 </head>
 <body>
-    <div class="wrapper lg:max-w-7xl lg:mx-auto mx-4">
+    <div class="wrapper bg-black border-b-1 border-neutral-700">
         <!--Navbar-->
-        <nav class="flex">
+        <nav class="flex text-neutral-100 lg:max-w-7xl lg:mx-auto mx-4 items-center">
             <div>
                 <a href="index.html" class="text-h2 font-logo">A.</a>
             </div>
             <div class="mx-auto">
-                <ul class="flex mx-6 my-4 text-p">
-                    <li>
-                        <a href="index.html" class="px-4 border border-neutral-900" aria-current="page">
+                <ul class="flex mx-6 mt-6 text-p">
+                    <li class="border border-neutral-700 rounded-tl-md py-4 px-4">
+                        <a href="index.html" class="mx-6" aria-current="page">
                             Work
                         </a>
                     </li>
-                    <li>
-                        <a href="about.html" aria-current="page">
+                    <li class="border border-neutral-700 py-4 px-4">
+                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
                             About
                         </a>
                     </li>
-                    <li>
+                    <li class="border border-neutral-700 py-4 px-4 rounded-tr-md">
                         <a href="assets/AnushkaSharma.pdf" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
                             Resume
                         </a>
                     </li>
                 </ul>
             </div>
-            <div>
-                <button class="">Contact Me</button>
-            </div>
+            <button class="border border-neutral-700 bg-neutral-800 py-4 px-6 rounded-md">
+                Contact Me
+            </button>
         </nav>
+        
     </div>
+
+    
+
+    <!--Content-->
+    <section class="w-full min-h-[680px] bg-black text-neutral-100 flex items-center justify-center">
+        <div class="text-center">
+            <h2 class="text-h2 font-bold mb-4 font-headings uppercase">I’m Anushka Sharma</h2>
+            <p class="text-p text-neutral-100">UI/UX | Digital Product Designer Specializing in software and Website designs</p>
+        </div>
+    </section>
+
+    <section>
+        <h6 class="text-h6 text-neutral-700 my-10 lg:max-w-7xl lg:mx-auto mx-4 lg:w-[600px] text-center">Hello, I'm Anushka, a UI/UX  designer based in Ontario, Canada focusing on brand identity, advertising, and no-code instruments.</h6>
+    </section>
+
+    <section class="bg-black overflow-hidden py-4">
+        <div class="whitespace-nowrap animate-marquee flex items-center">
+            <span class="inline-flex items-center text-white text-p mx-8">
+            <img src="../dist/assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
+            User Experience
+            </span>
+            <span class="inline-flex items-center text-white text-p mx-8">
+            <img src="../dist/assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
+            User Interface
+            </span>
+            <span class="inline-flex items-center text-white text-p mx-8">
+            <img src="../dist/assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
+            Product Design
+            </span>
+            <span class="inline-flex items-center text-white text-p mx-8">
+            <img src="../dist/assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
+            MERN
+            </span>
+            <span class="inline-flex items-center text-white text-p mx-8">
+            <img src="../dist/assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
+            Rapid Prototyping
+            </span>
+            <span class="inline-flex items-center text-white text-p mx-8">
+            <img src="../dist/assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
+            Wireframing
+            </span>
+            <span class="inline-flex items-center text-white text-p mx-8">
+            <img src="../dist/assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
+            Storyboarding
+            </span>
+            <span class="inline-flex items-center text-white text-p mx-8">
+            <img src="../dist/assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
+            Interaction Design
+            </span>
+        </div>
+    </section>
+
+    <section class="lg:max-w-7xl lg:mx-auto mx-4">
+        <h2 class="text-h2 font-headings my-10 uppercase font-semibold items-center">Selected Projects</h2>
+    </section>
+
 </body>
 </html>

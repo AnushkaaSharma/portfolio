@@ -3,6 +3,15 @@ module.exports = {
  content: ["./dist/**/*.html", "./src/**/*.css"],
   theme: {
     extend: {
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      },
+      animation: {
+        marquee: 'marquee 40s linear infinite',
+      },
       colors: {
         neutral: {
           '100': '#FAFAFA',
@@ -13,7 +22,7 @@ module.exports = {
           '600': '#A1A1A1',
           '700': '#7B7B7B',
           '800': '#484848',
-          '900': '#2C2C2C',
+          '900': '#161618',
         },
         belly: {
           '100': '#FBF1E7',
@@ -49,6 +58,7 @@ module.exports = {
       fontFamily: {
         body: ['Mulish'],
         logo: ['Playfair Display'],
+        headings: ['Oswald'],
       },
     },
   },
