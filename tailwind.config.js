@@ -28,7 +28,7 @@ module.exports = {
           '100': '#FBF1E7',
           '400': '#ED644A',
           'black':'#333333',
-          'secondary': '#FCB316',
+          'bg': '#C08589',
         },
         payper: {
           '100':'#FBF4E1',
