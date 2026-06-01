@@ -38,3 +38,117 @@
 		opacity: 0;
 	}
 }
+
+/* Hero letter-stagger reveal */
+.stagger > span {
+	display: inline-block;
+	opacity: 0;
+	transform: translateY(14px);
+	animation: stagger-in 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.stagger > span:nth-child(1)  { animation-delay: 0.02s; }
+.stagger > span:nth-child(2)  { animation-delay: 0.06s; }
+.stagger > span:nth-child(3)  { animation-delay: 0.10s; }
+.stagger > span:nth-child(4)  { animation-delay: 0.14s; }
+.stagger > span:nth-child(5)  { animation-delay: 0.18s; }
+.stagger > span:nth-child(6)  { animation-delay: 0.22s; }
+.stagger > span:nth-child(7)  { animation-delay: 0.26s; }
+.stagger > span:nth-child(8)  { animation-delay: 0.32s; }
+.stagger > span:nth-child(9)  { animation-delay: 0.36s; }
+.stagger > span:nth-child(10) { animation-delay: 0.40s; }
+.stagger > span:nth-child(11) { animation-delay: 0.44s; }
+.stagger > span:nth-child(12) { animation-delay: 0.48s; }
+.stagger > span:nth-child(13) { animation-delay: 0.52s; }
+.stagger > span:nth-child(14) { animation-delay: 0.56s; }
+
+@keyframes stagger-in {
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero subtitle accent line draw */
+.accent-line {
+	display: inline-block;
+	width: 0;
+	height: 2px;
+	background: #ED644A;
+	animation: line-grow 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 0.6s forwards;
+	vertical-align: middle;
+}
+@keyframes line-grow {
+	to { width: 48px; }
+}
+
+/* CTA arrow shift on hover */
+.cta-arrow {
+	display: inline-block;
+	transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.cta:hover .cta-arrow,
+.cta-group:hover .cta-arrow {
+	transform: translateX(4px);
+}
+
+/* Project row image zoom + view shift */
+.project-row .project-thumb img {
+	transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.project-row:hover .project-thumb img {
+	transform: scale(1.04);
+}
+.project-row .view-link {
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+.project-row:hover .view-link {
+	transform: translateX(4px);
+}
+
+/* Scroll cue dot pulse */
+.scroll-cue {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: #7B7B7B;
+	font-size: 12px;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+.scroll-cue .dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 9999px;
+	background: currentColor;
+	animation: scroll-dot 1.8s ease-in-out infinite;
+}
+@keyframes scroll-dot {
+	0%, 100% { transform: translateY(0); opacity: 0.4; }
+	50%      { transform: translateY(6px); opacity: 1; }
+}
+
+/* Hero portrait subtle float (legacy) */
+.hero-portrait {
+	animation: portrait-float 6s ease-in-out infinite;
+}
+@keyframes portrait-float {
+	0%, 100% { transform: translateY(0); }
+	50%      { transform: translateY(-8px); }
+}
+
+/* Hero mosaic cards: subtle hover lift, preserves per-card rotation */
+.mosaic-card {
+	transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.5s ease;
+	transform-origin: center;
+	will-change: transform;
+	animation: mosaic-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.mosaic-card:nth-child(2) { animation-delay: 0.1s; }
+.mosaic-card:nth-child(3) { animation-delay: 0.2s; }
+.mosaic-card:nth-child(4) { animation-delay: 0.3s; }
+.mosaic-card:hover {
+	transform: rotate(0deg) translateY(-6px) !important;
+	box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.25);
+	z-index: 20;
+}
+@keyframes mosaic-in {
+	from { opacity: 0; transform: translateY(20px) rotate(0deg); }
+	to   { opacity: 1; }
+}

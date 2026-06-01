@@ -7,79 +7,211 @@
     <link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Anushka Sharma</title>
+    <link href="../src/navbar.css" rel="stylesheet" />
+    <title>About, Anushka Sharma</title>
+    <meta name="description" content="Anushka Sharma, a product designer in Ontario, Canada, with a Computer Engineering background. Designing across mobile, web, and B2B SaaS, with production code in the loop." />
 </head>
-<body class="font-body text-neutral-900 bg-neutral-100 max-w-4xl mx-auto">     
-   <!--Navbar-->
-   <nav class="mx-4">
-        <div class="flex justify-between py-3">
+<body class="bg-accent-cream text-neutral-900 font-body">
+
+    <!--Navbar-->
+    <header class="bg-accent-cream">
+        <nav class="flex items-center justify-between lg:max-w-7xl lg:mx-auto mx-4 py-6">
             <div>
-                <a href="index.html" class="text-h2 font-logo">A.</a>
+                <a href="index.html" class="text-4xl font-logo text-neutral-900 tracking-tight hover:text-primary-500 transition-colors">A.</a>
             </div>
-            <div class="py-3">
-                <ul class="flex">
-                    <li>
-                        <a href="index.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
-                            Work
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="text-p text-neutral-900 font-semibold mx-6" aria-current="page">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="assets/AnushkaSharma.pdf" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
-                            Resume
-                        </a>
-                    </li>
+            <div>
+                <ul class="flex space-x-10 text-sm font-medium">
+                    <li><a href="index.html" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">Work</a></li>
+                    <li><a href="about.html" class="text-neutral-900 font-body text-p font-semibold">About</a></li>
+                    <li><a href="assets/AnushkaSharma.pdf" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">Resume</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
+            <a href="#connect" class="cta-group group border border-neutral-900 text-neutral-900 text-p font-semibold tracking-wide py-2 px-5 rounded-full hover:bg-neutral-900 hover:text-accent-cream transition-all duration-300">
+                Get in touch <span class="cta-arrow ml-1">→</span>
+            </a>
+        </nav>
+    </header>
 
-    <!--Intro-->
-    <section class="mx-2">
-        <div class="mt-12"> 
-            <h4 class="text-h4 font-semibold">A little bit about myself.</h4>
-            <p class="pt-6 font-light text-p text-justify">
-                My name is Anushka Sharma and I'm passionate about improving the lives 
-                of others through design. I'm constantly learning new things everyday 
-                and love meeting people who are motivated and unafraid of sharing their 
-                ideas with the world.
-                Currently, I am a full-stack software development student at Lambton College.
+    <!--Hero: editorial type-only-->
+    <section class="bg-accent-cream">
+        <div class="lg:max-w-5xl mx-auto mx-4 px-4 py-20 lg:py-32">
+            <p class="text-xs tracking-[0.2em] uppercase text-neutral-700 mb-8">About</p>
+
+            <h1 class="font-headings font-semibold leading-[1.02] text-3xl sm:text-4xl lg:text-5xl text-neutral-900 max-w-3xl">
+                I'm <span class="text-primary-500">Anushka</span>. A product designer working across mobile, web, and B2B SaaS.
+            </h1>
+
+            <p class="mt-10 max-w-2xl text-h6 text-neutral-700 font-light leading-relaxed">
+                Two years of practice in research, IA, high-fidelity Figma, and production frontend. Computer engineering background, postgraduate in full-stack development, the pipeline from problem to shipped product is the part of design I care about.
             </p>
-            <p class="pt-6 font-light text-p text-justify">
-                As a self-taught designer, I’ve gained expertise in UX/UI and product design
-                by attending workshops, reading blogs, and applying these skills in both personal
-                projects and professional settings. I’m a big-picture thinker, and I enjoy working
-                on products from ideation all the way through to development.
+
+            <div class="mt-12 flex flex-wrap gap-6 items-center text-sm text-neutral-700">
+                <span class="inline-flex items-center gap-2">
+                    <span class="inline-block w-2 h-2 rounded-full bg-primary-500"></span>
+                    Based in Ontario, Canada
+                </span>
+                <span class="inline-flex items-center gap-2">
+                    <span class="inline-block w-2 h-2 rounded-full bg-neutral-400"></span>
+                    Originally from Kathmandu, Nepal
+                </span>
+                <span class="inline-flex items-center gap-2">
+                    <span class="inline-block w-2 h-2 rounded-full bg-neutral-400"></span>
+                    Open to full-time roles
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!--Story-->
+    <section class="bg-accent-cream">
+        <div class="lg:max-w-3xl mx-auto mx-4 px-4 py-16">
+            <p class="text-xs tracking-[0.2em] uppercase text-neutral-700 mb-4">My story, briefly</p>
+            <h2 class="text-h4 font-headings font-semibold text-neutral-900 mb-8">From engineering to design to product.</h2>
+
+            <p class="text-p text-neutral-800 font-light leading-relaxed pb-5">
+                I started in <span class="text-neutral-900 font-semibold">Computer Engineering</span> at Kathmandu Engineering College, expecting to write software, not design it. A UX internship at <span class="text-neutral-900 font-semibold">Leapfrog Technology</span> in 2021 changed that. Watching a small team turn user interviews into shipped flows convinced me design was the part of software I actually wanted to do.
             </p>
-            <img class="mt-10 w-full" src="./assets/profile.jpg" />
+            <p class="text-p text-neutral-800 font-light leading-relaxed pb-5">
+                I joined <span class="text-neutral-900 font-semibold">Core Software Integrated</span> shortly after as a UI/UX designer, and spent nearly two years there leading design on consumer and B2B products, including <a href="belly.html" class="text-primary-500 underline hover:text-primary-600">Belly Foods</a>, <a href="chatter.html" class="text-primary-500 underline hover:text-primary-600">Chatter</a>, and the <a href="lalitpur.html" class="text-primary-500 underline hover:text-primary-600">LMC Ward 10 survey app</a>. Mobile, web, multi-tenant SaaS, civic tech, the variety taught me how to think about products rather than just screens.
+            </p>
+            <p class="text-p text-neutral-800 font-light leading-relaxed pb-5">
+                In 2023 I moved to Ontario, Canada, for a postgraduate program in <span class="text-neutral-900 font-semibold">Full Stack Software Development at Lambton College</span>. The goal was deliberate: close the loop between design and code, so my Figma files turn into the React they were meant to be. I finished the program in 2025 and built a production storefront for <a href="https://banhmibites.ca/" target="_blank" rel="noopener" class="text-primary-500 underline hover:text-primary-600">Banh Mi &amp; Bites</a> as my co-op, designing it, building it, and shipping it.
+            </p>
+            <p class="text-p text-neutral-800 font-light leading-relaxed">
+                That's the through-line: research, design, and code on the same person. I'm not the best-in-class at any one of them, but holding all three shortens every loop in product work, and that's where I want to spend my career.
+            </p>
+        </div>
+    </section>
+
+    <!--How I work-->
+    <section class="bg-accent-cream">
+        <div class="lg:max-w-4xl mx-auto mx-4 px-4 py-16">
+            <p class="text-xs tracking-[0.2em] uppercase text-neutral-700 mb-4">How I work</p>
+            <h2 class="text-h4 font-headings font-semibold text-neutral-900 mb-10">Four principles I keep coming back to.</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="px-5 py-6 border border-neutral-300 rounded-lg bg-accent-paper">
+                    <p class="text-primary-500 font-semibold pb-2">Research first, opinions later.</p>
+                    <p class="text-p text-neutral-800 font-light">
+                        The fastest way to make a wrong product is to skip talking to the people who'll use it. I start there, even informally, and let the brief move when the research demands it.
+                    </p>
+                </div>
+                <div class="px-5 py-6 border border-neutral-300 rounded-lg bg-accent-paper">
+                    <p class="text-primary-500 font-semibold pb-2">Design the system, not just the screen.</p>
+                    <p class="text-p text-neutral-800 font-light">
+                        Components, states, and patterns before pixels. A small opinionated design system pays itself off the second a build phase starts, and keeps the product coherent as it scales.
+                    </p>
+                </div>
+                <div class="px-5 py-6 border border-neutral-300 rounded-lg bg-accent-paper">
+                    <p class="text-primary-500 font-semibold pb-2">Close the loop with code.</p>
+                    <p class="text-p text-neutral-800 font-light">
+                        Designs ship the way they were drawn because I sit close to the build, sometimes inside it. The handoff is a conversation, not a Figma link thrown over the wall.
+                    </p>
+                </div>
+                <div class="px-5 py-6 border border-neutral-300 rounded-lg bg-accent-paper">
+                    <p class="text-primary-500 font-semibold pb-2">Honest over polished.</p>
+                    <p class="text-p text-neutral-800 font-light">
+                        If something didn't ship, I'll say so. If a metric isn't there, I won't invent one. Portfolios that overclaim get exposed in the first interview, better to be precise.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Now + Outside design-->
+    <section class="bg-accent-cream">
+        <div class="lg:max-w-5xl mx-auto mx-4 px-4 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-7">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-700 mb-4">Right now</p>
+                    <h2 class="text-h4 font-headings font-semibold text-neutral-900 mb-6">Based in Ontario. Looking for product design roles.</h2>
+                    <p class="text-p text-neutral-800 font-light leading-relaxed pb-5">
+                        Open to <span class="text-neutral-900 font-semibold">full-time product / UX-UI designer roles</span> across Canada (remote, hybrid, or onsite) and remote-anywhere outside Canada. Equally happy in early-stage scrappiness or a more mature product team.
+                    </p>
+
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-700 mb-3 mt-10">Outside design</p>
+                    <p class="text-p text-neutral-800 font-light leading-relaxed">
+                        Most weekends I'm outside, <span class="text-neutral-900 font-semibold">hiking</span> and <span class="text-neutral-900 font-semibold">trekking</span> wherever the trail map says yes, usually with a camera. <span class="text-neutral-900 font-semibold">Photography</span> is the long-running hobby that everything else hangs off: it's why I notice composition and light in interfaces too.
+                    </p>
+                </div>
+
+                <!--Portrait-->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72">
+                        <div class="absolute -top-3 -left-3 w-full h-full rounded-md bg-primary-500 opacity-90"></div>
+                        <img src="./assets/profile.jpg" class="relative w-full h-full object-cover rounded-md border border-neutral-300" alt="Anushka Sharma" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Quick facts-->
+    <section class="bg-accent-cream">
+        <div class="lg:max-w-4xl mx-auto mx-4 px-4 py-16">
+            <p class="text-xs tracking-[0.2em] uppercase text-neutral-700 mb-6">Quick facts</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
+                <div>
+                    <p class="text-sm text-neutral-700 uppercase tracking-wide pb-1">Based in</p>
+                    <p class="text-p text-neutral-900 font-semibold">Ontario, Canada</p>
+                </div>
+                <div>
+                    <p class="text-sm text-neutral-700 uppercase tracking-wide pb-1">Originally from</p>
+                    <p class="text-p text-neutral-900 font-semibold">Kathmandu, Nepal</p>
+                </div>
+                <div>
+                    <p class="text-sm text-neutral-700 uppercase tracking-wide pb-1">Education</p>
+                    <p class="text-p text-neutral-900 font-semibold">B.E. Computer Engineering &middot; PG Full Stack Dev (Lambton)</p>
+                </div>
+                <div>
+                    <p class="text-sm text-neutral-700 uppercase tracking-wide pb-1">Toolbelt</p>
+                    <p class="text-p text-neutral-900 font-semibold">Figma &middot; React &middot; Tailwind &middot; Node</p>
+                </div>
+                <div>
+                    <p class="text-sm text-neutral-700 uppercase tracking-wide pb-1">Languages</p>
+                    <p class="text-p text-neutral-900 font-semibold">English &middot; Nepali</p>
+                </div>
+                <div>
+                    <p class="text-sm text-neutral-700 uppercase tracking-wide pb-1">Open to</p>
+                    <p class="text-p text-neutral-900 font-semibold">Full-time, contract, freelance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Connect-->
+    <section id="connect" class="bg-neutral-900 text-accent-cream py-16 scroll-mt-24">
+        <div class="lg:max-w-3xl lg:mx-auto mx-4 px-4 text-center">
+            <p class="text-xs tracking-[0.2em] uppercase text-neutral-400 mb-4">Let's work together</p>
+            <h2 class="text-h2 font-headings font-semibold mb-6">Want to talk?</h2>
+            <p class="text-h6 font-light text-neutral-300 mb-8">
+                Email is the fastest way to reach me. I usually reply within a day.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:sanushkaa4@gmail.com" class="cta-group group bg-accent-cream text-neutral-900 text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:bg-primary-500 hover:text-accent-cream transition-all duration-300">
+                    Email <span class="cta-arrow">→</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/" class="border border-neutral-700 text-accent-cream text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-accent-cream transition-all duration-300">
+                    LinkedIn
+                </a>
+                <a href="assets/AnushkaSharma.pdf" class="border border-neutral-700 text-accent-cream text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-accent-cream transition-all duration-300">
+                    Resume (PDF)
+                </a>
+            </div>
         </div>
     </section>
 
     <!--Footer-->
-    <footer class="mt-12 lg:max-w-4xl lg:mx-auto mx-4">
-        <hr class="h-px bg-neutral-300">
-        <div class="py-5 flex flex-col lg:flex-row lg:justify-between">
-            <div>
-                <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
-            </div>
-            <div class="mt-3 lg:mt-0 flex flex-row justify-center">
-                <a href="mailto: sanushkaa4@gmail.com">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/email.png" />
-                </a>
-                <a href="https://www.linkedin.com/in/sanushkaa4/">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/Linkedin.png" />
-                </a>
-                <a href="https://dribbble.com/AnushkaaSharma">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/dribbble.png" />
-                </a>
-                <a href="https://github.com/AnushkaaSharma">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/github.png" />
-                </a>
+    <footer class="bg-neutral-900 text-accent-cream">
+        <div class="lg:max-w-7xl lg:mx-auto mx-4 px-4 border-t border-neutral-800 py-6 flex flex-col lg:flex-row lg:justify-between items-center gap-3">
+            <p class="text-sm font-light">Designed &amp; built by Anushka Sharma.</p>
+            <div class="flex flex-row">
+                <a href="mailto:sanushkaa4@gmail.com" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/email.png" alt="Email" /></a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/Linkedin.png" alt="LinkedIn" /></a>
+                <a href="https://dribbble.com/AnushkaaSharma" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/dribbble.png" alt="Dribbble" /></a>
+                <a href="https://github.com/AnushkaaSharma" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/github.png" alt="GitHub" /></a>
             </div>
         </div>
     </footer>

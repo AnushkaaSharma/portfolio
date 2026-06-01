@@ -10,7 +10,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../src/navbar.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <title>Anushka Sharma</title>
+    <title>Belly Foods, Food Ordering App · Anushka Sharma</title>
+    <meta name="description" content="Case study: designing Belly Foods, a mobile food-ordering ecosystem connecting vendors and customers. By Anushka Sharma." />
 </head>
 <body class="font-body text-neutral-900 bg-neutral-100">    
     <!--Navbar-->
@@ -49,136 +50,184 @@
                 <div class="my-auto py-4">
                     <h2 class="text-h4 font-semibold text-belly-400">Belly Foods</h2>
                     <p class="text-p text-neutral-700 py-2">
-                        A one stop mobile app for all foodies in Nepal.
-                        Search restaurants and order today. 
+                        A two-sided food-ordering app built to give Nepal's restaurants a fairer,
+                        lower-commission alternative to the dominant delivery platform.
                     </p>
                 </div>
                 <div>
-                    <img src="./assets/belly/Img.png" class="w-full h-full"/>
+                    <img src="./assets/belly/Img.png" class="w-full h-full" alt="Img" />
                 </div>
             </div>
         </section>
-        <!--Project Overview-->
+        <!--Overview / Context-->
         <section class="my-24 mx-4 lg:max-w-4xl lg:mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                 <div>
                     <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
                     <h6 class="text-p font-semibold pb-4">
-                        Project Overview
+                        Overview
                     </h6>
-                    <p class="text-p font-light text-justify">
-                        Belly app is a revolutionary food service 
-                        platform that has something for everyone. 
-                        Whether you're a food vendor looking to expand
-                         your reach or a customer looking for a quick 
-                         and easy way to order food, Belly has you covered.
+                    <p class="text-p font-light">
+                        Belly is a two-sided food-ordering app for Nepal: one experience for
+                        customers ordering food, and a separate one for restaurant vendors running
+                        their business. I led design on a three-person team, working alongside a
+                        frontend and a backend developer to take the product from concept to a
+                        working build.
                     </p>
                 </div>
                 <div>
                     <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
                     <h6 class="text-p font-semibold pb-4">
-                        My Roles
+                        At a glance
                     </h6>
                     <ul class="text-p pl-4 font-light list-disc list-outside">
-                        <li class="pb-1 text-justify">
-                            Defined the goals of UX research.
-                        </li>
-                        <li class="pb-1 text-justify">
-                            Conducted user interviews and surveys to understand customer needs and pain points.
-                        </li>
-                        <li class="pb-1 text-justify">
-                            Designed the overall layout and navigation of the app
-                            to make it easy for users to find and order their favorite dishes.
-                        </li>
-                        <li class="text-justify">
-                            Collaborated with the marketing team to create promotional 
-                            materials and campaigns that drive app usage and retention.
-                        </li>
+                        <li class="pb-1"><span class="font-semibold">Role:</span> Sole product &amp; UX designer</li>
+                        <li class="pb-1"><span class="font-semibold">Team:</span> 1 designer, 1 frontend dev, 1 backend dev</li>
+                        <li class="pb-1"><span class="font-semibold">Platform:</span> iOS &amp; Android, customer + vendor apps</li>
+                        <li class="pb-1"><span class="font-semibold">Scope:</span> Research, IA, user flows, UI, prototyping</li>
+                        <li><span class="font-semibold">Status:</span> Pre-launch, secured verbal interest from local restaurants to pilot</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!--Image-->
-        <section class="my-24">
-            <img src="./assets/belly/bellyunsplash.png" />
+        <!--The Problem-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
+            <h6 class="text-p font-semibold pb-4">The problem</h6>
+            <p class="text-p font-light">
+                Nepal's food delivery market was dominated by Foodmandu and Bhoj, and both sides of
+                the market were unhappy. Restaurants were paying roughly 22% commission to Foodmandu
+, the highest take rate in the country, on top of optional fees for
+                sponsored visibility, and were given little in return: no real tooling for menu,
+                stock, or order management. Customers were unhappy too: surveys at the time
+                reported around 70% dissatisfaction with the market leader. The complaints were
+                consistent, multi-hour delays, menus with no photos, payment flows that
+                crashed mid-checkout, opaque order status, and customer support that defended the
+                restaurant when something went wrong.
+            </p>
+            <p class="text-p font-light pt-4">
+                Belly's bet was to design for both sides of that frustration: take a smaller cut so
+                restaurants kept more, give them the operational tooling the incumbents didn't, and
+                rebuild the customer experience around the things customers were actually losing
+                trust over, visual menus, transparent status, payment that worked.
+            </p>
         </section>
 
-        <!--Desc-->
+        <!--Image-->
+        <section class="my-24">
+            <img src="./assets/belly/bellyunsplash.png" alt="Belly Foods lifestyle imagery" />
+        </section>
+
+        <!--Two-sided decision-->
         <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
-            <p class="text-p font-light text-justify">
-                For vendors, Belly offers a simple and intuitive interface 
-                that allows you to add and manage your menus, update your 
-                restaurant's information, and track orders in real-time. With 
-                Belly, you can offer your customers a variety of options including 
-                take-out, dine-in, and delivery. You can even use Belly's promotional 
-                tools to attract new customers and increase sales.
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
+            <h6 class="text-p font-semibold pb-4">Designing for two very different users</h6>
+            <p class="text-p font-light">
+                The biggest early decision was to build Belly as two distinct experiences rather
+                than one app stretched across both audiences. Their jobs barely overlap: customers
+                only need to discover restaurants, order, and pay, while vendors run an operation
+, accepting orders, managing pickup and delivery, editing menus, and keeping
+                stock and availability current. Forcing both into one interface would have buried
+                the few things customers care about under the many things vendors do.
             </p>
-            <p class="text-p font-light py-4 text-justify">
-                For customers, Belly makes it easy to discover new restaurants 
-                and explore menus. With a few taps of your phone, you can find 
-                the perfect restaurant and place an order for take-out, dine-in,
-                 or delivery. You can also use Belly to earn credits and rewards, 
-                 track your orders, and read and write reviews.
-            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+                <div class="px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-belly-400 font-semibold pb-2">Customer side</p>
+                    <p class="text-p font-light">
+                        Discover and search restaurants, browse menus, order for take-out, dine-in,
+                        or delivery, track orders in real time, and earn loyalty rewards,
+                        kept deliberately simple and fast.
+                    </p>
+                </div>
+                <div class="px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-belly-400 font-semibold pb-2">Vendor side</p>
+                    <p class="text-p font-light">
+                        Manage menus and stock, set availability, accept and track orders, and
+                        coordinate pickup and delivery, an operational dashboard built for
+                        speed and control.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!--Research-->
         <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
             <hr class="w-10 h-1 mb-1 left-0 top-3 bg-belly-400">
             <h6 class="text-p font-semibold">
-                Competitive Analysis findings
+                What the incumbents were getting wrong
             </h6>
             <p class="text-p font-light pt-4">
-                Before starting with the app, I checked out the existing apps. 
-                Almost all food ordering apps offer similar features and services 
-                with some difference in their selection of restaurants, cuisines, 
-                search filters, and promotional offers. Some of the key features are:
+                I started by digging into Foodmandu and Bhoj, reading user reviews on the
+                App Store and Play Store, market reporting on their commission structure, and
+                first-hand conversations with restaurants we knew personally. A consistent
+                picture emerged on both sides of the marketplace.
             </p>
-            <div class="mt-3">
-                <ul class="text-p pl-4 font-light list-disc list-outside">
-                    <li class="pb-1 text-justify">
-                        Easy login (Google and Facebook)
-                    </li>
-                    <li class="pb-1 text-justify">
-                        Restaurant and menu listings: The app should provide users 
-                        with a comprehensive list of restaurants. The user should 
-                        be able to browse through the menu along with description, 
-                        images and price.
-                    </li>
-                    <li class="pb-1 text-justify">
-                        Real time Order Tracking: The app should provide users 
-                        with the status of their orders in real time.
-                    </li>
-                    <li class="text-justify">
-                        Order History: The app should store user’s order history,
-                         allowing them to easily reorder their favorite meals.
-                    </li>
-                </ul>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+                <div class="px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-belly-400 font-semibold pb-2">Customer-side complaints</p>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1">Multi-hour delivery delays vs. quoted times</li>
+                        <li class="pb-1">Menus with no photos, hard to choose unfamiliar dishes</li>
+                        <li class="pb-1">App freezes &amp; payment flow crashes (esp. eSewa)</li>
+                        <li class="pb-1">Double charges with slow or no refunds</li>
+                        <li class="pb-1">Opaque order status, no way to cancel</li>
+                        <li>Support that defended the restaurant when something went wrong</li>
+                    </ul>
+                </div>
+                <div class="px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-belly-400 font-semibold pb-2">Vendor-side complaints</p>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1">~22% commission on every order, highest in market</li>
+                        <li class="pb-1">Extra fees to get visibility in the app</li>
+                        <li class="pb-1">No real tools for menu, stock, or availability</li>
+                        <li class="pb-1">No way to pause orders during a kitchen rush</li>
+                        <li>Pickup vs. delivery handling baked into one rigid flow</li>
+                    </ul>
+                </div>
             </div>
-            <!--Grouped-->
+
+            <p class="text-p font-light pt-8">
+                Two things stood out. First, customer frustration wasn't about <em>missing</em>
+                features, the incumbents had search, tracking, history, all of it. It was
+                about <em>broken trust</em>: the order doesn't show up on time, the payment fails,
+                the menu picture isn't there to confirm what you're buying. Second, restaurants
+                weren't the customer of these platforms; they were the squeezed middle. They paid
+                the most and got the least.
+            </p>
+        </section>
+
+        <!--Design Principles-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 h-1 mb-1 left-0 top-3 bg-belly-400">
+            <h6 class="text-p font-semibold">
+                How the research shaped Belly
+            </h6>
+            <p class="text-p font-light pt-4">
+                Those findings became Belly's design principles. Every screen had to answer back to
+                a real complaint we'd heard.
+            </p>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 my-12">
                 <div class="text-p px-4 py-5 border border-b-neutral-400 rounded-lg">
-                    <p class="text-belly-400 font-semibold">Restaurant listings</p>
+                    <p class="text-belly-400 font-semibold">Visual-first menus</p>
                     <p class="font-light pt-3">
-                        Search and filter restaurants by location, price, 
-                        and rating. View restaurant hours of operation, 
-                        address and contact info.
+                        Photo on every item, prominent and required, not the
+                        text-only lists customers were getting frustrated with elsewhere.
                     </p>
                 </div>
                 <div class="text-p px-4 py-5 border border-b-neutral-400 rounded-lg">
-                    <p class="text-belly-400 font-semibold">Menu listings</p>
+                    <p class="text-belly-400 font-semibold">Transparent order status</p>
                     <p class="font-light pt-3">
-                        Browse menu items by category such as appetizers, 
-                        entrees, desserts. Add items to cart for checkout.
+                        Status surfaced clearly at every step, with empty and edge-case
+                        states designed so customers were never staring at a blank screen.
                     </p>
                 </div>
                 <div class="text-p px-4 py-5 border border-b-neutral-400 rounded-lg">
-                    <p class="text-belly-400 font-semibold">Order management</p>
+                    <p class="text-belly-400 font-semibold">Vendor self-service</p>
                     <p class="font-light pt-3">
-                        Real time order tracking from placement to delivery. 
-                        Push notifications for status updates. Reorder from past orders with ease. Leave feedback and 
-                        ratings for completed orders.
+                        A dedicated vendor app to manage menus, toggle stock, pause orders,
+                        and choose pickup vs. delivery, the tooling incumbents didn't ship.
                     </p>
                 </div>
             </div>
@@ -187,10 +236,34 @@
         <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
             <h6 class="text-p font-semibold">
-                Mapping out the user flow for customer 
+                Customer user flow
             </h6>
+            <p class="text-p font-light pt-3">
+                The customer flow stays deliberately short, from browsing restaurants to
+                paying for an order. Edge states (no internet, location off, empty search) were
+                designed in from the start, since "blank screen with no explanation" was one of the
+                trust-breakers we'd heard about in research.
+            </p>
             <div class="mt-6 flex justify-center">
-                <img class="lg:w-2/3" src="./assets/belly/User flow cus.png" />
+                <img class="lg:w-2/3" src="./assets/belly/User flow cus.png" alt="Customer user flow diagram" />
+            </div>
+        </section>
+
+        <!--Vendor onboarding flow-->
+        <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
+            <h6 class="text-p font-semibold">
+                Vendor onboarding flow
+            </h6>
+            <p class="text-p font-light pt-3">
+                Vendors had to feel the same low-friction entry the customer side promised. Six
+                steps from app download to taking the first order, register the restaurant,
+                verify the account, build the menu, open the shop, start cooking. The same flow
+                doubled as a marketing leaflet we used in vendor conversations to show how light
+                the lift was compared to onboarding with the incumbents.
+            </p>
+            <div class="mt-6 flex justify-center">
+                <img class="w-full" src="./assets/belly/belly-vendor-onboarding.jpg" alt="Vendor onboarding flow: download, register restaurant, verify account, create menu, open restaurant, get cooking" />
             </div>
         </section>
         <!--Final Screens-->
@@ -206,33 +279,33 @@
                 ensuring that the app is intuitive and meets the needs of its users.
             </p>
             <div class="grid grid-cols-1 lg:grid-cols-6 gap-6 mt-6">
-                <img class="drop-shadow-xl" src="./assets/belly/Splash screen 1.png">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Onboarding 1.jpg">
-                <img class="drop-shadow-xl" src="./assets/belly/Onboarding 2.jpg">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Onboarding 3.jpg">
-                <img class="drop-shadow-xl" src="./assets/belly/Main Page.jpg">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Search 1.png">
+                <img class="drop-shadow-xl" src="./assets/belly/Splash screen 1.png" alt="Splash screen 1">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Onboarding 1.jpg" alt="Onboarding 1">
+                <img class="drop-shadow-xl" src="./assets/belly/Onboarding 2.jpg" alt="Onboarding 2">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Onboarding 3.jpg" alt="Onboarding 3">
+                <img class="drop-shadow-xl" src="./assets/belly/Main Page.jpg" alt="Main Page">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Search 1.png" alt="Search 1">
 
-                <img class="drop-shadow-xl" src="./assets/belly/Vendor profile - customer view 4.png">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Vendor profile - customer view 5.png">
-                <img class="drop-shadow-xl" src="./assets/belly/Order details 3.png">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Order details 4.png">
-                <img class="drop-shadow-xl" src="./assets/belly/Notes.jpg">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Settings.jpg">
+                <img class="drop-shadow-xl" src="./assets/belly/Vendor profile - customer view 4.png" alt="Vendor profile   customer view 4">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Vendor profile - customer view 5.png" alt="Vendor profile   customer view 5">
+                <img class="drop-shadow-xl" src="./assets/belly/Order details 3.png" alt="Order details 3">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Order details 4.png" alt="Order details 4">
+                <img class="drop-shadow-xl" src="./assets/belly/Notes.jpg" alt="Notes">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Settings.jpg" alt="Settings">
 
-                <img class="drop-shadow-xl" src="./assets/belly/Order details 4.png">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Loyalty.jpg">
-                <img class="drop-shadow-xl" src="./assets/belly/Cus note view.jpg">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Customer view menu.jpg">
-                <img class="drop-shadow-xl" src="./assets/belly/Coupons.jpg">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Search menu empty state.jpg">
+                <img class="drop-shadow-xl" src="./assets/belly/Order details 4.png" alt="Order details 4">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Loyalty.jpg" alt="Loyalty">
+                <img class="drop-shadow-xl" src="./assets/belly/Cus note view.jpg" alt="Cus note view">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Customer view menu.jpg" alt="Customer view menu">
+                <img class="drop-shadow-xl" src="./assets/belly/Coupons.jpg" alt="Coupons">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Search menu empty state.jpg" alt="Search menu empty state">
 
-                <img class="drop-shadow-xl" src="./assets/belly/Location off.jpg">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Backend fetch.jpg">
-                <img class="drop-shadow-xl" src="./assets/belly/No internet.jpg">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/No coupons.jpg">
-                <img class="drop-shadow-xl" src="./assets/belly/No data.jpg">
-                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Update app.jpg">
+                <img class="drop-shadow-xl" src="./assets/belly/Location off.jpg" alt="Location off">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Backend fetch.jpg" alt="Backend fetch">
+                <img class="drop-shadow-xl" src="./assets/belly/No internet.jpg" alt="No internet">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/No coupons.jpg" alt="No coupons">
+                <img class="drop-shadow-xl" src="./assets/belly/No data.jpg" alt="No data">
+                <img class="mt-10 drop-shadow-xl" src="./assets/belly/Update app.jpg" alt="Update app">
             </div>
         </section>
         <!--UI-->
@@ -291,27 +364,27 @@
                     </p>
                     <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
                         <div class="flex">
-                            <img src="./assets/Figma-logo.svg" class="h-10"/>
+                            <img src="./assets/Figma-logo.svg" class="h-10" alt="Figma logo" />
                             <p class="font-light px-4">
                                 Figma
                                 for design
                             </p>
                         </div>
                         <div class="flex">
-                            <img src="./assets/notion.png" class="w-10 h-10"/>
+                            <img src="./assets/notion.png" class="w-10 h-10" alt="Notion" />
                             <p class="font-light px-4">
                                 Notion for documentation
                             </p>
                         </div>
                         <div class="flex">
-                            <img src="./assets/GMD.png" class="w-10 h-10"/>
+                            <img src="./assets/GMD.png" class="w-10 h-10" alt="GMD" />
                             <p class="font-light px-4">
                                 Icons from
                                 Google Material Design
                             </p>
                         </div>
                         <div class="flex">
-                            <img src="./assets/unsplash.png" class="w-10 h-10"/>
+                            <img src="./assets/unsplash.png" class="w-10 h-10" alt="Unsplash" />
                             <p class="font-light px-4">
                                 Images from
                                 Unsplash
@@ -321,36 +394,95 @@
                 </div>
             </div>
         </section>
-        <!--Takeaways-->
+
+        <!--Brand & Marketing-->
+        <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
+            <h6 class="text-p font-semibold">
+                Brand &amp; marketing
+            </h6>
+            <p class="text-p font-light pt-3">
+                Beyond the product itself, I designed Belly's brand voice and the marketing assets
+                we used to introduce it, social posts, printed leaflets for vendor
+                conversations, and download CTAs. Treating brand and product as one system meant a
+                vendor saw the same Belly whether they were holding a leaflet, scrolling Instagram,
+                or opening the app to take their first order.
+            </p>
+
+            <!--Landscape banner: hero opener-->
+            <div class="mt-8">
+                <img class="w-full drop-shadow-xl rounded" src="./assets/belly/belly-banner-mockups.png" alt="Belly download banner with phone mockups showing reviews, vendor bio, and login screens" />
+                <p class="text-sm font-light text-neutral-700 pt-2 text-center">Web banner, hero composition with in-app screens.</p>
+            </div>
+
+            <!--Two portrait leaflets-->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10 items-start">
+                <div>
+                    <img class="w-full drop-shadow-xl rounded" src="./assets/belly/belly-brand-leaflet.png" alt="Belly brand leaflet, Satisfy any cravings" />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">Brand leaflet, introducing Belly to customers.</p>
+                </div>
+                <div>
+                    <img class="w-full drop-shadow-xl rounded" src="./assets/belly/belly-leaflet-download.jpg" alt="Belly download leaflet with Play Store and App Store QR codes" />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">Download leaflet, printed for partner restaurants.</p>
+                </div>
+            </div>
+
+            <!--Three square IG posts-->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 items-start">
+                <div>
+                    <img class="w-full drop-shadow-xl rounded" src="./assets/belly/belly-ig-fillup.jpg" alt="Belly Instagram post, Fill up with Belly, phone mockup with feature callouts" />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">IG, product features.</p>
+                </div>
+                <div>
+                    <img class="w-full drop-shadow-xl rounded" src="./assets/belly/belly-ig-taptaptap.jpg" alt="Belly Instagram post, Tap. Tap. Tap." />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">IG, brand voice.</p>
+                </div>
+                <div>
+                    <img class="w-full drop-shadow-xl rounded" src="./assets/belly/belly-ig-snap.jpg" alt="Belly Instagram post, Order food in a snap with just a tap" />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">IG, download CTA.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Outcome-->
         <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
-            <h6 class="text-p font-semibold pb-2">
-                Takeaways
-            </h6>
-            <p class="text-p font-light text-justify">
-                User testing is key. <br />
-                When conducting user testing, it's important to use realistic scenarios 
-                that mimic real-world usage. User testing should be started as early in the 
-                development process as possible, and should be conducted frequently. 
-                <br /> After conducting user testing, it's important to use the feedback
-                received to make improvements to the app. This can involve tweaking 
-                the design, adding new features, or addressing usability issues. By 
-                iterating based on user feedback, app created can be more 
-                user-friendly and will meet the needs of the target audience.        
+            <h6 class="text-p font-semibold pb-2">Outcome</h6>
+            <p class="text-p font-light">
+                Belly reached a working build with both apps designed end-to-end, visual
+                menus, transparent status, payment flow, and a vendor dashboard for menu, stock,
+                and pickup/delivery handling. The design answered directly to the customer- and
+                vendor-side pains we'd surfaced in research.
+            </p>
+            <p class="text-p font-light pt-4">
+                We secured verbal commitments from several local restaurants willing to pilot.
+                That was the strongest signal we got: the lower-commission, vendor-tooling pitch
+                was compelling enough to make restaurants squeezed by incumbents say yes. The
+                project ultimately didn't reach a public launch, so the design was never
+                validated with live users at scale, something I'm upfront about.
             </p>
         </section>
-        <!--Next steps-->
+        <!--Reflection-->
         <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-belly-400">
-            <h6 class="text-p font-semibold pb-2">
-                Next Steps
-            </h6>
-            <p class="text-p font-light text-justify">
-                The next step would be to conduct another round of 
-                usability studies with a wider range of participants, 
-                to determine whether the current solution effectively
-                addresses the users’ pain points.      
-            </p>
+            <h6 class="text-p font-semibold pb-2">What I'd take into the next project</h6>
+            <ul class="text-p pl-4 font-light list-disc list-outside">
+                <li class="pb-2">
+                    <span class="font-semibold">Two audiences, two products.</span>
+                    Splitting customer and vendor into separate experiences kept each one focused.
+                    I'd make that call again, and earlier.
+                </li>
+                <li class="pb-2">
+                    <span class="font-semibold">Design serves the business model.</span>
+                    Belly's real edge was its pricing, not its screens, the design's job was
+                    to make that advantage feel effortless on both sides.
+                </li>
+                <li>
+                    <span class="font-semibold">Capture the research.</span>
+                    We made decisions from real conversations but kept few artifacts. Next time I'd
+                    document findings as I go so the rationale holds up later.
+                </li>
+            </ul>
         </section>
     </main>
 
@@ -363,16 +495,16 @@
             </div>
             <div class="mt-3 lg:mt-0 flex flex-row justify-center">
                 <a href="mailto: sanushkaa4@gmail.com">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/email.png" />
+                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/email.png" alt="Email" />
                 </a>
                 <a href="https://www.linkedin.com/in/sanushkaa4/">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/Linkedin.png" />
+                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/Linkedin.png" alt="Linkedin" />
                 </a>
                 <a href="https://dribbble.com/AnushkaaSharma">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/dribbble.png" />
+                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/dribbble.png" alt="Dribbble" />
                 </a>
                 <a href="https://github.com/AnushkaaSharma">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/github.png" />
+                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/github.png" alt="Github" />
                 </a>
             </div>
         </div>

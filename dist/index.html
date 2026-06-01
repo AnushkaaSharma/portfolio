@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,299 +11,281 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../src/navbar.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <title>Anushka Sharma</title>
+    <title>Anushka Sharma, Product Designer</title>
+    <meta name="description" content="Anushka Sharma is a product designer in Ontario, Canada, turning user research into shipped software across mobile, web, and B2B SaaS." />
 </head>
-<body>
-    <div class="wrapper bg-neutral-background border-b-1 border-neutral-700">
-        <!--Navbar-->
-        <nav class="flex items-center justify-between lg:max-w-7xl lg:mx-auto mx-4 py-6">
-            <!-- Logo -->
-            <div>
-                <a href="index.html" class="text-5xl font-logo text-neutral-100 tracking-tight hover:text-primary-400 transition-colors">
-                A.
-                </a>
-            </div>
+<body class="bg-accent-cream text-neutral-900 font-body">
 
-            <!-- Nav Links -->
+    <!--Navbar-->
+    <header class="bg-accent-cream">
+        <nav class="flex items-center justify-between lg:max-w-7xl lg:mx-auto mx-4 py-6">
             <div>
-                <ul class="flex space-x-12 text-sm font-medium">
-                <li>
-                    <a href="index.html"
-                    class="relative text-neutral-100 font-body text-p font-semibold">
-                    Work
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html"
-                    class="relative text-neutral-400 font-body text-p">
-                    About
-                    </a>
-                </li>
-                <li>
-                    <a href="assets/AnushkaSharma.pdf"
-                    class="relative text-neutral-400 font-body text-p">
-                    Resume
-                    </a>
-                </li>
+                <a href="index.html" class="text-4xl font-logo text-neutral-900 tracking-tight hover:text-primary-500 transition-colors">A.</a>
+            </div>
+            <div>
+                <ul class="flex space-x-10 text-sm font-medium">
+                    <li><a href="index.html" class="text-neutral-900 font-body text-p font-semibold">Work</a></li>
+                    <li><a href="about.html" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">About</a></li>
+                    <li><a href="assets/AnushkaSharma.pdf" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">Resume</a></li>
                 </ul>
             </div>
-
-            <!-- CTA -->
-            <button class="ml-6 border border-primary-500 bg-primary-500 text-neutral-100 text-p font-semibold tracking-wide py-2.5 px-6 rounded-full shadow-sm hover:bg-primary-400 hover:border-primary-400 transition-all duration-300">
-                Contact Me
-            </button>
+            <a href="#connect" class="cta-group group border border-neutral-900 text-neutral-900 text-p font-semibold tracking-wide py-2 px-5 rounded-full hover:bg-neutral-900 hover:text-accent-cream transition-all duration-300">
+                Get in touch <span class="cta-arrow ml-1">→</span>
+            </a>
         </nav>
-    </div>
+    </header>
 
-    
+    <!--Hero: editorial split-->
+    <section class="bg-accent-cream">
+        <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-    <!--Content-->
-    <section class="w-full min-h-[680px] bg-neutral-background text-neutral-100 flex items-center justify-center">
-        <div class="text-center flex flex-col items-center">
-            <h2 class="text-7xl font-bold mb-4 font-headings uppercase">I’m Anushka Sharma</h2>
-            <h6 class="text-h6 w-3/4 text-center mx-auto pt-6 text-neutral-secondary font-medium">
-            <span> UI/UX | Digital Product Designer </span>bridging user needs, product goals, and pixel-perfect design
-            </h6>
+            <!--Left column-->
+            <div class="order-2 lg:order-1">
+                <p class="text-xs tracking-[0.2em] uppercase text-neutral-700 mb-6">Product Designer · Ontario, Canada</p>
 
-            <!-- Arrow BELOW description -->
-            <a href="#demo" class="mt-20">
-            <div class="box">
-                <span></span>
-                <span></span>
-                <span></span>
+                <h1 class="stagger font-headings font-semibold uppercase leading-[0.95] text-5xl sm:text-6xl lg:text-7xl text-neutral-900 tracking-tight">
+                    <span>A</span><span>n</span><span>u</span><span>s</span><span>h</span><span>k</span><span>a</span>
+                    <br />
+                    <span>S</span><span>h</span><span>a</span><span>r</span><span>m</span><span>a</span>
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3 flex-wrap">
+                    <span class="accent-line"></span>
+                    <p class="text-h6 text-neutral-700">Research <span class="text-primary-500 font-semibold">→</span> Design <span class="text-primary-500 font-semibold">→</span> Production.</p>
+                </div>
+
+                <p class="mt-8 max-w-lg text-p text-neutral-800 font-light leading-relaxed">
+                    I design products that turn user research into shipped software, across mobile, web, and B2B SaaS. Two years end-to-end, from problem framing to production code.
+                </p>
+
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#work" class="cta-group group inline-flex items-center gap-2 bg-neutral-900 text-accent-cream text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:bg-primary-500 transition-all duration-300">
+                        See work <span class="cta-arrow">→</span>
+                    </a>
+                    <a href="#connect" class="inline-flex items-center gap-2 border border-neutral-400 text-neutral-900 text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-neutral-900 transition-all duration-300">
+                        Get in touch
+                    </a>
+                </div>
             </div>
+
+            <!--Right column: portrait with accent shape-->
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 hero-portrait">
+                    <div class="absolute inset-0 rounded-full bg-primary-500 opacity-90"></div>
+                    <div class="absolute inset-3 rounded-full bg-accent-paper border border-neutral-300"></div>
+                    <img src="./assets/profile.jpg" class="absolute inset-4 rounded-full object-cover w-[calc(100%-2rem)] h-[calc(100%-2rem)]" alt="Anushka Sharma" />
+                </div>
+            </div>
+        </div>
+
+        <!--Scroll cue-->
+        <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 pb-10 flex justify-center lg:justify-start">
+            <a href="#work" class="scroll-cue hover:text-neutral-900 transition-colors">
+                <span>Scroll</span>
+                <span class="dot"></span>
             </a>
         </div>
     </section>
 
-    <section>
-        <h6 id="demo" class="text-h6 text-neutral-700 py-20 lg:max-w-7xl lg:mx-auto mx-4 lg:w-[600px] text-center">
-            Based in Ontario, Canada, I’m self-taught UI/UX and Web Designer with over 2 years of working experience, specializing in User Interface 
-            and Experience design for different digital medium and software helping users to reach their goals solving design problems. 
-            My passion and inspiration lie in combining Business, Design 
-            and Technology.
-        </h6>
+    <!--Intro paragraph-->
+    <section class="bg-accent-cream">
+        <div class="lg:max-w-3xl mx-auto mx-4 px-4 py-16">
+            <p class="text-h6 text-neutral-800 font-light leading-relaxed text-center">
+                Based in Ontario, Canada. I work at the intersection of product, design, and code, going from
+                <span class="text-neutral-900 font-semibold">user research</span> through
+                <span class="text-neutral-900 font-semibold">information architecture</span>,
+                high-fidelity <span class="text-neutral-900 font-semibold">Figma prototypes</span>, and
+                <span class="text-neutral-900 font-semibold">production frontend</span>.
+                Designs ship the way they were drawn because I see them through to the build.
+            </p>
+        </div>
     </section>
 
-    <section class="bg-neutral-background overflow-hidden py-4">
+    <!--Ticker (minor polish only)-->
+    <section class="bg-neutral-900 overflow-hidden py-5">
         <div class="whitespace-nowrap animate-marquee flex items-center">
-            <span class="inline-flex items-center text-white text-p mx-8">
-            <img src="assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
-            User Experience
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> Product Design
             </span>
-            <span class="inline-flex items-center text-white text-p mx-8">
-            <img src="assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
-            User Interface
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> User Experience
             </span>
-            <span class="inline-flex items-center text-white text-p mx-8">
-            <img src="assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
-            Product Design
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> User Interface
             </span>
-            <span class="inline-flex items-center text-white text-p mx-8">
-            <img src="assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
-            MERN
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> User Research
             </span>
-            <span class="inline-flex items-center text-white text-p mx-8">
-            <img src="assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
-            Rapid Prototyping
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> Information Architecture
             </span>
-            <span class="inline-flex items-center text-white text-p mx-8">
-            <img src="assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
-            Wireframing
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> Rapid Prototyping
             </span>
-            <span class="inline-flex items-center text-white text-p mx-8">
-            <img src="assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
-            Storyboarding
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> Design Systems
             </span>
-            <span class="inline-flex items-center text-white text-p mx-8">
-            <img src="assets/Icon.png" class="w-8 h-8 mr-2" alt="icon" />
-            Interaction Design
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> Interaction Design
+            </span>
+            <span class="inline-flex items-center text-accent-cream text-p mx-8 tracking-wide">
+                <img src="assets/Icon.png" class="w-6 h-6 mr-2 opacity-80" alt="" /> MERN
             </span>
         </div>
     </section>
 
-    <section>
-        <h2 class="text-h2 font-headings my-10 uppercase font-semibold flex justify-center text-neutral-900">
-            Selected Projects
-        </h2>
+    <!--Projects: asymmetric editorial list-->
+    <section id="work" class="bg-accent-cream py-20 lg:py-28">
+        <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 mb-16 flex items-baseline justify-between flex-wrap gap-4">
+            <h2 class="text-h2 font-headings font-semibold uppercase tracking-tight text-neutral-900">Selected Work</h2>
+            <p class="text-sm text-neutral-700 tracking-wide">2021, present</p>
+        </div>
 
-        <!-- Banh Mi -->
-        <div class="h-screen transition-colors duration-1000 hover:bg-banh-bg pt-20">
-            <div class="lg:max-w-7xl lg:mx-auto mx-4">
-                <div class="w-1/2 h-[460px] rounded-md cursor-pointer overflow-hidden group">
-                    <!-- Image with zoom effect -->
-                    <a href="https://banhmibites.ca/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/Banhmi.png" 
-                            alt="Banh Mi" 
-                            class="w-full h-auto transform transition-transform duration-700 ease-in-out group-hover:scale-110" />
-                    </a>
-
+        <!--Project 01, Banh Mi (thumb left)-->
+        <a href="https://banhmibites.ca/" target="_blank" rel="noopener noreferrer"
+           class="project-row block group">
+            <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-t border-neutral-300">
+                <div class="lg:col-span-7 project-thumb overflow-hidden rounded-md bg-banh-bg">
+                    <img src="assets/Banhmi.png" alt="Banh Mi & Bites, restaurant merchandise storefront" class="w-full h-auto" />
                 </div>
-                <h4 class="text-neutral-900 text-h6 font-body font-bold mt-6">Building a digital storefront for restaurant merchandise</h4>
-                <!-- Tags -->
-                <ul class="mt-4 flex flex-wrap items-center gap-2" aria-label="Project tags">
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        Custom Merchandise
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        DTC
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        Digital Retail
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        Full Stack Development                        
+                <div class="lg:col-span-5">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-3">01 / E-commerce · Full-stack</p>
+                    <h3 class="text-h4 font-headings font-semibold text-neutral-900 leading-tight mb-3">
+                        Banh Mi &amp; Bites
+                    </h3>
+                    <p class="text-p text-neutral-800 font-light mb-5">
+                        Designed and built a DTC merchandise storefront for a restaurant brand, sauces, dry goods, and noodles shipped from the kitchen.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 mb-6" aria-label="Project tags">
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">DTC</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Merchandise</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Full-stack</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">MERN</span></li>
+                    </ul>
+                    <span class="view-link text-sm font-semibold tracking-wide text-neutral-900 inline-flex items-center gap-2">
+                        Visit live site <span class="cta-arrow">→</span>
                     </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Belly foods -->
-        <div class="h-screen transition-colors duration-1000 hover:bg-belly-bg pt-20">
-            <div class="lg:max-w-7xl lg:mx-auto mx-4">
-                <div class="w-1/2 h-[460px] rounded-md cursor-pointer overflow-hidden group">
-                    <!-- Image with zoom effect -->
-                    <a href="belly.html" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/belly/belly-cover.png" 
-                            alt="Belly Foods" 
-                            class="w-full h-auto transform transition-transform duration-700 ease-in-out group-hover:scale-110" />
-                    </a>
-
                 </div>
-                <h4 class="text-neutral-900 text-h6 font-body font-bold mt-6">Designing a food ecosystem for all</h4>
-                <!-- Tags -->
-                <ul class="mt-4 flex flex-wrap items-center gap-2" aria-label="Project tags">
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        UI/UX
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        Product Design
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        Mobile App
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        Food Tech
-                        </span>
-                    </li>
-                </ul>
             </div>
-        </div>
+        </a>
 
-
-        <!--Chatter-->
-        <div class="h-screen transition-colors duration-1000 hover:bg-chatter-bg pt-20">
-            <div class="lg:max-w-7xl lg:mx-auto mx-4">
-                <div class="w-1/2 h-[460px] rounded-md cursor-pointer overflow-hidden group">
-                    <!-- Image with zoom effect -->
-                    <a href="chatter.html" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/chatter/chatterthumbnail.png" 
-                            alt="Chatter" 
-                            class="w-full h-auto transform transition-transform duration-700 ease-in-out group-hover:scale-110" />
-                    </a>
-
+        <!--Project 02, Belly (thumb right)-->
+        <a href="belly.html" class="project-row block group">
+            <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-t border-neutral-300">
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-3">02 / Mobile · Two-sided platform</p>
+                    <h3 class="text-h4 font-headings font-semibold text-neutral-900 leading-tight mb-3">
+                        Belly Foods
+                    </h3>
+                    <p class="text-p text-neutral-800 font-light mb-5">
+                        A two-sided food-ordering app for Nepal, designed to give restaurants a fairer, lower-commission alternative to the dominant platform.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 mb-6" aria-label="Project tags">
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Product Design</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Two-sided</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Mobile</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Brand</span></li>
+                    </ul>
+                    <span class="view-link text-sm font-semibold tracking-wide text-neutral-900 inline-flex items-center gap-2">
+                        Read case study <span class="cta-arrow">→</span>
+                    </span>
                 </div>
-                <h4 class="text-neutral-900 text-h6 font-body font-bold mt-6">Simplifying customer conversations for businesses</h4>
-                <!-- Tags -->
-                <ul class="mt-4 flex flex-wrap items-center gap-2" aria-label="Project tags">
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        Business Communication
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        SaaS
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        B2B
-                        </span>
-                    </li>
-                    <li>
-                        <span class="inline-flex items-center rounded-full border border-neutral-400 bg-neutral-200 px-3 py-1 text-xs md:text-sm text-neutral-700 hover:border-neutral-400 hover:shadow-sm transition">
-                        Messaging Platform
-                        </span>
-                    </li>
-                </ul>
+                <div class="lg:col-span-7 order-1 lg:order-2 project-thumb overflow-hidden rounded-md bg-belly-bg">
+                    <img src="assets/belly/belly-cover.png" alt="Belly Foods, food ordering app cover" class="w-full h-auto" />
+                </div>
             </div>
-        </div>
+        </a>
 
-        <!--Misc-->
-            </section>
+        <!--Project 03, Chatter (thumb left)-->
+        <a href="chatter.html" class="project-row block group">
+            <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-t border-neutral-300">
+                <div class="lg:col-span-7 project-thumb overflow-hidden rounded-md bg-chatter-bg">
+                    <img src="assets/chatter/chatterthumbnail.png" alt="Chatter, multi-tenant SaaS messaging platform" class="w-full h-auto" />
+                </div>
+                <div class="lg:col-span-5">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-3">03 / B2B SaaS · Multi-tenant</p>
+                    <h3 class="text-h4 font-headings font-semibold text-neutral-900 leading-tight mb-3">
+                        Chatter
+                    </h3>
+                    <p class="text-p text-neutral-800 font-light mb-5">
+                        Multi-tenant SaaS chat platform, embeddable widget, agent web panel, and GraphQL/REST API. Intercom-class capability for Nepali businesses.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 mb-6" aria-label="Project tags">
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">B2B SaaS</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Multi-tenant</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Web app</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Design System</span></li>
+                    </ul>
+                    <span class="view-link text-sm font-semibold tracking-wide text-neutral-900 inline-flex items-center gap-2">
+                        Read case study <span class="cta-arrow">→</span>
+                    </span>
+                </div>
+            </div>
+        </a>
 
-    
+        <!--Project 04, LMC Ward 10 (thumb right)-->
+        <a href="lalitpur.html" class="project-row block group">
+            <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-t border-b border-neutral-300">
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-3">04 / Civic · Mobile · Bilingual</p>
+                    <h3 class="text-h4 font-headings font-semibold text-neutral-900 leading-tight mb-3">
+                        LMC Ward 10 Survey App
+                    </h3>
+                    <p class="text-p text-neutral-800 font-light mb-5">
+                        A bilingual household and individual census app for Lalitpur Metropolitan City Ward 10, replacing paper surveys with digital capture and GPS-tagged proof of visit.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 mb-6" aria-label="Project tags">
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Civic Tech</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Mobile</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Bilingual</span></li>
+                        <li><span class="inline-flex items-center rounded-full border border-neutral-400 px-3 py-1 text-xs text-neutral-700">Design System</span></li>
+                    </ul>
+                    <span class="view-link text-sm font-semibold tracking-wide text-neutral-900 inline-flex items-center gap-2">
+                        Read case study <span class="cta-arrow">→</span>
+                    </span>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2 project-thumb overflow-hidden rounded-md bg-lalitpur-bg flex items-center justify-center py-8">
+                    <img src="assets/lalitpur/app-login.png" alt="LMC Ward 10 app login screen" class="w-44 lg:w-52 rounded-xl shadow-xl" />
+                </div>
+            </div>
+        </a>
+    </section>
 
     <!--Email me-->
-    <section class="bg-neutral-background py-10 mt-10">
-        <h4 class="text-h4 text-neutral-100 font-headings font-semibold flex justify-center">
-            Lets Connect!
-        </h4>    
-        <div class="text-neutral-100 flex justify-center pt-6">
-            <a href="mailto: sanushkaa4@gmail.com" class="px-4">Email</a>
-            <a href="https://www.linkedin.com/in/sanushkaa4/" class="px-4">Linkedin</a>
-            <a href="https://dribbble.com/AnushkaaSharma" class="px-4">Dribble</a>
+    <section id="connect" class="bg-neutral-900 text-accent-cream py-16 mt-0 scroll-mt-24">
+        <div class="lg:max-w-3xl lg:mx-auto mx-4 px-4 text-center">
+            <p class="text-xs tracking-[0.2em] uppercase text-neutral-400 mb-4">Let's work together</p>
+            <h2 class="text-h2 font-headings font-semibold mb-6">Have a project in mind?</h2>
+            <p class="text-h6 font-light text-neutral-300 mb-8">
+                Open to product design roles, contract work, and interesting briefs across mobile, web, and SaaS.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:sanushkaa4@gmail.com" class="cta-group group bg-accent-cream text-neutral-900 text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:bg-primary-500 hover:text-accent-cream transition-all duration-300">
+                    Email <span class="cta-arrow">→</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/" class="border border-neutral-700 text-accent-cream text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-accent-cream transition-all duration-300">
+                    LinkedIn
+                </a>
+                <a href="https://dribbble.com/AnushkaaSharma" class="border border-neutral-700 text-accent-cream text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-accent-cream transition-all duration-300">
+                    Dribbble
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- <section class="bg-neutral-background">
-        <div class="lg:max-w-7xl lg:mx-auto mx-4 py-10">
-            <div class="grid grid-cols-2 gap-6">
-                <div>
-                    <h4 class="text-neutral-100 text-h4 font-medium">Want to talk <br />about something?</h4>
-                </div>
-                <div>
-                    <h6 class="text-neutral-secondary text-h6 font-semibold">Email Me</h6>
-                    <a href="mailto: sanushkaa4@gmail.com" class="text-p text-neutral-100">anushkasharma</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-     <!--Footer-->
-    <footer class="lg:max-w-7xl lg:mx-auto mx-4">
-        <hr class="h-px bg-neutral-300">
-        <div class="py-5 flex flex-col lg:flex-row lg:justify-between">
-            <div>
-                <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
-            </div>
-            <div class="mt-3 lg:mt-0 flex flex-row justify-center">
-                <a href="mailto: sanushkaa4@gmail.com">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/email.png" />
-                </a>
-                <a href="https://www.linkedin.com/in/sanushkaa4/">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/Linkedin.png" />
-                </a>
-                <a href="https://dribbble.com/AnushkaaSharma">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/dribbble.png" />
-                </a>
-                <a href="https://github.com/AnushkaaSharma">
-                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/github.png" />
-                </a>
+    <!--Footer-->
+    <footer class="bg-neutral-900 text-accent-cream">
+        <div class="lg:max-w-7xl lg:mx-auto mx-4 px-4 border-t border-neutral-800 py-6 flex flex-col lg:flex-row lg:justify-between items-center gap-3">
+            <p class="text-sm font-light">Designed &amp; built by Anushka Sharma.</p>
+            <div class="flex flex-row">
+                <a href="mailto:sanushkaa4@gmail.com" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/email.png" alt="Email" /></a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/Linkedin.png" alt="LinkedIn" /></a>
+                <a href="https://dribbble.com/AnushkaaSharma" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/dribbble.png" alt="Dribbble" /></a>
+                <a href="https://github.com/AnushkaaSharma" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/github.png" alt="GitHub" /></a>
             </div>
         </div>
     </footer>
-    <!--Feather Icons-->
-    <script>
-        feather.replace()
-    </script>
 
-
+    <script>feather.replace()</script>
 </body>
 </html>
