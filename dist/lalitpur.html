@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/navbar.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>LMC Ward 10, Household Survey App · Anushka Sharma</title>
+    <meta name="description" content="Case study: designing a household + individual census survey app for Lalitpur Metropolitan City Ward 10. By Anushka Sharma." />
+</head>
+<body class="font-body text-neutral-900 bg-neutral-100">
+    <!--Navbar-->
+    <nav class="lg:max-w-4xl lg:mx-auto mx-4">
+        <div class="flex justify-between py-3">
+            <div><a href="index.html" class="text-h2 font-logo">A.</a></div>
+            <div class="py-3">
+                <ul class="flex">
+                    <li><a href="index.html" class="text-p text-neutral-700 font-regular mx-6">Work</a></li>
+                    <li><a href="about.html" class="text-p text-neutral-700 font-regular mx-6">About</a></li>
+                    <li><a href="assets/AnushkaSharma.pdf" class="text-p text-neutral-700 font-regular mx-6">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!--Banner-->
+        <section class="bg-lalitpur-100 h-full">
+            <div class="grid mx-4 lg:max-w-4xl h-full lg:mx-auto my-auto grid-cols-1 lg:grid-cols-2 gap-6 items-center py-12">
+                <div class="my-auto py-4">
+                    <h2 class="text-h4 font-semibold text-lalitpur-500">LMC Ward 10, Survey App</h2>
+                    <p class="text-p text-neutral-700 py-2">
+                        A field-worker mobile app for Lalitpur Metropolitan City Ward 10, designed to
+                        replace paper-based household and individual census surveys with a single,
+                        location-assigned digital workflow.
+                    </p>
+                </div>
+                <div class="flex justify-center lg:justify-end gap-4">
+                    <img src="./assets/lalitpur/app-login.png" class="w-40 lg:w-56 rounded-xl shadow-xl" alt="LMC Ward 10 app login screen" />
+                    <img src="./assets/lalitpur/app-form-select.png" class="w-40 lg:w-56 rounded-xl shadow-xl mt-12" alt="LMC Ward 10 form selection screen" />
+                </div>
+            </div>
+        </section>
+
+        <!--Overview-->
+        <section class="my-24 mx-4 lg:max-w-4xl lg:mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div>
+                    <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+                    <h6 class="text-p font-semibold pb-4">Overview</h6>
+                    <p class="text-p font-light">
+                        Lalitpur Metropolitan City Ward 10 covers Jwagal and Kopundole, roughly
+                        1,729 households and 6,554 residents. The ward office needed a digital tool
+                        for field workers to capture standardised household and individual
+                        demographic data, location-by-location, across the entire ward. I designed
+                        the mobile app the workers used in the field.
+                    </p>
+                </div>
+                <div>
+                    <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+                    <h6 class="text-p font-semibold pb-4">At a glance</h6>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1"><span class="font-semibold">Role:</span> UX/UI designer</li>
+                        <li class="pb-1"><span class="font-semibold">Client:</span> LMC Ward 10 office (our office was located within the ward)</li>
+                        <li class="pb-1"><span class="font-semibold">Surface:</span> Mobile app + design system</li>
+                        <li class="pb-1"><span class="font-semibold">Languages:</span> Nepali (Devanagari) + English bilingual labels</li>
+                        <li><span class="font-semibold">Status:</span> Shipped and used in the field; the ward's web presence has since been redesigned at <a href="https://ward10.lmc.gov.np/" target="_blank" rel="noopener" class="text-lalitpur-500 underline">ward10.lmc.gov.np</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--The Problem-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-4">The problem</h6>
+            <p class="text-p font-light">
+                Ward-level census and household surveys in Nepal were, and largely still are
+, paper-driven. A field worker walks a route with a clipboard, fills out long
+                Nepali-language forms by hand, then returns to the ward office where staff re-enter
+                everything into a spreadsheet. The result is predictable: lost forms, illegible
+                handwriting, double entry, no real-time visibility of who'd been surveyed where, and
+                an aggregate dataset that took weeks to compile and could never quite be trusted.
+            </p>
+            <p class="text-p font-light pt-4">
+                Ward 10 wanted to skip that whole pipeline. Capture the same data digitally at the
+                doorstep, tag it to a household with GPS, sync it centrally, and use the same
+                interface every survey worker already understood from paper, in Nepali, with
+                the same field names and the same flow.
+            </p>
+        </section>
+
+        <!--Design constraints-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-4">Designing inside three hard constraints</h6>
+            <p class="text-p font-light">
+                This wasn't a greenfield product where I could invent terminology and flows. Three
+                constraints shaped every design decision.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+                <div class="px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-lalitpur-500 font-semibold pb-2">Match the paper</p>
+                    <p class="text-p font-light">
+                        Workers had been filling the same form for years. The field labels, ordering,
+                        and Nepali wording had to match exactly, otherwise we'd lose the very
+                        muscle memory that made the app fast to use.
+                    </p>
+                </div>
+                <div class="px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-lalitpur-500 font-semibold pb-2">Bilingual, Nepali-first</p>
+                    <p class="text-p font-light">
+                        Devanagari was the primary language; English labels sat in support where
+                        helpful. Every label, validation message, and empty state was bilingual or
+                        Nepali-only, not English with a Nepali sticker on top.
+                    </p>
+                </div>
+                <div class="px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-lalitpur-500 font-semibold pb-2">One thumb, in the field</p>
+                    <p class="text-p font-light">
+                        Workers held the phone at a doorstep, often with one hand. Tap targets stayed
+                        large, primary action sat at the thumb-reachable bottom, and review/preview
+                        screens let workers double-check before save.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Two-form architecture-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-4">Two forms, one household</h6>
+            <p class="text-p font-light">
+                Every household visit produced two linked records: a <em>family</em>-level form
+                (पारिबारिक प्रश्न) capturing dwelling and household-wide data, and one or more
+                <em>individual</em>-level forms (व्यक्तिगत खण्ड), one per member. Splitting the data
+                model into two forms, with a clear card-based picker on the home screen
+, let workers move between them without losing context, and matched the
+                paper survey's existing two-section structure exactly.
+            </p>
+            <div class="mt-8 flex justify-center">
+                <img src="./assets/lalitpur/app-form-select.png" class="w-64 lg:w-80 rounded-xl shadow-xl" alt="Form type selection screen with two cards: Individual and Family" />
+            </div>
+        </section>
+
+        <!--Family form-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-4">Family form: dwelling, ownership, livelihood</h6>
+            <p class="text-p font-light">
+                The family form captures who lives at an address and how. Across two pages, workers
+                log form number, respondent name, head of household, house and street numbers, toll
+                (locality), phone, migration history (if the family moved from another district),
+                primary and secondary occupations, and dwelling-level details like access road type
+                (motor road / bike-only / walk-only) and ancestral-home status. Each section sits in
+                its own card, so a worker can scroll, edit, and review without losing place.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+                <img src="./assets/lalitpur/app-family-form-1.png" class="w-full rounded-xl shadow-lg" alt="Family form page 1, household details" />
+                <img src="./assets/lalitpur/app-family-form-2.png" class="w-full rounded-xl shadow-lg" alt="Family form page 2, continuation" />
+                <img src="./assets/lalitpur/app-family-form-preview.png" class="w-full rounded-xl shadow-lg" alt="Family form preview screen with dwelling info" />
+            </div>
+        </section>
+
+        <!--Individual form-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-4">Individual form: per-member demographics</h6>
+            <p class="text-p font-light">
+                Each member of the household gets their own record. Name, relation to head of
+                household, gender, parents' names, age, marital status, blood group, mobile, email.
+                An <em>Add new member</em> action lets a worker capture an entire household in one
+                sitting; the form preserves shared context (household name, head of family) across
+                members so workers aren't re-typing the same fields five times.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+                <img src="./assets/lalitpur/app-individual-form.png" class="w-full rounded-xl shadow-lg" alt="Individual form with relation, gender, blood group, contact" />
+                <img src="./assets/lalitpur/app-individual-form-preview.png" class="w-full rounded-xl shadow-lg" alt="Individual form preview screen" />
+            </div>
+        </section>
+
+        <!--Location & attendance-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-4">Routing, coverage, and proof-of-visit</h6>
+            <p class="text-p font-light">
+                Each worker is assigned a location for their day's route. The attendance screen
+                pins it on a map (heritage landmarks like Patan Durbar Square and Manga Hiti show
+                up, this is real Kathmandu Valley geography), captures whether the owner
+                was available, and lets the worker upload a photo of the house. That photo plus
+                the GPS pin is the audit trail: ward office knows the visit actually happened,
+                where, and to which dwelling.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+                <img src="./assets/lalitpur/app-attendance.png" class="w-full rounded-xl shadow-lg" alt="Attendance sheet with map showing assigned location in Patan area" />
+                <img src="./assets/lalitpur/app-attendance-2.png" class="w-full rounded-xl shadow-lg" alt="Attendance sheet with owner availability and uploaded house photo" />
+                <img src="./assets/lalitpur/app-location-preview.png" class="w-full rounded-xl shadow-lg" alt="Location preview with availability and house photo upload" />
+            </div>
+        </section>
+
+        <!--Design system-->
+        <section class="my-24 py-24 bg-lalitpur-100">
+            <div class="lg:max-w-4xl lg:mx-auto mx-4">
+                <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+                <h6 class="text-p font-semibold pb-4">A small, opinionated design system</h6>
+                <p class="text-p font-light">
+                    Because so many fields and screens share the same patterns, radio groups,
+                    checkboxes, inputs, status states, dropdowns, modals, I built a
+                    component library before drawing the screens. That kept the long forms feeling
+                    consistent and let the engineering team build them faster.
+                </p>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-10 items-start">
+                    <div>
+                        <img src="./assets/lalitpur/ds-buttons.png" class="w-full rounded-lg" alt="Button styles" />
+                        <p class="text-sm text-neutral-700 text-center pt-2">Buttons</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lalitpur/ds-input.png" class="w-full rounded-lg" alt="Text input states" />
+                        <p class="text-sm text-neutral-700 text-center pt-2">Inputs</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lalitpur/ds-radio.png" class="w-full rounded-lg" alt="Radio states" />
+                        <p class="text-sm text-neutral-700 text-center pt-2">Radio</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lalitpur/ds-checkbox.png" class="w-full rounded-lg" alt="Checkbox states" />
+                        <p class="text-sm text-neutral-700 text-center pt-2">Checkbox</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lalitpur/ds-status.png" class="w-full rounded-lg" alt="Status indicators" />
+                        <p class="text-sm text-neutral-700 text-center pt-2">Status</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lalitpur/ds-modal.png" class="w-full rounded-lg" alt="Modal pattern" />
+                        <p class="text-sm text-neutral-700 text-center pt-2">Modal</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lalitpur/ds-form-type-card.png" class="w-full rounded-lg" alt="Form type card component" />
+                        <p class="text-sm text-neutral-700 text-center pt-2">Form-type card</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lalitpur/ds-icons.png" class="w-full rounded-lg" alt="Mobile app icons" />
+                        <p class="text-sm text-neutral-700 text-center pt-2">Icon set</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Saved state-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-4">Close the loop</h6>
+            <p class="text-p font-light">
+                Every form submission ends with the same calm success screen. Workers see a single
+                clear confirmation, then a Continue action that takes them straight back into their
+                route. No celebration, no extra clicks, this is government data work, and the
+                fastest possible turnaround per household is the actual feature.
+            </p>
+            <div class="mt-8 flex justify-center">
+                <img src="./assets/lalitpur/app-data-saved.png" class="w-56 lg:w-72 rounded-xl shadow-xl" alt="Data saved successfully confirmation screen" />
+            </div>
+        </section>
+
+        <!--Outcome-->
+        <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-2">Outcome</h6>
+            <p class="text-p font-light">
+                The app shipped and was used by Ward 10 field workers to survey households in
+                Jwagal and Kopundole, a ward of roughly 1,729 households and 6,554 residents.
+                The design replaced the previous paper-and-spreadsheet pipeline with single-pass
+                digital capture, GPS-tagged proof of visit, and central sync.
+            </p>
+            <p class="text-p font-light pt-4">
+                The ward's public web presence has since been rebuilt at
+                <a href="https://ward10.lmc.gov.np/" target="_blank" rel="noopener" class="text-lalitpur-500 underline">ward10.lmc.gov.np</a>,
+                which now points residents at external government portals for forms and incident
+                reporting. The app I designed sits behind that change, in the parts of the ward's
+                operations that residents don't see.
+            </p>
+        </section>
+
+        <!--Reflection-->
+        <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-lalitpur-500">
+            <h6 class="text-p font-semibold pb-2">What I'd take into the next project</h6>
+            <ul class="text-p pl-4 font-light list-disc list-outside">
+                <li class="pb-2">
+                    <span class="font-semibold">Sit next to the user before you draw.</span>
+                    Designing for workers I could talk to in person changed which fields belonged on
+                    the same screen, where validation could relax, and how aggressive the bilingual
+                    labelling needed to be. None of that came out of a brief.
+                </li>
+                <li class="pb-2">
+                    <span class="font-semibold">Match existing mental models, then improve.</span>
+                    The temptation in a digital-replaces-paper project is to redesign the whole
+                    form. Keeping the field order, labels, and Nepali wording was the unglamorous
+                    decision that made adoption real.
+                </li>
+                <li>
+                    <span class="font-semibold">Government work is design work.</span>
+                    Civic and public-sector tools rarely show up in portfolios because they're
+                    bilingual, regulated, and built to a brief. They're also where design has the
+                    most direct effect on people's lives, I'd take more of this kind of work.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="mt-12 lg:max-w-4xl lg:mx-auto mx-4">
+        <hr class="h-px bg-neutral-300">
+        <div class="py-5 flex flex-col lg:flex-row lg:justify-between">
+            <div>
+                <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
+            </div>
+            <div class="mt-3 lg:mt-0 flex flex-row justify-center">
+                <a href="mailto: sanushkaa4@gmail.com"><img class="lg:my-0 mx-2 w-7 h-7" src="./assets/email.png" alt="Email" /></a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/"><img class="lg:my-0 mx-2 w-7 h-7" src="./assets/Linkedin.png" alt="Linkedin" /></a>
+                <a href="https://dribbble.com/AnushkaaSharma"><img class="lg:my-0 mx-2 w-7 h-7" src="./assets/dribbble.png" alt="Dribbble" /></a>
+                <a href="https://github.com/AnushkaaSharma"><img class="lg:my-0 mx-2 w-7 h-7" src="./assets/github.png" alt="Github" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>feather.replace()</script>
+</body>
+</html>

@@ -3,15 +3,6 @@ module.exports = {
  content: ["./dist/**/*.html", "./src/**/*.css"],
   theme: {
     extend: {
-      keyframes: {
-        marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
-        }
-      },
-      animation: {
-        marquee: 'marquee 40s linear infinite',
-      },
       colors: {
         neutral: {
           '100': '#FAFAFA',
@@ -38,7 +29,42 @@ module.exports = {
         },
         banh: {
           'bg': '#E3E4F2',
-        }
+        },
+        lalitpur: {
+          '100': '#EFF6FF',
+          '500': '#2563EB',
+          '600': '#1D4ED8',
+          'bg':  '#DBEAFE',
+        },
+        primary: {
+          '400': '#F47A62',
+          '500': '#ED644A',
+          '600': '#D9492E',
+        },
+        accent: {
+          'cream': '#FAF5EE',
+          'paper': '#FBF7F0',
+          'ink':   '#1A1A1A',
+        },
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        fadeUp: {
+          '0%':   { opacity: '0', transform: 'translateY(12px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scrollDot: {
+          '0%, 100%': { transform: 'translateY(0)', opacity: '0.4' },
+          '50%':      { transform: 'translateY(6px)', opacity: '1' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 40s linear infinite',
+        'fade-up': 'fadeUp 0.7s cubic-bezier(0.2,0.7,0.2,1) both',
+        'scroll-dot': 'scrollDot 1.8s ease-in-out infinite',
       },
       fontSize: {
         'sm': ['14px', '20px'],

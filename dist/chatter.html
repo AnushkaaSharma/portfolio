@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../src/navbar.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <title>Chatter — B2B Messaging SaaS · Anushka Sharma</title>
+    <title>Chatter, B2B Messaging SaaS · Anushka Sharma</title>
     <meta name="description" content="Case study: designing Chatter, a B2B SaaS platform that simplifies customer conversations for businesses. By Anushka Sharma." />
 </head>
 <body class="font-body text-neutral-900 bg-neutral-100">    
@@ -50,7 +50,9 @@
                 <div class="my-auto py-4">
                     <h2 class="text-h4 font-semibold text-chatter-500">Chatter</h2>
                     <p class="text-p text-neutral-700 py-2">
-                        Chatter enables chat communication with your site's visitors , either registered users or anonymous. 
+                        A multi-tenant SaaS chat platform, embeddable widget, agent web panel,
+                        and GraphQL/REST API, designed to give Nepali businesses Intercom-class
+                        customer engagement without the global price tag.
                     </p>
                 </div>
                 <div>
@@ -58,118 +60,151 @@
                 </div>
             </div>
         </section>
+
         <!--Project Overview-->
         <section class="my-24 mx-4 lg:max-w-4xl lg:mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                 <div>
                     <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
                     <h6 class="text-p font-semibold pb-4">
-                        Project Overview
+                        Overview
                     </h6>
-                    <p class="text-p font-light text-justify">
-                        Chatter is a SaaS application that is specifically 
-                        designed to help businesses manage their interactions 
-                        with customers through messaging. It offers features 
-                        such as group chat, direct messaging, and the ability
-                        to share files and other content.
+                    <p class="text-p font-light">
+                        Chatter is a B2B SaaS customer-engagement platform. Businesses install an
+                        embeddable widget on their site with a JS snippet; their agents log into a
+                        web panel to triage conversations, manage contacts, run email/SMS campaigns,
+                        and track tasks. The product is multi-tenant, one panel manages
+                        unlimited apps for different sites, and sits on a GraphQL and REST
+                        API surface, with end-to-end encrypted message payloads (JWE).
                     </p>
                 </div>
                 <div>
                     <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
                     <h6 class="text-p font-semibold pb-4">
-                        My Roles
+                        At a glance
                     </h6>
                     <ul class="text-p pl-4 font-light list-disc list-outside">
-                        <li class="pb-1 text-justify">
-                            Conducting user research to understand how businesses and customers use chat for communication.
-                        </li>
-                        <li class="pb-1 text-justify">
-                            Planned and organized project tasks into sprints to efficiently break down and complete the project.
-                        </li>
-                        <li class="pb-1 text-justify">
-                            I also worked closely with developers to ensure that the chat features 
-                            are implemented according to the design specifications and function as intended.
-                        </li>
-                        <li class="text-justify">
-                            Additionally, I was also involved in defining and enforcing design standards and guidelines for the overall CRM application.
-                        </li>
+                        <li class="pb-1"><span class="font-semibold">Role:</span> UX/UI designer, sole designer on the product</li>
+                        <li class="pb-1"><span class="font-semibold">Team:</span> Designer + engineering team at Core Software Integrated</li>
+                        <li class="pb-1"><span class="font-semibold">Scope:</span> Research, IA, sitemap, sprint planning, end-to-end UI</li>
+                        <li class="pb-1"><span class="font-semibold">Surface:</span> Web admin panel + embeddable widget + companion mobile app</li>
+                        <li><span class="font-semibold">Status:</span> Designed end-to-end, scoped into a four-phase build roadmap</li>
                     </ul>
                 </div>
             </div>
         </section>
-        <!--Desc-->
+
+        <!--The Problem-->
         <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
-            <p class="text-p font-light text-justify">
-                Chatter is a customer relationship management, is a platform that helps businesses 
-                manage and track their customer interactions, sales, and support. It typically provides
-                tools for managing customer information, such as contact details and purchase history, 
-                and for automating and tracking sales and support activities. Web-based CRMs often integrate
-                with other business systems and tools, such as email and messaging platforms, to provide a 
-                central hub for managing customer relationships. They may also offer features such as chat 
-                and messaging tools, as well as integrations with social media and other channels, to help 
-                businesses communicate with their customers in real-time and across multiple channels.
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold pb-4">The problem</h6>
+            <p class="text-p font-light">
+                Globally, the customer-engagement category was crowded, Intercom, Crisp,
+                Drift, Zendesk, but every one of those tools shared two friction points for
+                a Nepali business: priced in USD at seat counts most local teams couldn't justify,
+                and built around channels, currencies, and workflows tuned for North American
+                markets. The cheaper alternatives (Tawk.to, basic widget plugins) solved the chat
+                box but stopped there, no shared inbox, no contact history, no marketing,
+                no pipeline.
             </p>
-            <div class="mt-3">
-                <p class="font-light">The project was divided into four phases:</p>
-                <ul class="text-p pt-3 pl-4 font-light list-disc list-outside">
-                    <li class="pb-1 text-justify">
-                        Support
-                    </li>
-                    <li class="pb-1 text-justify">
-                        Marketing
-                    </li>
-                    <li class="pb-1 text-justify">
-                        Sales
-                    </li>
-                    <li class="text-justify">
-                        Management and operation
-                    </li>
-                </ul>
+            <p class="text-p font-light pt-4">
+                Local businesses ended up doing customer engagement across five disconnected apps:
+                Facebook Messenger, WhatsApp, Viber, IG DM, and email. Conversations leaked between
+                channels. There was no team inbox, no ticket history, no contact record tying it
+                all together. Chatter set out to be that missing layer, a single, locally
+                built SaaS covering support, marketing, sales, and operations end-to-end, priced
+                for the market it served.
+            </p>
+        </section>
+
+        <!--Anatomy of the product-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold pb-4">Anatomy of the product</h6>
+            <p class="text-p font-light">
+                Chatter is three surfaces stitched together. Each one targets a different audience,
+                and the design work spans all three.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-chatter-500 font-semibold">Embeddable widget</p>
+                    <p class="font-light pt-2">
+                        A JS snippet drops into any host site. End customers chat through it,
+                        anonymous or signed in, with FAQ, knowledge-base lookup, and
+                        live-agent escalation built in.
+                    </p>
+                </div>
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-chatter-500 font-semibold">Web admin panel</p>
+                    <p class="font-light pt-2">
+                        The agent workspace. Shared inbox, conversation routing, contact records,
+                        marketing campaigns, sales pipeline, task boards, the operational
+                        heart of the product.
+                    </p>
+                </div>
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-chatter-500 font-semibold">API surface</p>
+                    <p class="font-light pt-2">
+                        GraphQL and REST endpoints with JWE-encrypted payloads. Multi-tenant by
+                        design, one panel manages unlimited apps for unlimited sites.
+                    </p>
+                </div>
             </div>
-            <!--Grouped-->
+        </section>
+
+        <!--Phased Roadmap-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold pb-4">A four-phase build, ordered by who needed it first</h6>
+            <p class="text-p font-light">
+                The feature set was too large to ship in one go. I worked with the team to organise
+                it into four prioritised phases, each one mapped to a distinct user inside the
+                customer's company. Support went first because that was the bleeding wound,
+                everything else compounded on the foundation it laid.
+            </p>
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 my-12">
                 <div class="text-p px-4 py-5 border border-b-neutral-400 rounded-lg">
-                    <p class="text-chatter-500 font-semibold">Support</p>
-                    <ul class="text-p pt-3 pl-4 font-light list-decimal">
-                        <li class="pb-1">
-                            Shared team inbox
-                        </li>
-                        <li class="pb-1">
-                            Messenger
-                        </li>
-                        <li class="pb-1">
-                            Knowledge Base
-                        </li>
+                    <p class="text-chatter-500 font-semibold">1. Support team</p>
+                    <p class="font-light pt-2 pb-3">
+                        Stop the inbox bleeding.
+                    </p>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1">Shared team inbox</li>
+                        <li class="pb-1">Messenger widget with FAQ + auto-reply</li>
+                        <li>Knowledge base &amp; tickets</li>
                     </ul>
                 </div>
                 <div class="text-p px-4 py-5 border border-b-neutral-400 rounded-lg">
-                    <p class="text-chatter-500 font-semibold">Marketing</p>
-                    <ul class="text-p pt-3 pl-4 font-light list-decimal">
-                        <li class="pb-1">
-                            Email and SMS marketing
-                        </li>
+                    <p class="text-chatter-500 font-semibold">2. Marketing team</p>
+                    <p class="font-light pt-2 pb-3">
+                        Turn conversations into outbound.
+                    </p>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1">Email &amp; SMS campaigns</li>
+                        <li class="pb-1">Segmentation</li>
+                        <li>Templates &amp; engagement analytics</li>
                     </ul>
                 </div>
                 <div class="text-p px-4 py-5 border border-b-neutral-400 rounded-lg">
-                    <p class="text-chatter-500 font-semibold">Sales</p>
-                    <ul class="text-p pt-3 pl-4 font-light list-decimal">
-                        <li class="pb-1">
-                            Contact management
-                        </li>
-                        <li class="pb-1">
-                            Automation
-                        </li>
+                    <p class="text-chatter-500 font-semibold">3. Sales team</p>
+                    <p class="font-light pt-2 pb-3">
+                        Convert engagement into pipeline.
+                    </p>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1">Contact management with history</li>
+                        <li class="pb-1">Tags &amp; segments</li>
+                        <li>Trigger-based automation</li>
                     </ul>
                 </div>
                 <div class="text-p px-4 py-5 border border-b-neutral-400 rounded-lg">
-                    <p class="text-chatter-500 font-semibold">Management & Operation</p>
-                    <ul class="text-p pt-3 pl-4 font-light list-decimal">
-                        <li class="pb-1">
-                            Task management
-                        </li>
-                        <li class="pb-1">
-                            Mobile App
-                        </li>
+                    <p class="text-chatter-500 font-semibold">4. Management &amp; ops</p>
+                    <p class="font-light pt-2 pb-3">
+                        Run the team from anywhere.
+                    </p>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1">Task boards &amp; pipelines</li>
+                        <li class="pb-1">Calendar &amp; assignment</li>
+                        <li>Companion mobile app</li>
                     </ul>
                 </div>
             </div>
@@ -180,8 +215,32 @@
             <h6 class="text-p font-semibold">
                 Sitemap and flow
             </h6>
+            <p class="text-p font-light pt-3">
+                With no incumbent product to react against, I had to define the information
+                architecture from first principles. The sitemap below shows how the four phases
+                map onto the navigation an agent sees inside the web panel, with the embeddable
+                widget hanging off the support module on the customer-facing side.
+            </p>
             <div class="mt-6 flex justify-center">
-                <img class="lg:w-2/3" src="./assets/chatter/IA-chatter.png" alt="IA chatter" />
+                <img class="lg:w-2/3" src="./assets/chatter/IA-chatter.png" alt="Chatter sitemap and information architecture" />
+            </div>
+        </section>
+
+        <!--Marketing Site / Landing Page-->
+        <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold">
+                The marketing surface
+            </h6>
+            <p class="text-p font-light pt-3">
+                Before the product, the landing page. Chatter sold itself on three things: an open
+                alternative to expensive global tools, a complete CRM under one roof, and pricing
+                in the right currency. The site lays those out in order, services, social
+                proof, pricing, get-started.
+            </p>
+            <div class="mt-6">
+                <img class="w-full drop-shadow-xl rounded-lg" src="./assets/chatter/landing-1440.jpg" alt="Chatter landing page, services, testimonials, pricing tiers" />
+                <p class="text-sm font-light text-neutral-700 pt-2 text-center">Landing page (1440px), services, social proof, pricing.</p>
             </div>
         </section>
 
@@ -189,81 +248,198 @@
         <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
             <h6 class="text-p font-semibold">
-                Final Screens
+                Designs by phase
             </h6>
-            <div class="my-2">
-                <div>
-                    <p class="font-semibold">Login</p>
-                    <p class="font-light pt-1">
-                        A simple sign up page that allow users to either log in using Google, Apple and Linkedin.
-                    </p>
-                    <img
-                        class="mt-6 drop-shadow-lg" 
-                        src="./assets/chatter/login.png" alt="Login" />
+            <p class="text-p font-light pt-3">
+                Below are the designs grouped by the same four phases the build was scoped into.
+                Each block opens with the user problem the screens were resolving, then shows the
+                designs that answered back.
+            </p>
+
+            <!--Onboarding & Auth-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Onboarding &amp; auth</p>
+                <p class="font-light pt-1">
+                    A new SMB owner shouldn't need an IT team to start. Single-tap social sign-in,
+                    a recoverable password flow, and email verification, every step is one
+                    decision wide.
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/auth-login.jpg" alt="Login screen" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/auth-login-2.jpg" alt="Login screen, alternate variant" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/auth-forgot.jpg" alt="Forgot password screen" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/auth-email.jpg" alt="Email entry for password reset" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/auth-verification.jpg" alt="Verification code entry" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/auth-set-password.jpg" alt="Set new password screen" />
                 </div>
-                <div class="my-12">
-                    <p class="font-semibold">Channels</p>
-                    <p class="font-light pt-1">
-                        Integrating channels allows users to access and interact with the application
-                        through a variety of platforms such as social media, messaging apps, or 
-                        other third-party tools.
-                    </p>
-                    <img
-                        class="mt-6 drop-shadow-lg" 
-                        src="./assets/chatter/Channel.jpg" alt="Channel" />
-                    <img
-                        class="mt-6 drop-shadow-lg" 
-                        src="./assets/chatter/channel.png" alt="Channel" />
+            </div>
+
+            <!--Workspace setup-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">First-run: create a workspace</p>
+                <p class="font-light pt-1">
+                    Chatter is multi-tenant, so the first thing a new user does is create an
+                    organisation. The empty state explains what a workspace is for; the create
+                    flow gathers the minimum needed to spin one up.
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/org-empty.jpg" alt="Create organization, empty state" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/org-create.jpg" alt="Create organization form" />
                 </div>
-                <div class="my-12">
-                    <p class="font-semibold">Boards</p>
-                    <p class="font-light pt-1">
-                        Boards allow users to organize and track tasks and projects by creating
-                        a visual representation of the work that needs to be done. Boards are 
-                        used to track the progress of individual tasks or projects, assign 
-                        tasks to team members, set deadlines, and collaborate with others. 
-                        It also offers features such as comments, attachments, and integration with other tools and platforms.
-                    </p>
-                    <img
-                        class="mt-6 drop-shadow-lg" 
-                        src="./assets/chatter/boards.png" alt="Boards" />
-                    <img
-                        class="mt-6 drop-shadow-lg" 
-                        src="./assets/chatter/boardmodals.png" alt="Boardmodals" />
+            </div>
+
+            <!--Phase 1: Support, Team inbox-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Phase 1, Team inbox</p>
+                <p class="font-light pt-1">
+                    The core of the product: a shared inbox where every channel lands. Agents see
+                    the conversation list, the active thread, and the customer's right-rail profile
+                    side-by-side, with mark-as-ticket, assignment, tags, and call escalation
+                    inline. Internal team chat hangs off the same shell.
+                </p>
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/inbox-conversation.jpg" alt="Team inbox, active conversation with customer right-rail" />
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/inbox-empty.jpg" alt="Inbox empty state" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/inbox-no-user.jpg" alt="Inbox, anonymous visitor without contact info" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/inbox-internal.jpg" alt="Internal team chat, sender view" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/inbox-internal-receiver.jpg" alt="Internal team chat, receiver view" />
                 </div>
-                <div class="my-12">
-                    <p class="font-semibold">Billing</p>
-                    <p class="font-light pt-1">
-                        We have subscription-based billing where customers pay a recurring fee on a regular basis, 
-                        monthly or annually and access your service. This model can be further customized with 
-                        different pricing tiers or plans, allowing customers to choose the level of service 
-                        that best meets their needs.
-                    </p>
-                    <img
-                        class="mt-6 drop-shadow-lg" 
-                        src="./assets/chatter/billing.png" alt="Billing" />
+            </div>
+
+            <!--Phase 1: Channels-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Phase 1, Channel integrations</p>
+                <p class="font-light pt-1">
+                    Each external channel (Messenger, WhatsApp, Viber, web widget) has its own
+                    empty-state setup screen that walks the SMB owner through connecting their
+                    account, no engineering required.
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/channels-empty-1.jpg" alt="Channels, empty state, integration list" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/channels-empty-2.jpg" alt="Channels, setup variant 2" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/channels-empty-3.jpg" alt="Channels, setup variant 3" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/channels-empty-4.jpg" alt="Channels, setup variant 4" />
                 </div>
-                <div class="my-12">
-                    <p class="font-semibold">Chat widget</p>
-                    <p class="font-light pt-1">
-                        This allows users to communicate with a support team in real time.
-                        These widgets are customized in various colors in order to differentiate between 
-                        the type of users.
-                    </p>
-                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                        <img
-                            class="mt-6 drop-shadow-lg" 
-                            src="./assets/chatter/Chat FAQ.png" alt="Chat FAQ" />
-                        <img
-                            class="mt-6 drop-shadow-lg" 
-                            src="./assets/chatter/Support 2.png" alt="Support 2" />
-                        <img
-                            class="mt-6 drop-shadow-lg" 
-                            src="./assets/chatter/Support 3.png" alt="Support 3" />
-                        <img
-                            class="mt-6 drop-shadow-lg" 
-                            src="./assets/chatter/Support 4.png" alt="Support 4" />
-                    </div>
+            </div>
+
+            <!--Phase 1: Knowledge base-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Phase 1, Knowledge base &amp; FAQs</p>
+                <p class="font-light pt-1">
+                    Half the support volume in any SMB is repeat questions. The knowledge base lets
+                    the team write articles and tutorials, organise them by topic, and surface them
+                    inside the embeddable widget as self-serve FAQs, cutting the inbox load
+                    before a conversation even starts.
+                </p>
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/kb-support.jpg" alt="Knowledge base, Support landing with articles and tutorials" />
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/kb-faqs.jpg" alt="Knowledge base, FAQs section" />
+            </div>
+
+            <!--Phase 1: Widget-->
+            <div class="my-16">
+                <p class="font-light pt-1">
+                    The embeddable widget itself ships in multiple variants, FAQ-first,
+                    direct-to-agent, and color-themed for different host sites, designed to
+                    feel native to whatever site it lands on.
+                </p>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                    <img class="drop-shadow-lg rounded" src="./assets/chatter/widget-chat.png" alt="Chat widget, main state" />
+                    <img class="drop-shadow-lg rounded" src="./assets/chatter/widget-conversation.png" alt="Chat widget, active conversation" />
+                    <img class="drop-shadow-lg rounded" src="./assets/chatter/widget-chat-support.png" alt="Chat widget, support flow" />
+                    <img class="drop-shadow-lg rounded" src="./assets/chatter/Chat FAQ.png" alt="Chat widget, FAQ variant" />
+                    <img class="drop-shadow-lg rounded" src="./assets/chatter/Support 2.png" alt="Chat widget, support variant 2" />
+                    <img class="drop-shadow-lg rounded" src="./assets/chatter/Support 3.png" alt="Chat widget, support variant 3" />
+                    <img class="drop-shadow-lg rounded" src="./assets/chatter/Support 4.png" alt="Chat widget, support variant 4" />
+                </div>
+            </div>
+
+            <!--Phase 2: Marketing-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Phase 2, Marketing &amp; analytics</p>
+                <p class="font-light pt-1">
+                    Once conversations are flowing in, they become a customer list. Marketing turns
+                    that list into outbound, engagement campaigns segmented by tag,
+                    behaviour, or conversation history. The analytics view shows performance broken
+                    down by channel: Messenger, SMS, Email.
+                </p>
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/marketing-engagement.jpg" alt="Customer engagement screen for marketing campaigns" />
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/marketing-analytics.jpg" alt="Marketing analytics, total clicks by day and by channel" />
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/Email.jpg" alt="Email composition screen" />
+            </div>
+
+            <!--Phase 3: Sales, Contacts-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Phase 3, Contact management</p>
+                <p class="font-light pt-1">
+                    Visitors, customers, and companies all live in one filterable table with tags,
+                    segments, and primary contact channels. Clicking a row opens a full profile
+                    with personal info, conversation notes, email thread, and shared files
+, the audit trail a sales rep needs before picking up the phone.
+                </p>
+                <div class="grid grid-cols-1 gap-6 mt-6">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-customers.jpg" alt="Contacts, customer list with filters and tags" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-customers-select.jpg" alt="Contacts, table multi-select for bulk actions" />
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-visitors.jpg" alt="Contacts, anonymous visitors view" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-company.jpg" alt="Contacts, companies view" />
+                </div>
+                <p class="font-light pt-6 pb-3">
+                    The contact detail page anchors everything: personal info, notes, email
+                    thread, and files all rendered in tabs so the rep can move between context
+                    without leaving the customer.
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-2">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-user-info.jpg" alt="Contact detail, personal info" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-user-edit.jpg" alt="Contact detail, edit mode" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-notes.jpg" alt="Contact detail, notes tab" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-customer-email.jpg" alt="Contact detail, email thread" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/contacts-customer-files.jpg" alt="Contact detail, files tab" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/profile.jpg" alt="Profile screen" />
+                </div>
+            </div>
+
+            <!--Phase 4: Ops, Boards-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Phase 4, Boards: pipelines &amp; ops</p>
+                <p class="font-light pt-1">
+                    Boards are where engagement becomes pipeline. Each conversation can be promoted
+                    onto a board, assigned to a teammate, deadlined, and tracked through stages.
+                    The same board surface backs both sales pipelines and operational task lists,
+                    so a single SMB owner doesn't have to context-switch between two products.
+                </p>
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/boards-empty.jpg" alt="Boards, empty state" />
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/boards-active.jpg" alt="Boards, active pipeline with cards" />
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/boards-active-2.jpg" alt="Boards, alternate pipeline view" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/boards-detail.png" alt="Board card detail with comments and attachments" />
+                </div>
+            </div>
+
+            <!--Settings-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Settings &amp; team availability</p>
+                <p class="font-light pt-1">
+                    Agent availability windows, team management, integration credentials, and
+                    workspace preferences all sit in one settings surface, structured so
+                    admins can find what they need without spelunking through nested menus.
+                </p>
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/settings.jpg" alt="Settings screen" />
+            </div>
+
+            <!--Billing & Add-ons-->
+            <div class="my-16">
+                <p class="text-chatter-500 font-semibold">Billing, add-ons, &amp; the marketplace</p>
+                <p class="font-light pt-1">
+                    A locally priced subscription is half the pitch, the other half is
+                    optional add-ons (extra channels, automation tiers, integrations) the customer
+                    can opt into without leaving the app. The add-ons store is self-serve with a
+                    cart, so an SMB doesn't have to email sales to upgrade.
+                </p>
+                <img class="mt-6 w-full drop-shadow-lg rounded" src="./assets/chatter/billing.jpg" alt="Billing screen with subscription tiers" />
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/addons-store.jpg" alt="Add-ons store" />
+                    <img class="w-full drop-shadow-lg rounded" src="./assets/chatter/addons-cart-empty.jpg" alt="Add-ons cart, empty state" />
                 </div>
             </div>
         </section>
@@ -346,46 +522,49 @@
                 </div>
             </div>
         </section>
-        <!--Takeaways-->
+        <!--Outcome-->
         <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
-            <h6 class="text-p font-semibold pb-2">
-                Takeaways
-            </h6>
-            <p class="text-p font-light text-justify">
-                <strong class="font-semibold">
-                    Keeping it simple:
-                </strong>
-                The simpler the design, the easier it is for users to
-                navigate and accomplish tasks. One should avoid cluttered interfaces,
-                excessive features, or confusing terminology.
+            <h6 class="text-p font-semibold pb-2">Outcome</h6>
+            <p class="text-p font-light">
+                Chatter reached a fully designed product, widget, admin panel, and the
+                companion mobile app, scoped into a four-phase build plan that engineering
+                could pick up sprint by sprint. The IA, design system, and screen library cover
+                the entire feature set in the spec: support, marketing, sales, and operations.
             </p>
-            <p class="text-p pt-1 font-light text-justify">
-                <strong class="font-semibold">
-                    Responsive design:
-                </strong> The application should be responsive across various devices, screen sizes, 
-                and browsers. This way, users can access the application from anywhere, at any time.
-            </p>
-            <p class="text-p pt-1 font-light text-justify">
-                <strong class="font-semibold">
-                    Creating a seamless user experience:
-                </strong> 
-                Ensuring that the application has a consistent look and feel, 
-                and that users can move through the application with ease.
+            <p class="text-p font-light pt-4">
+                Chatter didn't reach a public launch during my tenure at Core Software Integrated.
+                The design was complete; the build was still in progress when I moved on. That
+                means the work was never validated with live users, which I'm upfront about. What
+                I can speak to is what was designed, why each decision was made, and how the
+                roadmap was scoped to be buildable.
             </p>
         </section>
-        <!--Next steps-->
+
+        <!--Reflection-->
         <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
-            <h6 class="text-p font-semibold pb-2">
-                Next Steps
-            </h6>
-            <p class="text-p font-light text-justify">
-                The next step would be to collaborate with the
-                development team to develop, deploy
-                test and launch. After launching, we need to ensure
-                that it provides value to users and meets their needs.    
-            </p>
+            <h6 class="text-p font-semibold pb-2">What I'd take into the next project</h6>
+            <ul class="text-p pl-4 font-light list-disc list-outside">
+                <li class="pb-2">
+                    <span class="font-semibold">Define the category, don't copy one.</span>
+                    With no incumbent to react against, the IA had to be argued from first
+                    principles. That's harder than redesigning a known product, and more
+                    formative. I'd reach for that kind of greenfield problem again.
+                </li>
+                <li class="pb-2">
+                    <span class="font-semibold">Phase before you design.</span>
+                    Scoping the build into four prioritised phases before drawing a single screen
+                    kept the design grounded in what would actually ship in which sprint, instead
+                    of polishing a feature that wasn't on the near-term roadmap.
+                </li>
+                <li>
+                    <span class="font-semibold">Design the embed, not just the app.</span>
+                    The widget is the only surface most end-customers ever see, it has to
+                    feel native to every host site it lands on. Designing for that variability
+                    forced earlier component thinking than a typical product would.
+                </li>
+            </ul>
         </section>
     </main>
 
