@@ -30,6 +30,12 @@ module.exports = {
         banh: {
           'bg': '#E3E4F2',
         },
+        wildfire: {
+          '100': '#EFF3FA',
+          '500': '#234075',
+          '600': '#1B3159',
+          'bg':  '#DDE6F4',
+        },
         lalitpur: {
           '100': '#EFF6FF',
           '500': '#2563EB',

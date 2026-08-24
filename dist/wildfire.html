@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/navbar.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Campfire Verdict · Anushka Sharma</title>
+    <meta name="description" content="UX case study: Campfire Verdict, a decision feature for the BC Wildfire Service app that tells a camper in under 30 seconds whether a fire is safe and legal at their exact site. By Anushka Sharma." />
+</head>
+<body class="font-body text-neutral-900 bg-neutral-100">
+    <!--Navbar (on navy hero)-->
+    <header class="bg-wildfire-500">
+        <nav class="lg:max-w-6xl lg:mx-auto mx-4">
+            <div class="flex justify-between py-3">
+                <div><a href="index.html" class="text-h2 font-logo text-neutral-100">A.</a></div>
+                <div class="py-3">
+                    <ul class="flex">
+                        <li><a href="index.html" class="text-p text-wildfire-100 font-regular mx-6 hover:text-neutral-100 transition-colors">Work</a></li>
+                        <li><a href="about.html" class="text-p text-wildfire-100 font-regular mx-6 hover:text-neutral-100 transition-colors">About</a></li>
+                        <li><a href="assets/AnushkaSharma.pdf" class="text-p text-wildfire-100 font-regular mx-6 hover:text-neutral-100 transition-colors">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Hero: full-bleed navy-->
+        <section class="bg-wildfire-500 text-neutral-100 pb-24">
+            <div class="lg:max-w-6xl lg:mx-auto mx-4 pt-12 lg:pt-16 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7">
+                    <p class="text-xs tracking-[0.2em] uppercase text-wildfire-100 mb-5">UX Case Study · BC Wildfire Service · Mobile</p>
+                    <h1 class="font-headings font-semibold uppercase tracking-tight leading-[0.95] text-5xl sm:text-6xl lg:text-7xl">
+                        Campfire<br />Verdict
+                    </h1>
+                    <p class="mt-6 max-w-xl text-h6 font-light text-wildfire-100 leading-relaxed">
+                        A decision feature for the BC Wildfire Service app that answers the one
+                        question campers actually ask: <em>"Is it safe and legal to light a fire
+                        here, right now?"</em> From five map layers and jargon to a single
+                        plain-worded verdict.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 flex justify-center lg:justify-end gap-4">
+                    <img src="./assets/wildfire/phone-verdict.png" class="w-40 lg:w-52" alt="Campfire Verdict home screen with fire-ban verdict and appliance list" />
+                    <img src="./assets/wildfire/phone-status.png" class="w-40 lg:w-52 mt-12" alt="Campfire Verdict status screen explaining why the ban applies" />
+                </div>
+            </div>
+        </section>
+
+        <!--Stats: overlapping cards-->
+        <section class="lg:max-w-6xl lg:mx-auto mx-4 -mt-14">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-neutral-100 border border-neutral-300 rounded-xl shadow-lg px-5 py-6">
+                    <p class="text-h4 font-headings font-semibold text-wildfire-500">$21,850</p>
+                    <p class="text-sm text-neutral-700 pt-1">in campfire-ban fines issued in one BC weekend, Aug 2026</p>
+                </div>
+                <div class="bg-neutral-100 border border-neutral-300 rounded-xl shadow-lg px-5 py-6">
+                    <p class="text-h4 font-headings font-semibold text-wildfire-500">~40%</p>
+                    <p class="text-sm text-neutral-700 pt-1">of BC wildfires are human-caused</p>
+                </div>
+                <div class="bg-neutral-100 border border-neutral-300 rounded-xl shadow-lg px-5 py-6">
+                    <p class="text-h4 font-headings font-semibold text-wildfire-500">5+ → 1</p>
+                    <p class="text-sm text-neutral-700 pt-1">steps to an answer, current app vs. this feature</p>
+                </div>
+                <div class="bg-neutral-100 border border-neutral-300 rounded-xl shadow-lg px-5 py-6">
+                    <p class="text-h4 font-headings font-semibold text-wildfire-500">&lt;30s</p>
+                    <p class="text-sm text-neutral-700 pt-1">target time-to-verdict for a first-time user</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Body: sticky rail + narrative-->
+        <section class="lg:max-w-6xl lg:mx-auto mx-4 mt-20 lg:mt-28 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+
+            <!--Sticky at-a-glance rail-->
+            <aside class="lg:col-span-4">
+                <div class="lg:sticky lg:top-10 bg-wildfire-100 border border-neutral-300 rounded-xl px-6 py-7">
+                    <h6 class="text-p font-semibold pb-4 text-wildfire-500 uppercase tracking-wide">At a glance</h6>
+                    <ul class="text-p font-light space-y-3">
+                        <li><span class="font-semibold block text-sm uppercase tracking-wide text-neutral-700">Role</span>Product designer &amp; researcher (solo, self-initiated)</li>
+                        <li><span class="font-semibold block text-sm uppercase tracking-wide text-neutral-700">Type</span>Feature concept for the official BCWS mobile app</li>
+                        <li><span class="font-semibold block text-sm uppercase tracking-wide text-neutral-700">Methods</span>Task-based app audit, public-forum research, competitor analysis, persona, feature design</li>
+                        <li><span class="font-semibold block text-sm uppercase tracking-wide text-neutral-700">Timeline</span>August 2026</li>
+                    </ul>
+                    <a href="https://medium.com/@sanushkaa4/analysis-of-the-british-columbia-wildfires-ccfe40841935" target="_blank" rel="noopener"
+                       class="mt-6 inline-flex items-center gap-2 bg-wildfire-500 text-neutral-100 text-sm font-semibold tracking-wide py-2.5 px-5 rounded-full hover:bg-wildfire-600 transition-all duration-300">
+                        Full write-up on Medium <span>→</span>
+                    </a>
+                </div>
+            </aside>
+
+            <!--Narrative column-->
+            <div class="lg:col-span-8">
+
+                <!--01 Problem-->
+                <article class="pb-16">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-2">01</p>
+                    <h3 class="text-h5 font-headings font-semibold uppercase tracking-tight text-neutral-900 mb-4">The problem</h3>
+                    <p class="text-p font-light">
+                        Every day, BC Wildfire Service publishes the exact data needed to answer
+                        whether tonight's campfire is safe and legal: fire weather indices, danger
+                        ratings, and ban boundaries, computed daily. None of it reaches an ordinary
+                        person at the moment they decide to light a fire.
+                    </p>
+                    <p class="text-p font-light pt-4">
+                        Existing tools are built around <em>active</em> fires. Watch Duty and Cal
+                        Fire can tell you where a fire is burning, but not whether tonight's
+                        campfire is legal. The BCWS app technically holds the answer, but only
+                        after digging through multiple map layers and decoding confusing category
+                        names.
+                    </p>
+                    <blockquote class="border-l-4 border-wildfire-500 pl-5 my-6">
+                        <p class="text-h6 font-light text-neutral-800">
+                            During BC's August 2026 state of emergency, <span class="font-semibold">19
+                            campfire-ban tickets, $21,850 in fines, were issued in a single
+                            weekend</span>, some to people who say they checked and still got it wrong.
+                        </p>
+                    </blockquote>
+                    <p class="text-p font-light">
+                        Roughly 40% of BC's wildfires are human-caused, and behind most of them is
+                        an ordinary decision made without information. The data exists. The
+                        consequences are real. What's missing is one answer at the moment of decision.
+                    </p>
+                </article>
+
+                <!--02 Audit-->
+                <article class="py-16 border-t border-neutral-300">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-2">02</p>
+                    <h3 class="text-h5 font-headings font-semibold uppercase tracking-tight text-neutral-900 mb-4">Auditing the current app</h3>
+                    <p class="text-p font-light">
+                        To find where the experience breaks, I walked through the current BCWS
+                        mobile app with a single task: <em>"Can I light a campfire here
+                        tonight?"</em> The app offers five tabs, Dashboard, Map, Saved, Report,
+                        More, and reaching an answer takes four-plus steps: open the map, find your
+                        location, pan to the exact site, toggle the right layer, and tap the area.
+                        Even then, the app never gives a definite decision. It drowns a normal user
+                        in uninterpretable information.
+                    </p>
+                    <figure class="mt-8">
+                        <img src="./assets/wildfire/bcws-current-app.png" class="w-full rounded-xl shadow-lg" alt="Current BCWS app prohibition screens showing dense map layers and legal category names" />
+                        <figcaption class="text-sm text-neutral-700 text-center pt-2">Prohibition pages from the current BCWS app: the answer is in there, but no verdict ever surfaces.</figcaption>
+                    </figure>
+                </article>
+
+                <!--03 Persona-->
+                <article class="py-16 border-t border-neutral-300">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-2">03</p>
+                    <h3 class="text-h5 font-headings font-semibold uppercase tracking-tight text-neutral-900 mb-4">Who I designed for</h3>
+                    <p class="text-p font-light">Built from public-forum evidence, not invented in a vacuum:</p>
+                    <div class="mt-6 px-6 py-6 bg-wildfire-100 border border-neutral-300 rounded-xl">
+                        <p class="text-wildfire-500 font-semibold pb-2">Apurba, the Meticulous Planner</p>
+                        <p class="text-p font-light">
+                            Apurba has booked a campground for Saturday. On Tuesday night, deciding
+                            whether to pack firewood, he reads the official prohibition pages and
+                            still can't project the ban map onto his campsite. This was the most
+                            common failure in my research: he needs a <span class="font-semibold">verdict
+                            for an exact place and date</span>, plus a heads-up if it changes before
+                            the trip.
+                        </p>
+                    </div>
+                </article>
+
+                <!--04 Pain points-->
+                <article class="py-16 border-t border-neutral-300">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-2">04</p>
+                    <h3 class="text-h5 font-headings font-semibold uppercase tracking-tight text-neutral-900 mb-4">Three pain points, from research</h3>
+                    <div class="space-y-5 mt-6">
+                        <div class="border-l-4 border-wildfire-500 pl-5">
+                            <p class="font-semibold pb-1">Jurisdiction confusion</p>
+                            <p class="text-p font-light">Campers checking the provincial map still can't tell whether a park or municipal rule overrides it at their exact site.</p>
+                        </div>
+                        <div class="border-l-4 border-wildfire-500 pl-5">
+                            <p class="font-semibold pb-1">Ambiguous danger ratings</p>
+                            <p class="text-p font-light">Users don't know if "Extreme" is a legal restriction or just a warning. The rating arrives without the rule.</p>
+                        </div>
+                        <div class="border-l-4 border-wildfire-500 pl-5">
+                            <p class="font-semibold pb-1">No appliance-level clarity</p>
+                            <p class="text-p font-light">Bans are published by region and broad category, so nobody can tell whether a wood campfire, propane fire pit, or charcoal grill is actually allowed.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!--05 Competitors-->
+                <article class="py-16 border-t border-neutral-300">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-2">05</p>
+                    <h3 class="text-h5 font-headings font-semibold uppercase tracking-tight text-neutral-900 mb-4">Competitive landscape</h3>
+                    <p class="text-p font-light">
+                        BCWS effectively competes with Watch Duty and Cal Fire for this moment, even
+                        though neither was built for it. Across all three, none answers the one
+                        question the camper actually has.
+                    </p>
+                    <div class="mt-6 overflow-x-auto">
+                        <table class="w-full text-p font-light border-collapse">
+                            <thead>
+                                <tr class="border-b border-neutral-400 text-left">
+                                    <th class="py-3 pr-4 font-semibold">Platform</th>
+                                    <th class="py-3 pr-4 font-semibold">Can it answer "campfire tonight?"</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-neutral-300">
+                                    <td class="py-3 pr-4 font-semibold text-neutral-800">BCWS app</td>
+                                    <td class="py-3 pr-4">Yes, but in 5+ steps across two ambiguous layers, with once-a-day data and no verdict.</td>
+                                </tr>
+                                <tr class="border-b border-neutral-300">
+                                    <td class="py-3 pr-4 font-semibold text-neutral-800">Watch Duty</td>
+                                    <td class="py-3 pr-4">No. Tracks active fires; carries no ban or preventive data.</td>
+                                </tr>
+                                <tr class="border-b border-neutral-300">
+                                    <td class="py-3 pr-4 font-semibold text-neutral-800">Cal Fire</td>
+                                    <td class="py-3 pr-4">No. Incident-specific; no decision tool.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <!--06 The feature-->
+                <article class="py-16 border-t border-neutral-300">
+                    <p class="text-xs tracking-[0.2em] uppercase text-neutral-600 mb-2">06</p>
+                    <h3 class="text-h5 font-headings font-semibold uppercase tracking-tight text-neutral-900 mb-4">Campfire Verdict: one surface, one answer</h3>
+                    <p class="text-p font-light">
+                        The goal: a first-time user gets a definitive answer within 30 seconds of
+                        opening the app. Everything the current app scatters lives on one surface,
+                        and each element answers one of the researched pain points directly:
+                    </p>
+                    <ul class="text-p pl-4 pt-4 font-light list-disc list-outside">
+                        <li class="pb-2"><span class="font-semibold">A plain-worded verdict.</span> The camper's question is answered in a sentence, not a map layer, resolving the jurisdiction confusion by doing the overlay math for them.</li>
+                        <li class="pb-2"><span class="font-semibold">Danger as a spectrum, shown with the rule.</span> The rating is presented on a visual scale alongside what it legally means, so "Extreme" is no longer ambiguous.</li>
+                        <li><span class="font-semibold">An appliance-level list.</span> Built from BCWS's own published rule book: wood campfire, propane fire pit, charcoal grill, each explicitly allowed or not at this site, today.</li>
+                    </ul>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 bg-wildfire-100 border border-neutral-300 rounded-xl px-6 py-10">
+                        <figure>
+                            <img src="./assets/wildfire/phone-verdict.png" class="w-52 lg:w-60 mx-auto" alt="Campfire Verdict home screen: active fire ban verdict, danger spectrum, and per-appliance allowed list" />
+                            <figcaption class="text-sm text-neutral-700 text-center pt-3">The verdict: plain words, danger spectrum with the rule, appliance-level list.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/wildfire/phone-status.png" class="w-52 lg:w-60 mx-auto" alt="Campfire Verdict status screen: which jurisdiction layers agree and why the ban applies" />
+                            <figcaption class="text-sm text-neutral-700 text-center pt-3">The evidence: why it's banned, layer by layer, province, park, municipal.</figcaption>
+                        </figure>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--Reflection: full-bleed navy band-->
+        <section class="bg-wildfire-500 text-neutral-100 mt-8 py-20">
+            <div class="lg:max-w-4xl lg:mx-auto mx-4">
+                <p class="text-xs tracking-[0.2em] uppercase text-wildfire-100 mb-2">Reflection</p>
+                <h3 class="text-h5 font-headings font-semibold uppercase tracking-tight mb-6">No new data, just a decision</h3>
+                <p class="text-p font-light text-wildfire-100">
+                    The feature needed <span class="font-semibold text-neutral-100">no new data</span>.
+                    Every layer already existed as open data; the work was turning an unreadable map
+                    into a decision-facing answer. That's the part of product design I find most
+                    interesting: the gap is rarely in the data, it's between the data and the moment
+                    of decision.
+                </p>
+                <p class="text-p font-light text-wildfire-100 pt-4">
+                    <span class="font-semibold text-neutral-100">What's not designed yet:</span> a
+                    forecast. Apurba checks on Tuesday for a Saturday trip, will today's verdict
+                    hold until the day of the event? Closing that loop, verdict plus change-alert,
+                    is the natural next iteration.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="https://medium.com/@sanushkaa4/analysis-of-the-british-columbia-wildfires-ccfe40841935" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 bg-neutral-100 text-wildfire-500 text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:bg-wildfire-100 transition-all duration-300">
+                        Read the full case study on Medium <span>→</span>
+                    </a>
+                    <a href="index.html#work"
+                       class="inline-flex items-center gap-2 border border-wildfire-100 text-neutral-100 text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-neutral-100 transition-all duration-300">
+                        More work
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="lg:max-w-6xl lg:mx-auto mx-4">
+        <div class="py-5 flex flex-col lg:flex-row lg:justify-between">
+            <div>
+                <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
+            </div>
+            <div class="mt-3 lg:mt-0 flex flex-row justify-center">
+                <a href="mailto: sanushkaa4@gmail.com"><img class="lg:my-0 mx-2 w-7 h-7" src="./assets/email.png" alt="Email" /></a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/"><img class="lg:my-0 mx-2 w-7 h-7" src="./assets/Linkedin.png" alt="Linkedin" /></a>
+                <a href="https://dribbble.com/AnushkaaSharma"><img class="lg:my-0 mx-2 w-7 h-7" src="./assets/dribbble.png" alt="Dribbble" /></a>
+                <a href="https://github.com/AnushkaaSharma"><img class="lg:my-0 mx-2 w-7 h-7" src="./assets/github.png" alt="Github" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>feather.replace()</script>
+</body>
+</html>
