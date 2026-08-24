@@ -152,3 +152,24 @@
 	from { opacity: 0; transform: translateY(20px) rotate(0deg); }
 	to   { opacity: 1; }
 }
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+    animation: marquee 25s linear infinite;
+}
+
+/* Pause on hover, nice touch for a portfolio */
+section:hover .animate-marquee {
+    animation-play-state: paused;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .animate-marquee {
+        animation: none;
+    }
+}
