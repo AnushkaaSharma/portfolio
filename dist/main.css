@@ -925,6 +925,10 @@ video {
   max-width: 36rem;
 }
 
+.shrink-0{
+  flex-shrink: 0;
+}
+
 .border-collapse{
   border-collapse: collapse;
 }
@@ -1341,11 +1345,6 @@ video {
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pb-1{
@@ -1911,6 +1910,34 @@ video {
 
   to   {
     opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Pause on hover, nice touch for a portfolio */
+
+section:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Respect reduced-motion preference */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
   }
 }
 
