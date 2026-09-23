@@ -28,7 +28,17 @@ module.exports = {
           'bg':'#bae0b9',
         },
         banh: {
+          '100': '#FBF3E4',
+          '500': '#DB9423',
+          '600': '#B87A1C',
+          'ink':  '#1D1D23',
           'bg': '#E3E4F2',
+        },
+        stripe: {
+          '100': '#F0F0FF',
+          '500': '#635BFF',
+          '600': '#4B44CC',
+          'bg':  '#E4E3FF',
         },
         wildfire: {
           '100': '#EFF3FA',

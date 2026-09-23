@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/navbar.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Stripe Checkout Theming, Design System Study · Anushka Sharma</title>
+    <meta name="description" content="Case study: a self-initiated study of Stripe's checkout theming, four measured findings and three design proposals for where merchants choose their theme. By Anushka Sharma." />
+</head>
+<body class="font-body text-neutral-900 bg-neutral-100">
+    <!--Navbar-->
+    <nav class="lg:max-w-4xl lg:mx-auto mx-4">
+        <div class="flex justify-between py-3">
+            <div>
+                <a href="index.html" class="text-h2 font-logo">A.</a>
+            </div>
+            <div class="py-3">
+                <ul class="flex">
+                    <li>
+                        <a href="index.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                            Work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="assets/AnushkaSharmaResume.pdf" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main-->
+    <main>
+        <!--Banner-->
+        <section class="bg-stripe-100 h-full">
+            <div class="grid mx-4 lg:max-w-4xl h-full lg:mx-auto my-auto grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="my-auto py-4">
+                    <h2 class="text-h4 font-semibold text-stripe-500">Making an excellent design system legible</h2>
+                    <p class="text-p text-neutral-700 py-2">
+                        A self-initiated study of Stripe's checkout theming. The components held
+                        under every stress I could build. What didn't hold was the merchant's view
+                        of them: the system edits their brand, enforces limits, and picks languages
+                        on their behalf, and tells them none of it.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/stripe/checkout-branding-editor.png" class="my-10 w-auto h-auto" alt="Concept design, not Stripe's interface: a stress preview strip on Stripe's Branding page" />
+                </div>
+            </div>
+        </section>
+
+        <!--Project Overview-->
+        <section class="my-24 mx-4 lg:max-w-4xl lg:mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div>
+                    <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+                    <h6 class="text-p font-semibold pb-4">
+                        Overview
+                    </h6>
+                    <p class="text-p font-light">
+                        Most design system case studies are written from inside a team that shares a Figma
+                        library and a Slack channel. Stripe's checkout has a harder job. It
+                        ships to thousands of businesses who share none of that context. They
+                        recolour it, restyle it, and drop it into their own page and their own
+                        market, and they cannot see inside it. So the question isn't whether the
+                        components are well built. It is where Stripe's system stops, where the
+                        merchant's begins, and what a merchant knows about what they just shipped.
+                    </p>
+                </div>
+                <div>
+                    <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+                    <h6 class="text-p font-semibold pb-4">
+                        At a glance
+                    </h6>
+                    <ul class="text-p pl-4 font-light list-disc list-outside">
+                        <li class="pb-1"><span class="font-semibold">Role:</span> Research, synthesis, interaction design, prototyping</li>
+                        <li class="pb-1"><span class="font-semibold">Type:</span> Self-initiated, no affiliation with Stripe</li>
+                        <li class="pb-1"><span class="font-semibold">Duration:</span> One week</li>
+                        <li class="pb-1"><span class="font-semibold">Method:</span> A sandbox built against Stripe's test mode, measured in Brave</li>
+                        <li><span class="font-semibold">Outcome:</span> Four findings backed by measurement, and three concept screens answering them</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--The Problem-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+            <h6 class="text-p font-semibold pb-4">The problem</h6>
+            <p class="text-p font-light">
+                Stripe's checkout is the most interesting design system problem I know of. The merchant's designer owns the
+                brand, has a colour and a typeface and a set of rules, and wants the payment step to
+                feel like the rest of the experience. They will never see Stripe's source, and they
+                mostly won't test the checkout in another language. The merchant's developer
+                implements the theme inside a setup where brand values live in one place and
+                everything points at them, ships, and moves on.
+            </p>
+            <img src="./assets/stripe/stripe-checkout-theming.png" class="w-full pt-3" alt="Stripe checkout theming: the same payment form carrying a merchant brand" />
+            <p class="text-p font-light pt-4">
+                The shopper notices none of this, unless something looks wrong, in which case they
+                notice it as doubt, at the exact moment they are being asked for a card number. The
+                design question sits between the first two: what does a merchant know about what
+                they just shipped? 
+            </p>
+        </section>
+
+        <!--Method-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+            <h6 class="text-p font-semibold pb-4">How I tested it</h6>
+            <p class="text-p font-light">
+                I gave myself one merchant's brand and tried to break it. The sandbox renders Stripe's
+                real payment form live and launches Stripe's hosted page with matching settings, so
+                the two surfaces can be compared side by side. Where I could, I stopped judging by
+                eye and measured what rendered: padding values, computed contrast, which typeface
+                each script resolved to.
+            </p>
+            <p class="text-p font-light pt-4">
+                The sandbox is not a Stripe product but it uses Stripe's test keys to load
+                Stripe's real payment form, so every finding is about Stripe's actual component. It
+                exists because Stripe offers nothing like it: its Branding page previews one
+                condition, and merchants who theme the embedded form in code get no preview at all.
+                
+            </p>
+            <p class="text-h6 font-semibold pt-10 pb-2">The matrix I pushed it through</p>
+            <ul class="text-p pl-4 font-light list-disc list-outside pt-2">
+                <li class="pb-2">
+                    <span class="font-semibold">Theme: </span> Hot pink, hard shadows, pill shapes, and
+                    a left padding rule written the way an English-speaking office writes one.
+                </li>
+                <li class="pb-2">
+                    <span class="font-semibold">Typeface: </span> Playfair Display, which has no Arabic
+                    letters, against Noto Kufi Arabic and the system font.
+                </li>
+                <li class="pb-2">
+                    <span class="font-semibold">Language: </span> English, German, Japanese, and Arabic,
+                    which reads right to left and mirrors the whole form.
+                </li>
+                <li class="pb-2">
+                    <span class="font-semibold">Currency: </span> Five, including yen, which has no
+                    decimal places, and dinar, which has three.
+                </li>
+            </ul>
+
+            <p class="text-p font-light">
+                The biggest gap in this study is that there are no merchant interviews yet. Every claim comes from Stripe's public
+                documentation or a measurement in the sandbox. Anything I could not verify was left
+                out.
+            </p>
+        </section>
+
+        <!--Components hold-->
+        <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+            <h6 class="text-p font-semibold">
+                Components
+            </h6>
+            <p class="text-p font-light pt-3">
+                The components are excellent. I could not break them. Arabic and right-to-left,
+                multiple currencies, no-decimal currencies, crowded payment lists in two layouts,
+                phone width, all held up. The problems are not in the components. They are in what a
+                merchant can see, control, and connect to.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+                <div>
+                    <img class="w-full drop-shadow-xl rounded" src="./assets/stripe/F3-en-loud-system-font.png" alt="Stripe payment form in English with a deliberately loud custom theme, hot pink buttons, hard shadows, pill inputs" />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">A loud theme, hot pink, hard shadows, pill shapes, still coherent.</p>
+                </div>
+                <div>
+                    <img class="w-full drop-shadow-xl rounded" src="./assets/stripe/F3-F4-ar-loud-kufi-font-mirrored.png" alt="The same themed payment form in Arabic, fully mirrored, with Arabic labels and the theme intact" />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">The same theme in Arabic. Labels, inputs, tabs, and icons all mirror.</p>
+                </div>
+                <div>
+                    <img class="w-full drop-shadow-xl rounded" src="./assets/stripe/F3-ar-loud-playfair-font.png" alt="The themed form in Arabic using a Latin-only typeface, showing two typefaces in one form" />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">The one exception: a Latin-only font in Arabic. Two typefaces, neither chosen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Findings-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+            <h6 class="text-p font-semibold pb-4">Findings</h6>
+                 <p class="text-p font-light pt-4">
+                Stripe's system constantly makes decisions on the merchant's behalf: ignoring a
+                value it cannot read, enforcing a limit, picking a language. The system is less
+                controllable than merchants assume, and it says almost none of it out loud.
+                </p>
+                <p class="text-p font-light pt-4">
+                That reframed the project. I started this project expecting to redesign components. The actual
+                opportunity arose where a specific theme gets chosen. For hosted Checkout, it previews a single condition. For the embedded form, where most
+                of these findings are, there is no editor at all. The merchant's developer themes it
+                in code and learns about the failures in a console. 
+                </p>
+            <div class="my-10">
+                
+                <p class="text-p font-light pt-3">
+                    1. A company keeps its brand colour in one place, and every button on every page
+                    points at it. Change it once, and the whole site follows. I tried to point
+                    Stripe's checkout at that same source, the way a developer points everything
+                    else, and Stripe refused:
+                </p>
+                <!-- <pre class="bg-neutral-900 text-neutral-300 text-sm font-light rounded-lg px-5 py-4 mt-4 overflow-x-auto"><code>invalid variable value "var(--brand-500)" provided to "colorPrimary";
+"colorPrimary" accepts a valid HEX, rgb(), or hsl() CSS color.</code></pre> -->
+                <p class="text-p font-light pt-4">
+                    The colour has to be typed in manually, as #FF3D7F. So it now lives in two
+                    places, and when the brand changes, one of them gets forgotten. Translucent
+                    colours are refused outright: rgb() is accepted, rgba() is not, so a brand built
+                    on soft overlays has to drop them at the payment step.
+                </p>
+                <p class="text-p font-light pt-3">
+                    What happens next is the checkout still loads, in
+                    Stripe's own brand color rather than the merchant's pink, and the only error is a
+                    line in the console. A store can run
+                    for months with a payment page that carries none of its brand, and the merchant is never notified.
+                </p>
+            </div>
+            <div class="my-10">
+                
+                <p class="text-p font-light pt-3">
+                    2. Stripe lets a merchant restyle the checkout by naming its pieces: the input
+                    boxes, the labels above them, the payment method tabs. Each piece accepts a
+                    fixed set of changes, mostly colour, spacing, borders and corner rounding. Ask
+                    for anything outside that set and it is dropped. No error, no warning. The form
+                    renders as if the instruction was never written.
+                </p>
+                <p class="text-p font-light pt-3">
+                    The limit itself is right. A payment form that a merchant can reshape
+                    freely can break easily. 
+                </p>
+                <p class="text-p font-light pt-3">
+                    The problem is that merchants are told they can theme their
+                    checkout. They are never shown where theming stops, so a designer hands over a
+                    spec, a developer writes it, and both assume it shipped but only half of it does.
+                </p>
+            </div>
+            <div class="my-10">
+                
+                <p class="text-p font-light pt-3">
+                   3. A checkout is not only the merchant's brand. Apple Pay is black, Link is green,
+                    Klarna is pink, Amazon is yellow, and Visa, Mastercard and Amex each bring their
+                    own mark. None of them can be recoloured, and they should not be: a shopper
+                    needs to recognise the button that holds their card. Stripe also adds its own
+                    elements, like a green cashback badge on the bank option, which the merchant
+                    never asked for and cannot remove.
+                </p>
+                <img class="w-1/2 mx-auto drop-shadow-xl rounded-lg py-10" src="./assets/stripe/hosted-checkout-logo-wall.png" alt="Stripe hosted checkout with Apple Pay, Link, Klarna and Amazon wallet buttons above five payment methods, each in its own brand colour" />
+                <p class="text-p font-light pt-3">
+                    With card payments only, the checkout looks like
+                    the merchant. If a merchant turns on nine payment methods, which any shop selling across
+                    Europe does, the page becomes a wall of other companies' logos with the
+                    merchant's pink button at the bottom. Nothing changes this and the merchant is given no warning about it. 
+                </p>
+                <!-- <p class="text-p font-light pt-3">
+                    The wallet buttons have a rule of their own: push the corner rounding past a
+                    threshold and Apple Pay quietly resizes itself back, so a bold, rounded brand
+                    ends up sitting next to a button that refuses to match it.
+                </p> -->
+            </div>
+            <div class="my-10">
+        
+                <p class="text-p font-light pt-3">
+                    4. A shopper in Dubai with an English phone taps Arabic on a merchant's site.
+                    Everything turns Arabic until the payment step, which stays English. Not
+                    because Arabic is unsupported, with the browser set to Arabic the hosted
+                    page rendered beautifully. The merchant simply cannot ask for it.
+                </p>
+                <p class="text-p font-light pt-3">
+                    The hosted page accepts forty locales, none of them right to left. Stripe's
+                    embedded form accepts Arabic directly.
+                </p>
+            </div>
+        </section>
+
+        
+
+        <!--Design-->
+        <section class="lg:max-w-4xl lg:mx-auto mx-4">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+            <h6 class="text-p font-semibold">
+                The design
+            </h6>
+            
+            <!--Proposal 1-->
+            <div class="my-6">
+                <p class="text-stripe-500 font-semibold">Stress preview in the Branding page</p>
+                <p class="font-light pt-1">
+                    Today, Stripe's Branding page shows the merchant's theme in exactly one
+                    condition: English, US dollars, card only, desktop. That is the condition least
+                    likely to break.
+                </p>
+                <div class="mt-6">
+                    <img class="w-full drop-shadow-xl rounded-lg" src="./assets/stripe/stripe-branding-today.png" alt="Stripe's real Branding page in a sandbox: icon, logo, brand and accent colour pickers, and a single hosted Checkout preview" />
+                    <p class="text-sm font-light text-neutral-700 pt-2 text-center">Today. Stripe's Branding page: two colour pickers, one preview, no contrast warning.</p>
+                </div>
+                <p class="font-light pt-6">
+                    The proposal: the same page, with the merchant's theme rendered live in the four
+                    conditions nobody tests before launch, right to left, a no-decimal currency, a
+                    crowded payment list, phone width. It is buildable with what Stripe already has: the same payment form, rendered four
+                    times with different settings. 
+                </p>
+                <div class="mt-6">
+                    <img class="w-full drop-shadow-xl rounded-lg" src="./assets/stripe/checkout-branding-editor.png" alt="Concept design: the Branding page with four edge-case stress previews, Arabic flagged for font fallback, yen, dense methods and phone width passing" />
+                    
+                </div>  
+            </div>
+
+            <!--Proposal 2-->
+            <div class="my-16">
+                <p class="text-stripe-500 font-semibold">Checks at the point of choosing</p>
+                <p class="font-light pt-1">
+                    A font picker that knows which languages a merchant serves, and says when a face
+                    has no letters for one of them.
+                </p>
+                <div class="mt-6">
+                    <img class="w-full drop-shadow-xl rounded-lg" src="./assets/stripe/concept-typeface-coverage.png" alt="Concept design: a typeface coverage panel showing Playfair Display has no Arabic glyphs, today versus with an Arabic fallback, a script coverage table and a fallback picker" />
+                    
+                </div>
+                <p class="font-light pt-6">
+                    The same pattern applies to colour. My own test theme's pink button puts white
+                    text at roughly 3.4:1 contrast, under the accessibility standard for body text. The system can already compute
+                    this and I got no warning while I was picking it. 
+                </p>
+            </div>
+
+            <!--Proposal 3-->
+            <div class="my-16">
+                <p class="text-stripe-500 font-semibold">Make the language gap legible</p>
+                <p class="font-light pt-1">
+                    If the hosted page cannot offer Arabic, the system should say so where a merchant would look, next
+                    to what their shopper will actually get, with the alternative.
+                </p>
+                <div class="mt-6">
+                    <img class="w-full drop-shadow-xl rounded-lg" src="./assets/stripe/concept-language-parity.png" alt="Concept design: a language parity notice comparing the hosted page and the embedded form, with Arabic and Hebrew unselectable on the hosted page" />
+                </div>
+                <p class="font-light pt-6">
+                    Stripe should support the four
+                    right-to-left languages on both surfaces. This screen is what I would design for
+                    the interim.
+                </p>
+            </div>
+        </section>
+
+        <!--UI-->
+        <section class="my-24 py-24 bg-stripe-100">
+            <div class="lg:max-w-4xl lg:mx-auto mx-4">
+                <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+                <h6 class="text-p font-semibold">
+                    UI Design Elements
+                </h6>
+                <div class="pt-6">
+                    <p class="font-semibold text-neutral-700 pb-4">
+                        Colour
+                    </p>
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-6">
+                        <div>
+                            <div class="bg-stripe-500 w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                635BFF
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-stripe-600 w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                4B44CC
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-neutral-900 w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                333333
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-neutral-700 w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                7B7B7B
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-neutral-100 w-full h-20 rounded-lg">
+                            </div>
+                            <p class="text-p font-light py-2 text-center text-neutral-900">
+                                FAFAFA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Tools used-->
+                <div class="pt-6">
+                    <p class='font-semibold text-neutral-700 pb-4'>
+                        Tools used
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                        <div class="flex">
+                            <img src="./assets/Figma-logo.svg" class="h-10" alt="Figma logo" />
+                            <p class="font-light px-4">
+                                Figma for the concept screens
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <img src="./assets/Icon.png" class="w-10 h-10" alt="Sandbox" />
+                            <p class="font-light px-4">
+                                A sandbox on Stripe's test mode
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <img src="./assets/Icon.png" class="w-10 h-10" alt="Brave" />
+                            <p class="font-light px-4">
+                                Brave for measuring what rendered
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <img src="./assets/Icon.png" class="w-10 h-10" alt="LaTeX" />
+                            <p class="font-light px-4">
+                                LaTeX for documentation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Outcome-->
+        <!-- <section class="my-12 mx-4 lg:max-w-4xl lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
+            <h6 class="text-p font-semibold pb-2">Outcome</h6>
+            <p class="text-p font-light">
+                I tried to break Stripe's checkout and could not. The components held. What did not
+                hold was how much the merchant is told. A brand colour can be dropped, a style can be
+                ignored, a language can be out of reach, and in every case the checkout loads anyway
+                and nobody is told.
+            </p>
+            <p class="text-p font-light pt-4">
+                So the fix is not a better component. It is a better moment: when a merchant picks a
+                theme, show them what it will look like to the shoppers they do not test for. That is
+                what the three screens do.
+            </p>
+            <p class="text-p font-light pt-4">
+                I found all of this by measuring, not by asking. Talking to merchants who have themed
+                Stripe is the next step, and the thing that would prove or sink it.
+            </p>
+        </section> -->
+    </main>
+
+      <!--Footer-->
+      <footer class="mt-12 lg:max-w-4xl lg:mx-auto mx-4">
+        <hr class="h-px bg-neutral-300">
+        <div class="py-5 flex flex-col lg:flex-row lg:justify-between">
+            <div>
+                <p class="text-sm font-light text-center">Designed by Anushka Sharma.</p>
+            </div>
+            <div class="mt-3 lg:mt-0 flex flex-row justify-center">
+                <a href="mailto: anushkaadesign@gmail.com">
+                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/email.png" alt="Email" />
+                </a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/">
+                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/Linkedin.png" alt="Linkedin" />
+                </a>
+                <a href="https://dribbble.com/AnushkaaSharma">
+                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/dribbble.png" alt="Dribbble" />
+                </a>
+                <a href="https://github.com/AnushkaaSharma">
+                    <img class="lg:my-0 mx-2 w-7 h-7" src="./assets/github.png" alt="Github" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Feather Icons-->
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
