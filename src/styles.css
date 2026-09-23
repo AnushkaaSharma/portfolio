@@ -95,6 +95,16 @@
 .project-row:hover .project-thumb img {
 	transform: scale(1.04);
 }
+/* Device mockup thumbs zoom as one scene, not per screenshot */
+.project-row .project-thumb .device-scene {
+	transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.project-row:hover .project-thumb .device-scene {
+	transform: scale(1.04);
+}
+.project-row:hover .project-thumb .device-scene img {
+	transform: none;
+}
 .project-row .view-link {
 	transition: transform 0.3s ease, color 0.3s ease;
 }
