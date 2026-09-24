@@ -52,8 +52,7 @@
                     <p class="text-p text-neutral-700 py-2">
                         A self-initiated study of Stripe's checkout theming. The components held
                         under every stress I could build. What didn't hold was the merchant's view
-                        of them: the system edits their brand, enforces limits, and picks languages
-                        on their behalf, and tells them none of it.
+                        of system. The system enforces limits in design, and does not notify the merchant. 
                     </p>
                 </div>
                 <div>
@@ -71,13 +70,10 @@
                         Overview
                     </h6>
                     <p class="text-p font-light">
-                        Most design system case studies are written from inside a team that shares a Figma
-                        library and a Slack channel. Stripe's checkout has a harder job. It
-                        ships to thousands of businesses who share none of that context. They
-                        recolour it, restyle it, and drop it into their own page and their own
-                        market, and they cannot see inside it. So the question isn't whether the
-                        components are well built. It is where Stripe's system stops, where the
-                        merchant's begins, and what a merchant knows about what they just shipped.
+                        Most design system case studies are written from a team, that shares a Figma
+                        library and a Slack channel. Stripe's checkout
+                        ships to thousands of businesses who share none of that. They
+                        recolour it, restyle it, and drop it into their own page and they cannot preview it. 
                     </p>
                 </div>
                 <div>
@@ -86,11 +82,9 @@
                         At a glance
                     </h6>
                     <ul class="text-p pl-4 font-light list-disc list-outside">
-                        <li class="pb-1"><span class="font-semibold">Role:</span> Research, synthesis, interaction design, prototyping</li>
+                        <li class="pb-1"><span class="font-semibold">Role:</span> Research, synthesis, user experience, prototyping</li>
                         <li class="pb-1"><span class="font-semibold">Type:</span> Self-initiated, no affiliation with Stripe</li>
                         <li class="pb-1"><span class="font-semibold">Duration:</span> One week</li>
-                        <li class="pb-1"><span class="font-semibold">Method:</span> A sandbox built against Stripe's test mode, measured in Brave</li>
-                        <li><span class="font-semibold">Outcome:</span> Four findings backed by measurement, and three concept screens answering them</li>
                     </ul>
                 </div>
             </div>
@@ -104,17 +98,9 @@
                 Stripe's checkout is the most interesting design system problem I know of. The merchant's designer owns the
                 brand, has a colour and a typeface and a set of rules, and wants the payment step to
                 feel like the rest of the experience. They will never see Stripe's source, and they
-                mostly won't test the checkout in another language. The merchant's developer
-                implements the theme inside a setup where brand values live in one place and
-                everything points at them, ships, and moves on.
+                mostly won't test the checkout in another language.
             </p>
             <img src="./assets/stripe/stripe-checkout-theming.png" class="w-full pt-3" alt="Stripe checkout theming: the same payment form carrying a merchant brand" />
-            <p class="text-p font-light pt-4">
-                The shopper notices none of this, unless something looks wrong, in which case they
-                notice it as doubt, at the exact moment they are being asked for a card number. The
-                design question sits between the first two: what does a merchant know about what
-                they just shipped? 
-            </p>
         </section>
 
         <!--Method-->
@@ -122,20 +108,11 @@
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
             <h6 class="text-p font-semibold pb-4">How I tested it</h6>
             <p class="text-p font-light">
-                I gave myself one merchant's brand and tried to break it. The sandbox renders Stripe's
-                real payment form live and launches Stripe's hosted page with matching settings, so
-                the two surfaces can be compared side by side. Where I could, I stopped judging by
-                eye and measured what rendered: padding values, computed contrast, which typeface
-                each script resolved to.
+                I gave myself one merchant's brand and tried to break it. I used a sandbox to compare. The sandbox is not a Stripe product but it uses Stripe's test keys to load
+                Stripe's real payment form. 
             </p>
-            <p class="text-p font-light pt-4">
-                The sandbox is not a Stripe product but it uses Stripe's test keys to load
-                Stripe's real payment form, so every finding is about Stripe's actual component. It
-                exists because Stripe offers nothing like it: its Branding page previews one
-                condition, and merchants who theme the embedded form in code get no preview at all.
-                
-            </p>
-            <p class="text-h6 font-semibold pt-10 pb-2">The matrix I pushed it through</p>
+          
+            <p class="text-h6 font-semibold pt-10 pb-2">Tests</p>
             <ul class="text-p pl-4 font-light list-disc list-outside pt-2">
                 <li class="pb-2">
                     <span class="font-semibold">Theme: </span> Hot pink, hard shadows, pill shapes, and
@@ -156,9 +133,8 @@
             </ul>
 
             <p class="text-p font-light">
-                The biggest gap in this study is that there are no merchant interviews yet. Every claim comes from Stripe's public
-                documentation or a measurement in the sandbox. Anything I could not verify was left
-                out.
+                The biggest gap in this study is that there is no merchant interviews yet. Every claim comes from Stripe's public
+                documentation. 
             </p>
         </section>
 
@@ -170,9 +146,8 @@
             </h6>
             <p class="text-p font-light pt-3">
                 The components are excellent. I could not break them. Arabic and right-to-left,
-                multiple currencies, no-decimal currencies, crowded payment lists in two layouts,
-                phone width, all held up. The problems are not in the components. They are in what a
-                merchant can see, control, and connect to.
+                multiple currencies, no-decimal currencies, they all held up. The problems are not in the components. They are in what a
+                merchant can see, and control.
             </p>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
                 <div>
@@ -195,37 +170,26 @@
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-stripe-500">
             <h6 class="text-p font-semibold pb-4">Findings</h6>
                  <p class="text-p font-light pt-4">
-                Stripe's system constantly makes decisions on the merchant's behalf: ignoring a
-                value it cannot read, enforcing a limit, picking a language. The system is less
-                controllable than merchants assume, and it says almost none of it out loud.
+                Stripe's system constantly makes decisions on the
+                merchant's behalf. The system is less
+                controllable than they make it to be.
                 </p>
                 <p class="text-p font-light pt-4">
-                That reframed the project. I started this project expecting to redesign components. The actual
+                I started this project expecting to redesign components. The actual
                 opportunity arose where a specific theme gets chosen. For hosted Checkout, it previews a single condition. For the embedded form, where most
-                of these findings are, there is no editor at all. The merchant's developer themes it
-                in code and learns about the failures in a console. 
+                of these findings are, there is no editor at all. 
                 </p>
             <div class="my-10">
-                
-                <p class="text-p font-light pt-3">
-                    1. A company keeps its brand colour in one place, and every button on every page
-                    points at it. Change it once, and the whole site follows. I tried to point
-                    Stripe's checkout at that same source, the way a developer points everything
-                    else, and Stripe refused:
-                </p>
-                <!-- <pre class="bg-neutral-900 text-neutral-300 text-sm font-light rounded-lg px-5 py-4 mt-4 overflow-x-auto"><code>invalid variable value "var(--brand-500)" provided to "colorPrimary";
-"colorPrimary" accepts a valid HEX, rgb(), or hsl() CSS color.</code></pre> -->
                 <p class="text-p font-light pt-4">
                     The colour has to be typed in manually, as #FF3D7F. So it now lives in two
-                    places, and when the brand changes, one of them gets forgotten. Translucent
-                    colours are refused outright: rgb() is accepted, rgba() is not, so a brand built
-                    on soft overlays has to drop them at the payment step.
+                    places. Translucent
+                    colours are refused: rgb() is accepted, rgba() is not, so a brand that has
+                 overlays has to drop them at the payment step.
                 </p>
                 <p class="text-p font-light pt-3">
                     What happens next is the checkout still loads, in
                     Stripe's own brand color rather than the merchant's pink, and the only error is a
-                    line in the console. A store can run
-                    for months with a payment page that carries none of its brand, and the merchant is never notified.
+                    line in the console. 
                 </p>
             </div>
             <div class="my-10">
@@ -276,11 +240,7 @@
                     4. A shopper in Dubai with an English phone taps Arabic on a merchant's site.
                     Everything turns Arabic until the payment step, which stays English. Not
                     because Arabic is unsupported, with the browser set to Arabic the hosted
-                    page rendered beautifully. The merchant simply cannot ask for it.
-                </p>
-                <p class="text-p font-light pt-3">
-                    The hosted page accepts forty locales, none of them right to left. Stripe's
-                    embedded form accepts Arabic directly.
+                    page rendered beautifully. The merchant does not have that option.
                 </p>
             </div>
         </section>
@@ -320,7 +280,7 @@
 
             <!--Proposal 2-->
             <div class="my-16">
-                <p class="text-stripe-500 font-semibold">Checks at the point of choosing</p>
+                <p class="text-stripe-500 font-semibold">Typeface coverage</p>
                 <p class="font-light pt-1">
                     A font picker that knows which languages a merchant serves, and says when a face
                     has no letters for one of them.
@@ -338,18 +298,16 @@
 
             <!--Proposal 3-->
             <div class="my-16">
-                <p class="text-stripe-500 font-semibold">Make the language gap legible</p>
+                <p class="text-stripe-500 font-semibold">Language gap</p>
                 <p class="font-light pt-1">
-                    If the hosted page cannot offer Arabic, the system should say so where a merchant would look, next
-                    to what their shopper will actually get, with the alternative.
+                    If the hosted page cannot offer Arabic, the system should say so with an alternative.
                 </p>
                 <div class="mt-6">
                     <img class="w-full drop-shadow-xl rounded-lg" src="./assets/stripe/concept-language-parity.png" alt="Concept design: a language parity notice comparing the hosted page and the embedded form, with Arabic and Hebrew unselectable on the hosted page" />
                 </div>
                 <p class="font-light pt-6">
                     Stripe should support the four
-                    right-to-left languages on both surfaces. This screen is what I would design for
-                    the interim.
+                    right-to-left languages on both surfaces. This screen is what I would design temporarily.
                 </p>
             </div>
         </section>
