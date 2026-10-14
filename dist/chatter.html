@@ -50,15 +50,35 @@
         <section class="bg-chatter-100 h-full">
             <div class="grid mx-4 lg:max-w-4xl h-full lg:mx-auto my-auto grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="my-auto py-4">
-                    <h2 class="text-h4 font-semibold text-chatter-500">Chatter</h2>
+                    <p class="text-p font-semibold text-chatter-500">Chatter</p>
+                    <h2 class="text-h4 font-semibold py-2">One inbox for businesses answering customers in five different apps</h2>
                     <p class="text-p text-neutral-700 py-2">
-                        A multi-tenant SaaS chat platform, embeddable widget, agent web panel,
-                        and GraphQL/REST API, designed to give Nepali businesses Intercom-class
-                        customer engagement without the global price tag.
+                        Small businesses in Nepal were replying to customers on Messenger, WhatsApp,
+                        Viber, Instagram and email, with no shared history between them. As the sole
+                        designer, I designed the one place all of it lands: a chat widget for their
+                        website, and a workspace where their team answers every message.
                     </p>
                 </div>
                 <div>
-                    <img src="./assets/chatter/chatterproject.png" class="my-10 w-auto h-auto" alt="Chatterproject" />
+                    <img src="./assets/chatter/chatterproject.png" class="my-10 w-auto h-auto" alt="Chatter agent workspace and chat widget" />
+                </div>
+            </div>
+        </section>
+
+        <!--By the numbers-->
+        <section class="mt-16 mx-4 lg:max-w-4xl lg:mx-auto">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-h4 font-semibold text-chatter-500">5 &rarr; 1</p>
+                    <p class="font-light pt-1">apps merged into one team inbox</p>
+                </div>
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-h4 font-semibold text-chatter-500">4</p>
+                    <p class="font-light pt-1">build phases, ordered by whose pain was worst</p>
+                </div>
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-h4 font-semibold text-chatter-500">3</p>
+                    <p class="font-light pt-1">surfaces: website widget, agent workspace, mobile app</p>
                 </div>
             </div>
         </section>
@@ -101,21 +121,20 @@
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
             <h6 class="text-p font-semibold pb-4">The problem</h6>
             <p class="text-p font-light">
-                Globally, the customer-engagement category was crowded, Intercom, Crisp,
-                Drift, Zendesk, but every one of those tools shared two friction points for
-                a Nepali business: priced in USD at seat counts most local teams couldn't justify,
-                and built around channels, currencies, and workflows tuned for North American
-                markets. The cheaper alternatives (Tawk.to, basic widget plugins) solved the chat
-                box but stopped there, no shared inbox, no contact history, no marketing,
-                no pipeline.
+                Picture a small online shop with three people answering customers. A customer asks
+                about a size on Instagram, follows up on WhatsApp, then complains by email when the
+                parcel is late. Three apps, three staff, no shared record. Nobody can see that this
+                customer has already asked twice.
             </p>
             <p class="text-p font-light pt-4">
-                Local businesses ended up doing customer engagement across five disconnected apps:
-                Facebook Messenger, WhatsApp, Viber, IG DM, and email. Conversations leaked between
-                channels. There was no team inbox, no ticket history, no contact record tying it
-                all together. Chatter set out to be that missing layer, a single, locally
-                built SaaS covering support, marketing, sales, and operations end-to-end, priced
-                for the market it served.
+                Tools that fix this already existed: Intercom, Zendesk, Drift, Crisp. But they were
+                priced in USD, per seat, at numbers most local teams couldn't justify, and built
+                around North American channels and workflows. The cheap options, like Tawk.to, gave
+                you a chat box and stopped there. No shared inbox, no contact history, no follow-up.
+            </p>
+            <p class="text-p font-semibold pt-6">
+                How might we give a small team one place to answer every customer, without needing
+                an IT person to set it up?
             </p>
         </section>
 
@@ -211,6 +230,41 @@
                 </div>
             </div>
         </section>
+
+        <!--Key decisions-->
+        <section class="my-24 lg:max-w-4xl mx-4 lg:mx-auto">
+            <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
+            <h6 class="text-p font-semibold pb-4">Three decisions that shaped the product</h6>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4">
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-chatter-500 font-semibold">Support first, sales later</p>
+                    <p class="font-light pt-2">
+                        Campaigns and pipelines are easier to demo, but the daily pain was missed
+                        messages. Every later feature (contact history, segments, campaigns) is
+                        built from conversation data, so the inbox had to exist before anything
+                        else could.
+                    </p>
+                </div>
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-chatter-500 font-semibold">The customer sits beside the chat</p>
+                    <p class="font-light pt-2">
+                        Instead of a separate contacts page agents would have to open, the
+                        customer's profile, tags and past conversations sit in a rail next to every
+                        thread. The agent answers with full context and never leaves the
+                        conversation.
+                    </p>
+                </div>
+                <div class="text-p px-4 py-5 border border-neutral-400 rounded-lg">
+                    <p class="text-chatter-500 font-semibold">One board, not two products</p>
+                    <p class="font-light pt-2">
+                        Sales pipelines and ops task lists looked like two features. In a small
+                        business they're run by the same person. One board surface handles both,
+                        so the owner learns one tool, and any conversation can become a card.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!--IA-->
         <section class="my-24 lg:max-w-4xl lg:mx-auto mx-4">
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
@@ -461,7 +515,7 @@
                             <div class="bg-chatter-500 w-full h-20 rounded-lg">
                             </div>
                             <p class="text-p font-light py-2 text-center text-neutral-900">
-                                ED644A
+                                2F80ED
                             </p>
                         </div>
                         <div>
@@ -529,18 +583,21 @@
             <hr class="w-10 mb-1 h-1 left-0 top-3 bg-chatter-500">
             <h6 class="text-p font-semibold pb-2">Outcome</h6>
             <p class="text-p font-light">
-                Chatter reached a fully designed product, widget, admin panel, and the
-                companion mobile app, scoped into a four-phase build plan that engineering
-                could pick up sprint by sprint. The IA, design system, and screen library cover
-                the entire feature set in the spec: support, marketing, sales, and operations.
+                I handed engineering a complete product: a sitemap covering 7 top-level areas,
+                45+ screens across support, marketing, sales and operations, and a four-phase
+                build plan they could pick up sprint by sprint.
             </p>
             <p class="text-p font-light pt-4">
-                Chatter didn't reach a public launch during my tenure at Core Software Integrated.
-                The design was complete; the build was still in progress when I moved on. That
-                means the work was never validated with live users, which I'm upfront about. What
-                I can speak to is what was designed, why each decision was made, and how the
-                roadmap was scoped to be buildable.
+                Chatter didn't launch publicly while I was at Core Software Integrated. The design
+                was complete; the build was still in progress when I moved on. So the work was
+                never tested with live users, and I won't claim results it didn't have.
             </p>
+            <p class="text-p font-semibold pt-6">If it launched, here's what I'd measure</p>
+            <ul class="text-p pl-4 font-light list-disc list-outside pt-2">
+                <li class="pb-1"><span class="font-semibold">Time to first reply:</span> does one inbox actually make teams answer faster?</li>
+                <li class="pb-1"><span class="font-semibold">Questions solved by FAQs:</span> how many chats end in the widget before reaching an agent?</li>
+                <li><span class="font-semibold">Setup in week one:</span> how many new workspaces connect at least two channels without help?</li>
+            </ul>
         </section>
 
         <!--Reflection-->
