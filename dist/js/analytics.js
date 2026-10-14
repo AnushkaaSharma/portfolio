@@ -17,6 +17,7 @@ function eventFor(link) {
   if (url.includes('linkedin.com')) return ['LinkedIn', {}];
   if (url.includes('dribbble.com')) return ['Dribbble', {}];
   if (url.includes('github.com')) return ['GitHub', {}];
+  if (url === 'https://medium.com/@sanushkaa4') return ['Medium', {}];
 
   const file = href.split('#')[0].split('/').pop();
   if (projectNames[file]) return ['Open project', { project: projectNames[file] }];
