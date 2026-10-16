@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/navbar.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Craft, Anushka Sharma</title>
+    <meta name="description" content="Smaller projects, explorations, and design studies by Anushka Sharma." />
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="40c35507-fc8d-4646-afbe-b02a3686a571"></script>
+    <script defer src="js/analytics.js"></script>
+    <script>try{document.documentElement.classList.add(sessionStorage.getItem('seenLoader')?'no-loader':'is-loading')}catch(e){document.documentElement.classList.add('is-loading')}</script>
+    <script defer src="js/loader.js"></script>
+</head>
+<body class="bg-accent-cream text-neutral-900 font-body">
+
+    <!--Page loader-->
+    <div id="page-loader" class="page-loader" role="status" aria-label="Loading">
+        <div class="goo" aria-hidden="true"><span class="puddle"></span><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" /></filter></svg>
+    </div>
+
+    <!--Navbar-->
+    <header class="bg-accent-cream">
+        <nav class="flex items-center justify-between lg:max-w-7xl lg:mx-auto mx-4 py-6">
+            <div>
+                <a href="index.html" class="text-4xl font-logo text-neutral-900 tracking-tight hover:text-primary-500 transition-colors">A.</a>
+            </div>
+            <div>
+                <ul class="flex space-x-4 sm:space-x-10 text-sm font-medium">
+                    <li><a href="index.html" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">Work</a></li>
+                    <li><a href="craft.html" class="text-neutral-900 font-body text-p font-semibold" aria-current="page">Craft</a></li>
+                    <li><a href="about.html" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">About</a></li>
+                    <li><a href="assets/AnushkaSharmaResume.pdf" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">Resume</a></li>
+                </ul>
+            </div>
+            <a href="#connect" class="cta-group group hidden sm:inline-block border border-neutral-900 text-neutral-900 text-p font-semibold tracking-wide py-2 px-5 rounded-full hover:bg-neutral-900 hover:text-accent-cream transition-all duration-300">
+                Get in touch <span class="cta-arrow ml-1">→</span>
+            </a>
+        </nav>
+    </header>
+
+    <!--Craft intro-->
+    <section class="bg-accent-cream">
+        <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 pt-16 lg:pt-24 pb-12">
+            <h1 class="font-headings font-semibold uppercase leading-[0.95] text-5xl sm:text-6xl lg:text-7xl text-neutral-900 tracking-tight">Side Projects</h1>
+            <p class="mt-8 max-w-xl text-p text-neutral-800 font-light leading-relaxed">
+                Freelance projects, design studies, and things I built to learn things. 
+            </p>
+        </div>
+    </section>
+
+    <!--Craft grid: Dribbble-style shots on coloured tiles, slight zoom on hover-->
+    <section class="bg-accent-cream pb-20 lg:pb-28">
+        <div class="lg:max-w-7xl lg:mx-auto mx-4 px-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 border-t border-neutral-300 pt-12">
+
+            <!-- NorthFold Creative -->
+             
+
+            <!--Stripe checkout theming-->
+            <a href="stripe.html" class="craft-card" aria-label="Stripe Checkout Theming study">
+                <div class="craft-thumb bg-stripe-bg flex items-center justify-center p-6">
+                    <div class="w-full">
+                        <img src="assets/stripe/checkout-branding-editor.png" alt="Stripe checkout theming study, branding editor concept" class="w-full h-auto rounded shadow-xl" />
+                    </div>
+                </div>
+            </a>
+
+            <!--Worldlink, FIFA World Cup 2022 microsite-->
+            <div class="craft-card">
+                <div class="craft-thumb bg-[#E3E6FA]">
+                    <div class="absolute left-[7%] top-[9%] w-[78%] rounded-lg bg-white shadow-2xl overflow-hidden">
+                        <div class="flex gap-1.5 px-3 py-2 border-b border-neutral-300">
+                            <span class="w-2 h-2 rounded-full bg-[#FF5F57]"></span>
+                            <span class="w-2 h-2 rounded-full bg-[#FEBC2E]"></span>
+                            <span class="w-2 h-2 rounded-full bg-[#28C840]"></span>
+                        </div>
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/craft/worldlinkfifa2020webdesign.webp" alt="Worldlink FIFA World Cup 2022 microsite: live scores and match schedule" class="w-[103%] max-w-none -ml-[1.5%] h-auto" />
+                        </div>
+                    </div>
+                    <div role="img" aria-label="Close-up of the live match card: Argentina 0, Belgium 0" class="absolute right-[5%] bottom-[11%] w-[62%] aspect-[830/190] rounded-lg bg-white shadow-2xl ring-1 ring-black/5" style="background-image:url('assets/craft/worldlinkfifa2020webdesign.webp');background-size:229.4% auto;background-position:11.6% 23.1%;background-repeat:no-repeat"></div>
+                </div>
+            </div>
+
+            <!--Webzenia agency landing page (Dribbble-style shot, same layout as Goodness)-->
+            <div class="craft-card">
+                <div class="craft-thumb bg-[#DCE4F7]">
+                    <div class="absolute left-[7%] top-[9%] w-[78%] rounded-lg bg-white shadow-2xl overflow-hidden">
+                        <div class="flex gap-1.5 px-3 py-2 border-b border-neutral-300">
+                            <span class="w-2 h-2 rounded-full bg-[#FF5F57]"></span>
+                            <span class="w-2 h-2 rounded-full bg-[#FEBC2E]"></span>
+                            <span class="w-2 h-2 rounded-full bg-[#28C840]"></span>
+                        </div>
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/craft/webzenia-landing.webp" alt="Webzenia landing page hero: We accelerate success for visionary brands" class="w-full h-auto" />
+                        </div>
+                    </div>
+                    <!--Zoomed crop of the blog cards from the same page-->
+                    <div role="img" aria-label="Close-up of the Webzenia articles and blogs cards" class="absolute right-[5%] bottom-[9%] w-[60%] aspect-[732/279] rounded-lg bg-white shadow-2xl ring-1 ring-black/5" style="background-image:url('assets/craft/webzenia-landing.webp');background-size:109.3% auto;background-position:50% 65.8%;background-repeat:no-repeat"></div>
+                </div>
+            </div>
+
+            <!--Goodness dog treats, product description page-->
+            <div class="craft-card">
+                <div class="craft-thumb bg-[#DCEFD8]">
+                    <div class="absolute left-[7%] top-[9%] w-[78%] rounded-lg bg-white shadow-2xl overflow-hidden">
+                        <div class="flex gap-1.5 px-3 py-2 border-b border-neutral-300">
+                            <span class="w-2 h-2 rounded-full bg-[#FF5F57]"></span>
+                            <span class="w-2 h-2 rounded-full bg-[#FEBC2E]"></span>
+                            <span class="w-2 h-2 rounded-full bg-[#28C840]"></span>
+                        </div>
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/craft/goodness-pdp.webp" alt="Goodness product page for air-dried chicken neck dog treats, with size picker and add-to-cart" class="w-full h-auto" />
+                        </div>
+                    </div>
+                    <div role="img" aria-label="Close-up of a dog running on a beach beside a Free Express Delivery tile" class="absolute right-[5%] bottom-[9%] w-[58%] aspect-[846/386] rounded-lg shadow-2xl ring-1 ring-black/5" style="background-image:url('assets/craft/goodness-pdp.webp');background-size:141.8% auto;background-position:49.4% 69.6%;background-repeat:no-repeat"></div>
+                </div>
+            </div>
+
+            <!--Asia Recruitment Nepal brochure: pages fanned like cards-->
+            <div class="craft-card">
+                <div class="craft-thumb bg-[#FBE3D6]">
+                    <div class="fan">
+                        <img src="assets/craft/arn/p12.webp" alt="Brochure page: organizational chart" style="--r:-12deg;--x:-42%;--y:5%" />
+                        <img src="assets/craft/arn/p21.webp" alt="Brochure page: why hire Nepalese" style="--r:12deg;--x:42%;--y:5%" />
+                        <img src="assets/craft/arn/p01.webp" alt="Asia Recruitment Nepal brochure cover with Boudhanath stupa" style="--r:0deg;--x:0%;--y:-2%" />
+                    </div>
+                </div>
+            </div>
+
+            <!--Northfold Creative: nc monogram (from the SVG) on a pair of business cards; website in progress-->
+            <div class="craft-card">
+                <div class="craft-thumb bg-[#F6DDD3]">
+                    <div class="absolute left-1/2 top-1/2 w-[58%] aspect-[7/4] -translate-x-[72%] -translate-y-[66%] -rotate-[8deg] rounded-md bg-[#BC4749] text-[#FDF0D5] shadow-2xl p-[7%]">
+                        <svg viewBox="0 0 145 88" fill="currentColor" aria-hidden="true" class="w-[20%] h-auto"><path d="M80 46C80 53.7974 82.9501 61.2755 88.2012 66.7891C93.4522 72.3025 100.574 75.4004 108 75.4004C115.426 75.4004 122.548 72.3025 127.799 66.7891C128.638 65.9076 129.418 64.9752 130.138 64H144.14C142.196 68.3025 139.552 72.2667 136.284 75.6982C128.783 83.5748 118.609 88 108 88C97.3913 88 87.2173 83.5748 79.7158 75.6982C72.2144 67.8217 68 57.1391 68 46C68 38.2026 65.0498 30.7245 59.7988 25.2109C54.5478 19.6975 47.426 16.5996 40 16.5996C32.574 16.5996 25.4522 19.6975 20.2012 25.2109C14.9502 30.7245 12 38.2026 12 46V88H0V16C9.62045e-05 10.0783 2.2864 4.57451 6.20508 0C7.45658 1.56874 8.52447 3.24079 9.38965 4.99316C11.1124 8.48272 11.9999 12.223 12 16V16.0098C19.4733 8.31695 29.5239 4 40 4C50.6087 4 60.7827 8.42523 68.2842 16.3018C75.7856 24.1783 80 34.8609 80 46Z" /><path d="M109.546 4C119.701 4.00006 129.44 8.42531 136.62 16.3018C139.748 19.7333 142.28 23.6974 144.141 28H130.736C130.048 27.0249 129.302 26.0923 128.498 25.2109C123.472 19.6975 116.654 16.5997 109.546 16.5996C102.438 16.5996 95.6201 19.6975 90.5938 25.2109C85.7245 30.5521 82.9215 37.7369 82.751 45.2695L82.7432 46C82.7432 38.121 80.7226 30.4716 77 23.8809C78.5403 21.1538 80.3702 18.607 82.4717 16.3018C89.6523 8.42531 99.3911 4.00002 109.546 4Z" /></svg>
+                    </div>
+                    <div class="absolute left-1/2 top-1/2 w-[58%] aspect-[7/4] -translate-x-[32%] -translate-y-[36%] rotate-[4deg] rounded-md bg-[#FDF0D5] text-[#BC4749] shadow-2xl grid place-items-center">
+                        <svg viewBox="0 0 145 88" fill="currentColor" role="img" aria-label="Northfold Creative nc monogram" class="w-[46%] h-auto"><path d="M80 46C80 53.7974 82.9501 61.2755 88.2012 66.7891C93.4522 72.3025 100.574 75.4004 108 75.4004C115.426 75.4004 122.548 72.3025 127.799 66.7891C128.638 65.9076 129.418 64.9752 130.138 64H144.14C142.196 68.3025 139.552 72.2667 136.284 75.6982C128.783 83.5748 118.609 88 108 88C97.3913 88 87.2173 83.5748 79.7158 75.6982C72.2144 67.8217 68 57.1391 68 46C68 38.2026 65.0498 30.7245 59.7988 25.2109C54.5478 19.6975 47.426 16.5996 40 16.5996C32.574 16.5996 25.4522 19.6975 20.2012 25.2109C14.9502 30.7245 12 38.2026 12 46V88H0V16C9.62045e-05 10.0783 2.2864 4.57451 6.20508 0C7.45658 1.56874 8.52447 3.24079 9.38965 4.99316C11.1124 8.48272 11.9999 12.223 12 16V16.0098C19.4733 8.31695 29.5239 4 40 4C50.6087 4 60.7827 8.42523 68.2842 16.3018C75.7856 24.1783 80 34.8609 80 46Z" /><path d="M109.546 4C119.701 4.00006 129.44 8.42531 136.62 16.3018C139.748 19.7333 142.28 23.6974 144.141 28H130.736C130.048 27.0249 129.302 26.0923 128.498 25.2109C123.472 19.6975 116.654 16.5997 109.546 16.5996C102.438 16.5996 95.6201 19.6975 90.5938 25.2109C85.7245 30.5521 82.9215 37.7369 82.751 45.2695L82.7432 46C82.7432 38.121 80.7226 30.4716 77 23.8809C78.5403 21.1538 80.3702 18.607 82.4717 16.3018C89.6523 8.42531 99.3911 4.00002 109.546 4Z" /></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!--Instrumental series: illustrations for a friend's music videos-->
+            <div class="craft-card">
+                <div class="craft-thumb bg-wildfire-bg">
+                    <img src="assets/craft/Illustrations/the-reason.webp" alt="Illustration of a pianist performing on a stage under spotlights" class="absolute left-[5%] top-[7%] w-[54%] h-auto rounded shadow-xl -rotate-3" />
+                    <img src="assets/craft/Illustrations/second.webp" alt="Illustration of a couple talking at a table in a coffee shop" class="absolute right-[5%] top-[13%] w-[50%] h-auto rounded shadow-xl rotate-2" />
+                    <img src="assets/craft/Illustrations/first-2.webp" alt="Illustration of a couple walking under an umbrella by a lake in the rain" class="absolute left-[11%] bottom-[8%] w-[50%] h-auto rounded shadow-2xl rotate-1" />
+                    <img src="assets/craft/Illustrations/first-1.webp" alt="Illustration of neighbours on facing balconies at sunrise, one reading, one holding a mug" class="absolute right-[9%] bottom-[6%] w-[38%] h-auto rounded shadow-2xl -rotate-2" />
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+
+    <!--Email me-->
+    <section id="connect" class="bg-neutral-900 text-accent-cream py-16 mt-0 scroll-mt-24">
+        <div class="lg:max-w-3xl lg:mx-auto mx-4 px-4 text-center">
+            <p class="text-xs tracking-[0.2em] uppercase text-neutral-400 mb-4">Let's work together</p>
+            <h2 class="text-h2 font-headings font-semibold mb-6">Have a project in mind?</h2>
+            <p class="text-h6 font-light text-neutral-300 mb-8">
+                Open to product design roles, contract work, and interesting briefs across mobile, web, and SaaS.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:anushkaadesign@gmail.com" class="cta-group group bg-accent-cream text-neutral-900 text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:bg-primary-500 hover:text-accent-cream transition-all duration-300">
+                    Email <span class="cta-arrow">→</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/" class="border border-neutral-700 text-accent-cream text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-accent-cream transition-all duration-300">
+                    LinkedIn
+                </a>
+                <a href="https://dribbble.com/AnushkaaSharma" class="border border-neutral-700 text-accent-cream text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-accent-cream transition-all duration-300">
+                    Dribbble
+                </a>
+                <a href="https://medium.com/@sanushkaa4" class="border border-neutral-700 text-accent-cream text-p font-semibold tracking-wide py-3 px-6 rounded-full hover:border-accent-cream transition-all duration-300">
+                    Medium
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-neutral-900 text-accent-cream">
+        <div class="lg:max-w-7xl lg:mx-auto mx-4 px-4 border-t border-neutral-800 py-6 flex flex-col lg:flex-row lg:justify-between items-center gap-3">
+            <p class="text-sm font-light">Designed &amp; built by Anushka Sharma.</p>
+            <div class="flex flex-row">
+                <a href="mailto:anushkaadesign@gmail.com" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/email.png" alt="Email" /></a>
+                <a href="https://www.linkedin.com/in/sanushkaa4/" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/Linkedin.png" alt="LinkedIn" /></a>
+                <a href="https://dribbble.com/AnushkaaSharma" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/dribbble.png" alt="Dribbble" /></a>
+                <a href="https://medium.com/@sanushkaa4" class="mx-2"><img class="w-6 h-6 invert opacity-80 hover:opacity-100 transition" src="./assets/medium.png" alt="Medium" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>feather.replace()</script>
+</body>
+</html>

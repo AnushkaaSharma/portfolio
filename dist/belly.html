@@ -14,28 +14,41 @@
     <meta name="description" content="Case study: designing Belly Foods, a mobile food-ordering ecosystem connecting vendors and customers. By Anushka Sharma." />
     <script defer src="https://cloud.umami.is/script.js" data-website-id="40c35507-fc8d-4646-afbe-b02a3686a571"></script>
     <script defer src="js/analytics.js"></script>
+    <script>try{document.documentElement.classList.add(sessionStorage.getItem('seenLoader')?'no-loader':'is-loading')}catch(e){document.documentElement.classList.add('is-loading')}</script>
+    <script defer src="js/loader.js"></script>
 </head>
-<body class="font-body text-neutral-900 bg-neutral-100">    
+<body class="font-body text-neutral-900 bg-neutral-100">
+
+    <!--Page loader-->
+    <div id="page-loader" class="page-loader" role="status" aria-label="Loading">
+        <div class="goo" aria-hidden="true"><span class="puddle"></span><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" /></filter></svg>
+    </div>
     <!--Navbar-->
     <nav class="lg:max-w-4xl lg:mx-auto mx-4">
         <div class="flex justify-between py-3">
             <div>
-                <a href="index.html" class="text-h2 font-logo">A.</a>
+                <a href="index.html" class="text-4xl sm:text-h2 font-logo">A.</a>
             </div>
             <div class="py-3">
                 <ul class="flex">
                     <li>
-                        <a href="index.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                        <a href="index.html" class="text-p text-neutral-700 font-regular mx-2 sm:mx-6" aria-current="page">
                             Work
                         </a>
                     </li>
                     <li>
-                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                        <a href="craft.html" class="text-p text-neutral-700 font-regular mx-2 sm:mx-6">
+                            Craft
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-p text-neutral-700 font-regular mx-2 sm:mx-6" aria-current="page">
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="assets/AnushkaSharmaResume.pdf" class="text-p text-neutral-700 font-regular mx-6" aria-current="page">
+                        <a href="assets/AnushkaSharmaResume.pdf" class="text-p text-neutral-700 font-regular mx-2 sm:mx-6" aria-current="page">
                             Resume
                         </a>
                     </li>

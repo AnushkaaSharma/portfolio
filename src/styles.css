@@ -183,3 +183,101 @@ section:hover .animate-marquee {
         animation: none;
     }
 }
+/* Page loader: gooey metaballs */
+.page-loader {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #FAF5EE;
+	transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.no-loader .page-loader { display: none; }
+.page-loader.is-done {
+	opacity: 0;
+	visibility: hidden;
+}
+/* Gooey metaballs: blobs pull out of a coral puddle and melt back in (SVG #goo filter) */
+.page-loader .goo {
+	position: relative;
+	width: 180px;
+	height: 120px;
+	filter: url(#goo);
+}
+.page-loader .goo span {
+	position: absolute;
+	bottom: 10px;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #ED644A;
+}
+.page-loader .goo .puddle {
+	left: 18px;
+	bottom: 0;
+	width: 144px;
+	height: 22px;
+	border-radius: 12px;
+}
+.page-loader .goo .g1 { left: 20px; animation: goo-hop 1.4s ease-in-out infinite; }
+.page-loader .goo .g2 { left: 68px; animation: goo-hop 1.4s ease-in-out infinite .2s; }
+.page-loader .goo .g3 { left: 116px; animation: goo-hop 1.4s ease-in-out infinite .4s; }
+@keyframes goo-hop {
+	0%, 100% { transform: translateY(0) scale(1.1, .9); }
+	40%      { transform: translateY(-62px) scale(.9, 1.1); }
+	60%      { transform: translateY(-62px) scale(1); }
+}
+
+/* Hold the hero letter reveal until the loader lifts */
+.is-loading .stagger > span { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+	.page-loader .goo span { animation-duration: 4s; }
+}
+
+/* Craft grid: image-only cards, the whole shot zooms slightly on hover */
+.craft-card {
+	position: relative;
+	display: block;
+	border-radius: 6px;
+	overflow: hidden;
+	outline-offset: 4px;
+}
+.craft-card:focus-visible { outline: 2px solid #333333; }
+.craft-thumb {
+	position: relative;
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+}
+.craft-thumb > * { transition: transform 0.6s cubic-bezier(.2, .7, .2, 1); }
+.craft-card:hover .craft-thumb > *,
+.craft-card:focus-visible .craft-thumb > * { transform: scale(1.04); }
+
+/* ARN brochure: pages fanned out like a hand of cards; they spread a little wider on hover */
+.fan {
+	position: absolute;
+	inset: 0;
+}
+.fan img {
+	position: absolute;
+	top: 14%;
+	left: 50%;
+	height: 72%;
+	width: auto;
+	max-width: none;
+	border-radius: 3px;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, .12), 0 30px 40px -10px rgba(0, 0, 0, .18);
+	transform: translateX(-50%) translate(var(--x), var(--y)) rotate(var(--r));
+	transform-origin: 50% 100%;
+	transition: transform 0.7s cubic-bezier(.34, 1.56, .64, 1);
+}
+.craft-card:hover .fan,
+.craft-card:focus-visible .fan { transform: none; }
+.craft-card:hover .fan img,
+.craft-card:focus-visible .fan img { transform: translateX(-50%) translate(calc(var(--x) * 1.2), calc(var(--y) - 3%)) rotate(calc(var(--r) * 1.25)); }
+
+@media (prefers-reduced-motion: reduce) {
+	.craft-thumb > *, .fan img { transition: none; }
+}

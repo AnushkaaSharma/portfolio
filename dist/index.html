@@ -15,8 +15,16 @@
     <meta name="description" content="Anushka Sharma is a product designer in Ontario, Canada, turning user research into shipped software across mobile, web, and B2B SaaS." />
     <script defer src="https://cloud.umami.is/script.js" data-website-id="40c35507-fc8d-4646-afbe-b02a3686a571"></script>
     <script defer src="js/analytics.js"></script>
+    <script>try{document.documentElement.classList.add(sessionStorage.getItem('seenLoader')?'no-loader':'is-loading')}catch(e){document.documentElement.classList.add('is-loading')}</script>
+    <script defer src="js/loader.js"></script>
 </head>
 <body class="bg-accent-cream text-neutral-900 font-body">
+
+    <!--Page loader-->
+    <div id="page-loader" class="page-loader" role="status" aria-label="Loading">
+        <div class="goo" aria-hidden="true"><span class="puddle"></span><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" /></filter></svg>
+    </div>
 
     <!--Navbar-->
     <header class="bg-accent-cream">
@@ -25,13 +33,14 @@
                 <a href="index.html" class="text-4xl font-logo text-neutral-900 tracking-tight hover:text-primary-500 transition-colors">A.</a>
             </div>
             <div>
-                <ul class="flex space-x-10 text-sm font-medium">
+                <ul class="flex space-x-4 sm:space-x-10 text-sm font-medium">
                     <li><a href="index.html" class="text-neutral-900 font-body text-p font-semibold">Work</a></li>
+                    <li><a href="craft.html" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">Craft</a></li>
                     <li><a href="about.html" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">About</a></li>
                     <li><a href="assets/AnushkaSharmaResume.pdf" class="text-neutral-700 font-body text-p hover:text-neutral-900 transition-colors">Resume</a></li>
                 </ul>
             </div>
-            <a href="#connect" class="cta-group group border border-neutral-900 text-neutral-900 text-p font-semibold tracking-wide py-2 px-5 rounded-full hover:bg-neutral-900 hover:text-accent-cream transition-all duration-300">
+            <a href="#connect" class="cta-group group hidden sm:inline-block border border-neutral-900 text-neutral-900 text-p font-semibold tracking-wide py-2 px-5 rounded-full hover:bg-neutral-900 hover:text-accent-cream transition-all duration-300">
                 Get in touch <span class="cta-arrow ml-1">→</span>
             </a>
         </nav>
