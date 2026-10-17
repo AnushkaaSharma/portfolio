@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northfold Brand Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Brand */
+    --blue: #00478F;
+    --cream: #FDF0D5;
+    --red: #BC4749;
+    /* Black & white: B&W printing and websites only */
+    --black: #000000;
+    --white: #FAFAFA;
+    /* Page */
+    --paper: #FFFBF3;
+    --line: rgba(0, 71, 143, 0.16);
+    --muted: #4B5563;
+
+    --f-head: "Nunito", system-ui, sans-serif;
+    --f-body: "Nunito Sans", system-ui, sans-serif;
+
+    --nav-w: 232px;
+    --gutter: clamp(16px, 4vw, 56px);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--blue);
+    font-family: var(--f-body); font-size: 17px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, svg { display: block; max-width: 100%; }
+  h1, h2, h3, h4 { font-family: var(--f-head); font-weight: 800; line-height: 1.1; margin: 0; }
+  p { margin: 0 0 1em; }
+
+  /* ---------- Side column ---------- */
+  .nav {
+    position: fixed; inset: 0 auto 0 0; width: var(--nav-w);
+    background: var(--blue); color: var(--cream);
+    padding: 32px 24px; display: flex; flex-direction: column; gap: 36px; z-index: 10;
+  }
+  .nav .nav-logo { width: 64px; color: var(--cream); }
+  .nav ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+  .nav a {
+    display: flex; gap: 12px; align-items: baseline;
+    color: var(--cream); text-decoration: none; opacity: .7;
+    padding: 6px 0; font-weight: 600; font-size: 15px;
+  }
+  .nav a span { font-family: var(--f-head); font-weight: 800; font-size: 12px; width: 18px; }
+  .nav a:hover, .nav a.active { opacity: 1; }
+  .nav a.active { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
+  .nav .nav-foot { margin-top: auto; font-size: 12px; opacity: .6; line-height: 1.5; }
+  main { margin-left: var(--nav-w); }
+
+  @media (max-width: 960px) {
+    .nav { position: sticky; top: 0; width: 100%; flex-direction: row; align-items: center; padding: 12px var(--gutter); gap: 20px; overflow-x: auto; }
+    .nav .nav-logo { width: 40px; flex: none; }
+    .nav ol { display: flex; gap: 18px; }
+    .nav a { white-space: nowrap; font-size: 14px; }
+    .nav .nav-foot { display: none; }
+    main { margin-left: 0; }
+  }
+
+  /* ---------- Sections ---------- */
+  section { padding: clamp(56px, 8vw, 104px) var(--gutter); border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  .eyebrow { display: block; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
+  .section-title { font-size: clamp(40px, 6vw, 64px); font-weight: 900; margin-bottom: 18px; }
+  .lede { font-size: clamp(18px, 2vw, 20px); max-width: 640px; }
+  h3.sub { font-size: 28px; margin: 72px 0 10px; }
+  .sub + p, .sub + p + p { max-width: 640px; }
+  .note { font-size: 14px; color: var(--muted); }
+  .grid { display: grid; gap: 20px; margin-top: 24px; }
+  .g2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+  .g3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+  .g4 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+
+  .tile { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
+  .tile .stage { display: grid; place-items: center; padding: 36px 28px; min-height: 220px; position: relative; }
+  .tile .cap { padding: 14px 18px; font-size: 14px; border-top: 1px solid var(--line); color: var(--muted); }
+  .tile .cap b { font-family: var(--f-head); color: var(--blue); font-size: 16px; display: block; margin-bottom: 2px; }
+  .bg-blue { background: var(--blue); color: var(--cream); }
+  .bg-cream { background: var(--cream); color: var(--blue); }
+  .bg-white { background: var(--white); color: var(--black); }
+  .bg-black { background: var(--black); color: var(--white); }
+
+  .tag { display: inline-block; font-weight: 700; font-size: 12px; padding: 2px 9px; border-radius: 99px; background: var(--blue); color: var(--cream); margin-top: 6px; }
+  .tag.bw { background: var(--black); color: var(--white); }
+
+  /* ---------- Cover ---------- */
+  .cover {
+    min-height: 100vh; background: var(--blue); color: var(--cream); border: 0;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: clamp(32px, 6vw, 72px) var(--gutter); position: relative; overflow: hidden;
+  }
+  .cover .bigmark { position: absolute; right: -8vw; bottom: -6vw; width: min(70vw, 900px); color: rgba(253, 240, 213, .06); }
+  .cover .mark { width: 110px; position: relative; }
+  .cover h1 { font-size: clamp(56px, 10vw, 132px); font-weight: 900; line-height: .95; position: relative; }
+  .cover .meta { display: flex; flex-wrap: wrap; gap: 8px 40px; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; opacity: .8; position: relative; }
+
+  /* ---------- Logo ---------- */
+  .primary { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 40px; align-items: center; margin-top: 32px; }
+  .primary .art { background: var(--cream); border-radius: 14px; padding: clamp(40px, 7vw, 88px); }
+  .var .stage { min-height: 200px; }
+  .var .cap p { margin: 6px 0 0; font-size: 14px; line-height: 1.5; }
+
+  .safe { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center; padding: 56px 20px; background: #fff; border: 1px solid var(--line); border-radius: 14px; margin-top: 24px; }
+  .safe .zone {
+    padding: 32px;
+    background: repeating-linear-gradient(45deg, rgba(0,71,143,.10) 0 6px, rgba(0,71,143,.03) 6px 12px);
+    border: 1.5px dashed rgba(0,71,143,.45); border-radius: 4px;
+  }
+  .safe .zone > div { background: var(--cream); padding: 6px; }
+  .safe .zone.mk svg { width: 130px; }
+  .safe .zone.st svg { width: 190px; }
+
+  .dont .stage { min-height: 170px; }
+  .dont .stage::after { content: ""; position: absolute; left: 18%; right: 18%; top: 50%; height: 2px; background: var(--red); transform: rotate(-22deg); }
+  .dont .stage svg { width: 140px; }
+  .dont .num { position: absolute; top: 12px; left: 12px; width: 24px; height: 24px; border-radius: 50%; background: var(--blue); color: var(--cream); display: grid; place-items: center; font: 800 12px var(--f-head); z-index: 1; }
+
+  /* ---------- Colors ---------- */
+  .swatch { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
+  .swatch .chip { height: 170px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
+  .swatch .chip h4 { font-size: 26px; }
+  .swatch .chip .role { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
+  .swatch dl { margin: 0; padding: 16px 20px; display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; font-size: 14px; color: var(--muted); }
+  .swatch dt { font-weight: 700; }
+  .swatch dd { margin: 0; font-variant-numeric: tabular-nums; color: var(--blue); }
+  .neutrals .chip { height: 110px; }
+
+  .ratio { display: flex; height: 64px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); margin-top: 24px; }
+  .ratio div { display: flex; align-items: flex-end; padding: 10px 12px; font-size: 13px; font-weight: 700; }
+
+  .dots { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 180px)); gap: 24px 32px; margin-top: 16px; }
+  .dot { text-align: center; font-size: 13px; color: var(--muted); }
+  .dot .c { aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); position: relative; margin-bottom: 10px; }
+  .dot .c svg { width: 56%; }
+  .dot b { display: block; font: 800 18px var(--f-head); color: var(--blue); }
+  .dot.bad b { color: var(--red); }
+  .dot.bad .c::after { content: ""; position: absolute; left: 14%; right: 14%; top: 50%; height: 2px; background: var(--red); transform: rotate(-35deg); }
+
+  .rule-box { margin-top: 24px; padding: 20px 24px; border-radius: 14px; background: var(--blue); color: var(--cream); display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; }
+  .rule-box b { font: 900 28px var(--f-head); }
+
+  /* ---------- Type ---------- */
+  .face { padding: 28px; border-radius: 14px; border: 1px solid var(--line); background: #fff; }
+  .face .role { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+  .face h4 { font-size: 24px; margin: 6px 0 16px; }
+  .face .abc { font-size: 17px; line-height: 1.5; }
+  .face .aa { font-size: 96px; line-height: 1; margin-top: 20px; }
+  .typesys { margin-top: 24px; border-top: 1px solid var(--line); }
+  .typesys .row { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .typesys .spec { font-size: 13px; color: var(--muted); text-align: right; }
+
+  /* ---------- Business cards ---------- */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 28px 24px; padding: 40px clamp(16px, 4vw, 44px); background: #EDE6D8; border-radius: 14px; margin-top: 24px; }
+  .cards .set { grid-column: 1 / -1; font: 800 15px var(--f-head); margin-bottom: -12px; }
+  .bcw { container-type: inline-size; }
+  .bc { aspect-ratio: 3.5 / 2; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 18px 36px -18px rgba(0, 30, 70, .45); }
+  .bc.front { display: grid; place-items: center; }
+  .bc.front svg { width: 32%; }
+  .bc.back { padding: 7% 8%; display: flex; flex-direction: column; justify-content: space-between; }
+  .bc.back .hl { width: 40%; flex: none; }
+  .bc .name { font: 800 6.4cqw/1.1 var(--f-head); }
+  .bc .role { font: 700 2.6cqw var(--f-body); letter-spacing: .14em; text-transform: uppercase; margin-top: 1.6cqw; opacity: .85; }
+  .bc .contact { font-size: 3cqw; line-height: 1.5; margin-top: 3.6cqw; }
+  .bc.c-blue { background: var(--blue); color: var(--cream); }
+  .bc.c-cream { background: var(--cream); color: var(--blue); }
+  .bc.c-light { background: #FFF8EA; color: var(--blue); }
+  .spec-list { margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px; font-size: 15px; }
+  .spec-list b { display: block; font-family: var(--f-head); }
+
+  /* ---------- Merch ---------- */
+  .garment .stage { background: #EEE8DC; min-height: 300px; padding: 24px; }
+  .garment svg { width: min(100%, 240px); }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-top: 24px; }
+  .gsw { border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: #fff; font-size: 13px; }
+  .gsw .chip { height: 92px; display: grid; place-items: center; position: relative; }
+  .gsw .chip svg { width: 46%; }
+  .gsw .info { padding: 10px 12px; color: var(--muted); line-height: 1.4; }
+  .gsw .info b { display: block; color: var(--blue); font-family: var(--f-head); font-size: 14px; }
+  .gsw .r { font: 800 15px var(--f-head); color: var(--blue); margin-top: 2px; }
+  .gsw.bad .r { color: var(--red); }
+  .gsw.bad .chip::after { content: ""; position: absolute; left: 22%; right: 22%; top: 50%; height: 2px; background: var(--red); transform: rotate(-25deg); }
+
+  footer { padding: 40px var(--gutter); background: var(--paper); color: var(--blue); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
+  footer svg { width: 56px; }
+
+  @media print {
+    .nav { display: none; }
+    main { margin: 0; }
+    section { break-after: page; border: 0; }
+    .cover { min-height: auto; height: 100vh; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Logo artwork. Everything uses currentColor, so the color comes from CSS `color`. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Primary logo: Logo.svg -->
+    <symbol id="nc-mark" viewBox="0 0 145 88">
+      <path fill="currentColor" d="M80 46C80 53.7974 82.9501 61.2755 88.2012 66.7891C93.4522 72.3025 100.574 75.4004 108 75.4004C115.426 75.4004 122.548 72.3025 127.799 66.7891C128.638 65.9076 129.418 64.9752 130.138 64H144.14C142.196 68.3025 139.552 72.2667 136.284 75.6982C128.783 83.5748 118.609 88 108 88C97.3913 88 87.2173 83.5748 79.7158 75.6982C72.2144 67.8217 68 57.1391 68 46C68 38.2026 65.0498 30.7245 59.7988 25.2109C54.5478 19.6975 47.426 16.5996 40 16.5996C32.574 16.5996 25.4522 19.6975 20.2012 25.2109C14.9502 30.7245 12 38.2026 12 46V88H0V16C9.62045e-05 10.0783 2.2864 4.57451 6.20508 0C7.45658 1.56874 8.52447 3.24079 9.38965 4.99316C11.1124 8.48272 11.9999 12.223 12 16V16.0098C19.4733 8.31695 29.5239 4 40 4C50.6087 4 60.7827 8.42523 68.2842 16.3018C75.7856 24.1783 80 34.8609 80 46Z"/>
+      <path fill="currentColor" d="M109.546 4C119.701 4.00006 129.44 8.42531 136.62 16.3018C139.748 19.7333 142.28 23.6974 144.141 28H130.736C130.048 27.0249 129.302 26.0923 128.498 25.2109C123.472 19.6975 116.654 16.5997 109.546 16.5996C102.438 16.5996 95.6201 19.6975 90.5938 25.2109C85.7245 30.5521 82.9215 37.7369 82.751 45.2695L82.7432 46C82.7432 38.121 80.7226 30.4716 77 23.8809C78.5403 21.1538 80.3702 18.607 82.4717 16.3018C89.6523 8.42531 99.3911 4.00002 109.546 4Z"/>
+    </symbol>
+    <!-- Variation: stacked (matches the supplied PNG files) -->
+    <symbol id="nc-stacked" viewBox="-60 0 265 170">
+      <use href="#nc-mark" x="0" y="0" width="145" height="88"/>
+      <text x="-59" y="136.2" fill="currentColor" font-family="Montserrat, sans-serif" font-weight="700" font-size="32" textLength="263" lengthAdjust="spacing">NORTHFOLD</text>
+      <text x="13.5" y="167" fill="currentColor" font-family="Montserrat, sans-serif" font-weight="400" font-size="24" textLength="118" lengthAdjust="spacing">CREATIVE</text>
+    </symbol>
+    <!-- Variation: horizontal -->
+    <symbol id="nc-horizontal" viewBox="0 0 490 88">
+      <use href="#nc-mark" x="0" y="0" width="145" height="88"/>
+      <text x="185" y="41.3" fill="currentColor" font-family="Montserrat, sans-serif" font-weight="700" font-size="36.8" textLength="302.5" lengthAdjust="spacing">NORTHFOLD</text>
+      <text x="268.4" y="76.8" fill="currentColor" font-family="Montserrat, sans-serif" font-weight="400" font-size="27.6" textLength="135.7" lengthAdjust="spacing">CREATIVE</text>
+    </symbol>
+  </defs>
+</svg>
+
+<nav class="nav" aria-label="Sections">
+  <svg class="nav-logo" viewBox="0 0 145 88" role="img" aria-label="Northfold Creative"><use href="#nc-mark" width="145" height="88"/></svg>
+  <ol>
+    <li><a href="#logo"><span>01</span>Logo</a></li>
+    <li><a href="#colors"><span>02</span>Colors</a></li>
+    <li><a href="#type"><span>03</span>Typography</a></li>
+    <li><a href="#cards"><span>04</span>Business cards</a></li>
+    <li><a href="#merch"><span>05</span>Merch</a></li>
+  </ol>
+  <div class="nav-foot">Brand Guidelines<br>October 2026</div>
+</nav>
+
+<main>
+
+<!-- ============ COVER ============ -->
+<header class="cover">
+  <svg class="bigmark" viewBox="0 0 145 88" aria-hidden="true"><use href="#nc-mark" width="145" height="88"/></svg>
+  <svg class="mark" viewBox="0 0 145 88" role="img" aria-label="Northfold Creative logo"><use href="#nc-mark" width="145" height="88"/></svg>
+  <h1>Brand<br>Guidelines</h1>
+  <div class="meta"><span>Northfold Creative</span><span>October 2026</span></div>
+</header>
+
+<!-- ============ 01 LOGO ============ -->
+<section id="logo">
+  <div class="wrap">
+    <span class="eyebrow">01</span>
+    <h2 class="section-title">Logo</h2>
+    <p class="lede">How to use our logo so it always looks right.</p>
+
+    <h3 class="sub">Primary logo</h3>
+    <div class="primary">
+      <div class="art"><svg viewBox="0 0 145 88" role="img" aria-label="Primary logo"><use href="#nc-mark" width="145" height="88"/></svg></div>
+      <div>
+        <p>This is our main logo. Use it first, wherever you can.</p>
+        <p>It's the letters <b>n</b> and <b>c</b> drawn as one line, with the n flowing straight into the c.</p>
+        <p>The small point at the top always points up.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">Logo variations</h3>
+    <p>When people might not know us yet, use a version that shows our name. Don't go smaller than the sizes listed. Below that, the name gets hard to read, so use the main logo instead.</p>
+    <div class="grid g3">
+      <div class="tile var"><div class="stage bg-cream"><svg style="width:46%" viewBox="0 0 145 88" aria-label="Primary logo"><use href="#nc-mark" width="145" height="88"/></svg></div>
+        <div class="cap"><b>Primary logo</b><p>Use it first, everywhere. Merch, profile pictures, stickers.</p><p>Print 10 mm and up · Web 24 px and up</p></div></div>
+      <div class="tile var"><div class="stage bg-cream"><svg style="width:56%" viewBox="-60 0 265 170" aria-label="Stacked logo"><use href="#nc-stacked" x="-60" width="265" height="170"/></svg></div>
+        <div class="cap"><b>Stacked logo</b><p>Posters, signs, the first page of a presentation.</p><p>Print 25 mm and up · Web 120 px and up</p></div></div>
+      <div class="tile var"><div class="stage bg-cream"><svg style="width:88%" viewBox="0 0 490 88" aria-label="Horizontal logo"><use href="#nc-horizontal" width="490" height="88"/></svg></div>
+        <div class="cap"><b>Horizontal logo</b><p>Wide, short spaces. Website header, email signature, letterhead.</p><p>Print 38 mm and up · Web 160 px and up</p></div></div>
+    </div>
+
+    <h3 class="sub">Logo colors</h3>
+    <p>Blue and cream are the everyday versions. Black and white are only for black-and-white printing and websites. The number shows how well the logo stands out from its background.</p>
+    <div class="grid g2">
+      <div class="tile"><div class="stage bg-cream"><svg style="width:46%" viewBox="-60 0 265 170" aria-label="Blue logo on cream"><use href="#nc-stacked" x="-60" width="265" height="170"/></svg></div><div class="cap"><b>Blue on cream</b><span class="tag">8.1 : 1</span></div></div>
+      <div class="tile"><div class="stage bg-blue"><svg style="width:46%" viewBox="-60 0 265 170" aria-label="Cream logo on blue"><use href="#nc-stacked" x="-60" width="265" height="170"/></svg></div><div class="cap"><b>Cream on blue</b><span class="tag">8.1 : 1</span></div></div>
+      <div class="tile"><div class="stage bg-white"><svg style="width:46%" viewBox="-60 0 265 170" aria-label="Black logo on white"><use href="#nc-stacked" x="-60" width="265" height="170"/></svg></div><div class="cap"><b>Black on white</b><span class="tag bw">20.1 : 1 · B&amp;W and web only</span></div></div>
+      <div class="tile"><div class="stage bg-black"><svg style="width:46%" viewBox="-60 0 265 170" aria-label="White logo on black"><use href="#nc-stacked" x="-60" width="265" height="170"/></svg></div><div class="cap"><b>White on black</b><span class="tag bw">20.1 : 1 · B&amp;W and web only</span></div></div>
+    </div>
+
+    <h3 class="sub">Safe space</h3>
+    <p>Always leave white space around the logo. Don't let text, pictures or the edge of the page get too close. The shaded area shows the space to keep clear.</p>
+    <div class="safe">
+      <div class="zone mk"><div><svg viewBox="0 0 145 88" aria-label="Primary logo with safe space"><use href="#nc-mark" width="145" height="88"/></svg></div></div>
+      <div class="zone st"><div><svg viewBox="-60 0 265 170" aria-label="Stacked logo with safe space"><use href="#nc-stacked" x="-60" width="265" height="170"/></svg></div></div>
+    </div>
+
+    <h3 class="sub">Wrong usage</h3>
+    <p>Never do any of these. The same rules apply to every version of the logo.</p>
+    <div class="grid g3">
+      <div class="tile dont"><div class="stage bg-cream"><span class="num">1</span><svg viewBox="0 0 145 88" preserveAspectRatio="none" style="width:190px;height:52px"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="cap"><b>Don't stretch or squash it</b></div></div>
+      <div class="tile dont"><div class="stage bg-cream"><span class="num">2</span><svg viewBox="0 0 145 88" style="transform:rotate(-20deg)"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="cap"><b>Don't rotate it</b></div></div>
+      <div class="tile dont"><div class="stage bg-cream"><span class="num">3</span><svg viewBox="0 0 145 88" style="color:#3FA34D"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="cap"><b>Don't change its colors</b></div></div>
+      <div class="tile dont"><div class="stage bg-cream"><span class="num">4</span><svg viewBox="0 0 145 88" style="filter:drop-shadow(5px 5px 0 var(--red))"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="cap"><b>Don't add shadows or outlines</b></div></div>
+      <div class="tile dont"><div class="stage" style="background:var(--red);color:var(--blue)"><span class="num">5</span><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="cap"><b>Don't put it where it's hard to see</b></div></div>
+      <div class="tile dont"><div class="stage bg-cream"><span class="num">6</span><svg viewBox="-60 0 265 170" style="width:150px"><use href="#nc-mark" x="0" y="82" width="145" height="88"/><text x="-59" y="32" fill="currentColor" font-family="Montserrat" font-weight="700" font-size="32" textLength="263" lengthAdjust="spacing">NORTHFOLD</text><text x="13.5" y="62" fill="currentColor" font-family="Montserrat" font-size="24" textLength="118" lengthAdjust="spacing">CREATIVE</text></svg></div><div class="cap"><b>Don't move the parts around</b></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 COLORS ============ -->
+<section id="colors">
+  <div class="wrap">
+    <span class="eyebrow">02</span>
+    <h2 class="section-title">Colors</h2>
+    <p class="lede">Blue leads, cream supports, and red is a small accent. Only use these colors.</p>
+
+    <h3 class="sub">Brand colors</h3>
+    <p>CMYK values are converted from the HEX codes, so print a test before a big print run.</p>
+    <div class="grid g3">
+      <div class="swatch"><div class="chip bg-blue"><span class="role">Main</span><h4>Northfold Blue</h4></div>
+        <dl><dt>HEX</dt><dd>#00478F</dd><dt>RGB</dt><dd>0, 71, 143</dd><dt>CMYK</dt><dd>100, 50, 0, 44</dd></dl></div>
+      <div class="swatch"><div class="chip bg-cream"><span class="role">Main</span><h4>Cream</h4></div>
+        <dl><dt>HEX</dt><dd>#FDF0D5</dd><dt>RGB</dt><dd>253, 240, 213</dd><dt>CMYK</dt><dd>0, 5, 16, 1</dd></dl></div>
+      <div class="swatch"><div class="chip" style="background:var(--red);color:var(--cream)"><span class="role">Accent</span><h4>Red</h4></div>
+        <dl><dt>HEX</dt><dd>#BC4749</dd><dt>RGB</dt><dd>188, 71, 73</dd><dt>CMYK</dt><dd>0, 62, 61, 26</dd></dl></div>
+    </div>
+
+    <h3 class="sub">Black and white</h3>
+    <p>Only for black-and-white printing and websites.</p>
+    <div class="grid g2 neutrals">
+      <div class="swatch"><div class="chip bg-black"><span class="role">B&amp;W and web only</span><h4>Black</h4></div>
+        <dl><dt>HEX</dt><dd>#000000</dd><dt>RGB</dt><dd>0, 0, 0</dd><dt>CMYK</dt><dd>0, 0, 0, 100</dd></dl></div>
+      <div class="swatch"><div class="chip bg-white" style="border-bottom:1px solid var(--line)"><span class="role">B&amp;W and web only</span><h4>White</h4></div>
+        <dl><dt>HEX</dt><dd>#FAFAFA</dd><dt>RGB</dt><dd>250, 250, 250</dd><dt>CMYK</dt><dd>0, 0, 0, 2</dd></dl></div>
+    </div>
+
+    <h3 class="sub">How much of each</h3>
+    <p>A rough guide for any layout. Keep red small, like a line, a button or one highlighted word.</p>
+    <div class="ratio" role="img" aria-label="Blue 60 percent, cream 35 percent, red 5 percent">
+      <div class="bg-blue" style="flex:60">Blue 60%</div>
+      <div class="bg-cream" style="flex:35">Cream 35%</div>
+      <div style="flex:5;background:var(--red)"></div>
+    </div>
+    <p class="note" style="margin-top:8px">Last part: red, 5%.</p>
+
+    <h3 class="sub">Logo on backgrounds</h3>
+    <p>Always check the contrast before you put the logo on a background. A free tool like the WebAIM Contrast Checker gives you the number in seconds.</p>
+    <div class="rule-box"><b>4.5 : 1 or higher</b><span>The WCAG AA standard. Anything lower is too hard to see.</span></div>
+
+    <p style="margin-top:32px"><b>Do</b></p>
+    <div class="dots">
+      <div class="dot"><div class="c" style="background:var(--cream);color:var(--blue)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><b>8.1 : 1</b>Blue on cream</div>
+      <div class="dot"><div class="c" style="background:var(--blue);color:var(--cream)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><b>8.1 : 1</b>Cream on blue</div>
+      <div class="dot"><div class="c" style="background:var(--white);color:var(--black)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><b>20.1 : 1</b>Black on white<br>B&amp;W / web only</div>
+      <div class="dot"><div class="c" style="background:var(--black);color:var(--white)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><b>20.1 : 1</b>White on black<br>B&amp;W / web only</div>
+    </div>
+
+    <p style="margin-top:32px"><b>Don't</b></p>
+    <div class="dots">
+      <div class="dot bad"><div class="c" style="background:var(--red);color:var(--blue)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><b>1.8 : 1</b>Blue on red</div>
+      <div class="dot bad"><div class="c" style="background:var(--black);color:var(--blue)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><b>2.3 : 1</b>Blue on black</div>
+      <div class="dot bad"><div class="c" style="background:var(--white);color:var(--cream)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><b>1.1 : 1</b>Cream on white</div>
+      <div class="dot bad"><div class="c" style="background:var(--cream);color:var(--red)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><b>Not allowed</b>Red logo</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 TYPOGRAPHY ============ -->
+<section id="type">
+  <div class="wrap">
+    <span class="eyebrow">03</span>
+    <h2 class="section-title">Typography</h2>
+    <p class="lede">Two fonts from the same family, so they always look good together. Both are free on Google Fonts.</p>
+
+    <h3 class="sub">Typefaces</h3>
+    <div class="grid g2">
+      <div class="face">
+        <div class="role">Headlines</div>
+        <h4>Nunito</h4>
+        <div class="abc" style="font-family:var(--f-head);font-weight:700">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br>0123456789</div>
+        <div class="aa" style="font-family:var(--f-head);font-weight:800">Aa</div>
+      </div>
+      <div class="face">
+        <div class="role">Everything else</div>
+        <h4 style="font-family:var(--f-body);font-weight:700">Nunito Sans</h4>
+        <div class="abc">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br>0123456789</div>
+        <div class="aa" style="font-family:var(--f-body)">Aa</div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:16px">The lettering in the logo is part of the artwork. Don't retype it.</p>
+
+    <h3 class="sub">Type system</h3>
+    <div class="typesys">
+      <div class="row"><span style="font:800 clamp(36px,5vw,52px)/1.05 var(--f-head)">Headlines</span><span class="spec">Nunito Bold</span></div>
+      <div class="row"><span style="font:700 26px/1.2 var(--f-body)">Sub-headlines</span><span class="spec">Nunito Sans Bold</span></div>
+      <div class="row"><span style="font:400 17px/1.6 var(--f-body)">Paragraph text. This is what most of the words on a page look like.</span><span class="spec">Nunito Sans Regular</span></div>
+      <div class="row"><span style="font:400 13px/1.5 var(--f-body)">Captions and small notes</span><span class="spec">Nunito Sans Regular</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 BUSINESS CARDS ============ -->
+<section id="cards">
+  <div class="wrap">
+    <span class="eyebrow">04</span>
+    <h2 class="section-title">Business cards</h2>
+    <p class="lede">The front shows only our main logo. The back shows the name, job title and contact details, with the horizontal logo on top.</p>
+
+    <div class="cards">
+      <div class="set">Blue set</div>
+      <div class="bcw"><div class="bc front c-blue"><svg viewBox="0 0 145 88" aria-label="Card front"><use href="#nc-mark" width="145" height="88"/></svg></div></div>
+      <div class="bcw"><div class="bc back c-light">
+        <svg class="hl" viewBox="0 0 490 88" aria-label="Northfold Creative"><use href="#nc-horizontal" width="490" height="88"/></svg>
+        <div><div class="name">Alex Rivera</div><div class="role">Creative Director</div><div class="contact">alex@northfold.co<br>+1 (555) 012-3456</div></div>
+      </div></div>
+      <div class="set">Cream set</div>
+      <div class="bcw"><div class="bc front c-cream"><svg viewBox="0 0 145 88" aria-label="Card front"><use href="#nc-mark" width="145" height="88"/></svg></div></div>
+      <div class="bcw"><div class="bc back c-blue">
+        <svg class="hl" viewBox="0 0 490 88" aria-label="Northfold Creative"><use href="#nc-horizontal" width="490" height="88"/></svg>
+        <div><div class="name">Alex Rivera</div><div class="role">Creative Director</div><div class="contact">alex@northfold.co<br>+1 (555) 012-3456</div></div>
+      </div></div>
+    </div>
+    <p class="note" style="margin-top:12px">Name and contact details are placeholders. Pick one set and use it for the whole team.</p>
+
+    <div class="spec-list">
+      <div><b>Size</b>89 × 51 mm (3.5 × 2 in)</div>
+      <div><b>Edges</b>Keep text at least 4 mm from the edge</div>
+      <div><b>Paper</b>Thick, matte</div>
+      <div><b>File</b>Print-ready PDF, CMYK</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 MERCH ============ -->
+<section id="merch">
+  <div class="wrap">
+    <span class="eyebrow">05</span>
+    <h2 class="section-title">Merch</h2>
+    <p class="lede">T-shirts and hoodies only ever show <b>the logo</b>. No name, no slogans, nothing else.</p>
+
+    <h3 class="sub">Any color works, if the logo is easy to see</h3>
+    <p>Pick any shirt or hoodie color. Then print the logo in blue or cream, whichever stands out more. Check the contrast first: it must be <b>4.5 : 1 or higher</b> (WCAG AA).</p>
+    <div class="grid g4">
+      <div class="tile garment"><div class="stage">
+        <svg viewBox="0 0 320 340" role="img" aria-label="Blue hoodie with cream logo">
+          <path d="M95 78 Q100 12 160 12 Q220 12 225 78 Z" fill="#003D7A"/>
+          <path d="M85 72 L40 92 L10 250 L46 258 L72 142 L70 322 L250 322 L248 142 L274 258 L310 250 L280 92 L235 72 Q200 98 160 98 Q120 98 85 72 Z" fill="#00478F"/>
+          <path d="M115 72 Q160 36 205 72 Q185 100 160 100 Q135 100 115 72 Z" fill="#002E5C"/>
+          <rect x="70" y="306" width="180" height="16" fill="#003D7A"/>
+          <path d="M104 236 L216 236 L234 300 L86 300 Z" fill="#004284"/>
+          <line x1="146" y1="98" x2="143" y2="134" stroke="#FDF0D5" stroke-width="3" stroke-linecap="round"/>
+          <line x1="174" y1="98" x2="177" y2="134" stroke="#FDF0D5" stroke-width="3" stroke-linecap="round"/>
+          <use href="#nc-mark" x="116" y="156" width="88" height="53" style="color:#FDF0D5"/>
+        </svg></div>
+        <div class="cap"><b>Blue hoodie</b>Cream logo · 8.1 : 1</div></div>
+
+      <div class="tile garment"><div class="stage">
+        <svg viewBox="0 0 320 340" role="img" aria-label="Cream t-shirt with blue logo">
+          <path d="M110 30 Q160 58 210 30 L278 56 L312 126 L264 148 L250 118 L250 322 L70 322 L70 118 L56 148 L8 126 L42 56 Z" fill="#FDF0D5" stroke="#E5D3AE" stroke-width="1.5"/>
+          <path d="M110 30 Q160 72 210 30" fill="none" stroke="#EAD9B6" stroke-width="6"/>
+          <use href="#nc-mark" x="115" y="110" width="90" height="55" style="color:#00478F"/>
+        </svg></div>
+        <div class="cap"><b>Cream tee</b>Blue logo · 8.1 : 1</div></div>
+
+      <div class="tile garment"><div class="stage">
+        <svg viewBox="0 0 320 340" role="img" aria-label="Forest green hoodie with cream logo">
+          <path d="M95 78 Q100 12 160 12 Q220 12 225 78 Z" fill="#264F42"/>
+          <path d="M85 72 L40 92 L10 250 L46 258 L72 142 L70 322 L250 322 L248 142 L274 258 L310 250 L280 92 L235 72 Q200 98 160 98 Q120 98 85 72 Z" fill="#2E5E4E"/>
+          <path d="M115 72 Q160 36 205 72 Q185 100 160 100 Q135 100 115 72 Z" fill="#1E4036"/>
+          <rect x="70" y="306" width="180" height="16" fill="#264F42"/>
+          <path d="M104 236 L216 236 L234 300 L86 300 Z" fill="#2A5848"/>
+          <line x1="146" y1="98" x2="143" y2="134" stroke="#FDF0D5" stroke-width="3" stroke-linecap="round"/>
+          <line x1="174" y1="98" x2="177" y2="134" stroke="#FDF0D5" stroke-width="3" stroke-linecap="round"/>
+          <use href="#nc-mark" x="116" y="156" width="88" height="53" style="color:#FDF0D5"/>
+        </svg></div>
+        <div class="cap"><b>Forest green hoodie</b>Cream logo · 6.6 : 1</div></div>
+
+      <div class="tile garment"><div class="stage">
+        <svg viewBox="0 0 320 340" role="img" aria-label="Heather grey t-shirt with blue logo on the left chest">
+          <path d="M110 30 Q160 58 210 30 L278 56 L312 126 L264 148 L250 118 L250 322 L70 322 L70 118 L56 148 L8 126 L42 56 Z" fill="#B9BBBF"/>
+          <path d="M110 30 Q160 72 210 30" fill="none" stroke="#A7A9AE" stroke-width="6"/>
+          <use href="#nc-mark" x="184" y="104" width="40" height="24" style="color:#00478F"/>
+        </svg></div>
+        <div class="cap"><b>Heather grey tee</b>Blue logo, left chest · 4.8 : 1</div></div>
+    </div>
+
+    <h3 class="sub">Color check</h3>
+    <p>Some common shirt colors, with the logo color that works best on each.</p>
+    <div class="swatches">
+      <div class="gsw"><div class="chip" style="background:#111111;color:var(--cream)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="info"><b>Black</b>Cream logo<div class="r">16.7 : 1</div></div></div>
+      <div class="gsw"><div class="chip" style="background:#6D1F2F;color:var(--cream)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="info"><b>Burgundy</b>Cream logo<div class="r">9.9 : 1</div></div></div>
+      <div class="gsw"><div class="chip" style="background:#3A3D42;color:var(--cream)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="info"><b>Charcoal</b>Cream logo<div class="r">9.7 : 1</div></div></div>
+      <div class="gsw"><div class="chip" style="background:#6B6B3A;color:var(--cream)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="info"><b>Olive</b>Cream logo<div class="r">4.9 : 1</div></div></div>
+      <div class="gsw"><div class="chip" style="background:#A9CCE3;color:var(--blue)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="info"><b>Sky blue</b>Blue logo<div class="r">5.4 : 1</div></div></div>
+      <div class="gsw bad"><div class="chip" style="background:#BC4749;color:var(--cream)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="info"><b>Red</b>Cream logo<div class="r">4.49 : 1</div></div></div>
+      <div class="gsw bad"><div class="chip" style="background:#D9A23A;color:var(--blue)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="info"><b>Mustard</b>Blue logo<div class="r">4.0 : 1</div></div></div>
+      <div class="gsw bad"><div class="chip" style="background:#8A8D91;color:var(--cream)"><svg viewBox="0 0 145 88"><use href="#nc-mark" width="145" height="88"/></svg></div><div class="info"><b>Mid grey</b>Cream logo<div class="r">3.0 : 1</div></div></div>
+    </div>
+    <p class="note" style="margin-top:16px">Fabric colors vary. Ask your printer for the garment's HEX code, or match it with a swatch, before you check.</p>
+
+    <h3 class="sub">Where the logo goes</h3>
+    <div class="spec-list">
+      <div><b>Front center</b>About 8–10 in wide, 3 in below the collar</div>
+      <div><b>Left chest</b>About 3.5 in wide</div>
+      <div><b>Print</b>Screen print or embroidery</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <svg viewBox="0 0 145 88" role="img" aria-label="Northfold Creative"><use href="#nc-mark" width="145" height="88"/></svg>
+    <span>Northfold Creative · Brand Guidelines · October 2026</span>
+  </div>
+</footer>
+
+</main>
+
+<script>
+  // Underline the section you're reading in the side column
+  var links = document.querySelectorAll('.nav a');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id); });
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  document.querySelectorAll('main section[id]').forEach(function (s) { io.observe(s); });
+</script>
+</body>
+</html>
